@@ -1,0 +1,115 @@
+<!doctype html>
+<!-- Home-page hero: Odysseus's arrow over a band of Greek wave scrolls.
+     Arrow geometry comes from the img2threejs sculpt spec (reference: a red-figure archer illustration),
+     rebuilt here in ~60 lines with flat pottery colours. three.js r170 from cdnjs, pinned + SRI. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TraceFort arrow</title>
+<link rel="modulepreload" href="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.170.0/three.module.min.js"
+      integrity="sha512-zTnt1Hf43YVf2to5DC6GE6cPRSC/xgPJDf3PLQussTsaDak1uHdbnWtIYnOQiL40AIa2OZfFkayQXVdzL1/DqA=="
+      crossorigin="anonymous">
+<style>
+  html, body { margin: 0; height: 100%; overflow: hidden; background: #F3E9D8; }
+  canvas { display: block; width: 100%; height: 100%; }
+  svg { position: absolute; left: 0; right: 0; bottom: 0; width: 100%; height: 34px; }
+</style>
+</head>
+<body>
+<canvas id="c" role="img" aria-label="A terracotta arrow with a black leaf-shaped head, turning slowly above a band of Greek wave scrolls."></canvas>
+<svg aria-hidden="true">
+  <defs>
+    <pattern id="wave" width="48" height="34" patternUnits="userSpaceOnUse">
+      <path d="M0 27 C10 27 13 9 26 9 C37 9 39 22 30 22 C24 22 24 15 30 15" fill="none" stroke="#1A1410" stroke-width="2.2"
+            stroke-linecap="round"/>
+    </pattern>
+  </defs>
+  <line x1="0" y1="2" x2="100%" y2="2" stroke="#A84A33" stroke-width="3"/>
+  <rect y="0" width="100%" height="34" fill="url(#wave)"/>
+  <line x1="0" y1="31" x2="100%" y2="31" stroke="#1A1410" stroke-width="2.2"/>
+</svg>
+<script type="module">
+import * as THREE from 'https://cdnjs.cloudflare.com/ajax/libs/three.js/0.170.0/three.module.min.js';
+
+const INK = '#1A1410', CLAY = '#A84A33', PARCHMENT = '#F3E9D8';
+const canvas = document.getElementById('c');
+let renderer;
+try { renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true }); }
+catch (e) { canvas.remove(); throw e; }                  // no WebGL: the wave band still shows
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));   // phones: cap the pixel work
+
+// Flat pottery shading: 3 hard tones, no tone mapping so terracotta stays #A84A33 where lit.
+const steps = new THREE.DataTexture(new Uint8Array([90, 180, 255]), 3, 1, THREE.RedFormat);
+steps.minFilter = steps.magFilter = THREE.NearestFilter; steps.needsUpdate = true;
+const toon = color => new THREE.MeshToonMaterial({ color, gradientMap: steps });
+const clay = toon(CLAY), glaze = toon(INK), feather = toon(PARCHMENT);
+
+// Ink outline: a back-face copy pushed out along normals by a fixed number of screen pixels.
+const outlinePx = { value: 0.01 };
+const ink = new THREE.MeshBasicMaterial({ color: INK, side: THREE.BackSide });
+ink.onBeforeCompile = s => {
+  s.uniforms.outline = outlinePx;
+  s.vertexShader = 'uniform float outline;\n' + s.vertexShader.replace(
+    '#include <begin_vertex>', '#include <begin_vertex>\ntransformed += normalize(normal) * outline;');
+};
+
+// Arrow along +Y (tip up), sizes from the sculpt spec: shaft ~90:1, leaf head ~3.5:1.
+const arrow = new THREE.Group();
+const part = (geometry, material, y = 0) => {
+  const m = new THREE.Mesh(geometry, material); m.position.y = y;
+  m.add(new THREE.Mesh(geometry, ink)); arrow.add(m); return m;
+};
+const rod = (r, h, y, mat) => part(new THREE.CylinderGeometry(r, r, h, 12), mat, y);
+rod(0.024, 3.4, 0, clay);                                 // shaft
+rod(0.032, 0.16, 1.74, glaze);                            // head socket
+rod(0.030, 0.10, -1.73, glaze);                           // nock
+rod(0.028, 0.04, -1.64, glaze); rod(0.028, 0.04, -1.00, glaze);   // thread bindings around the fletching
+const leaf = [[0.032, 0], [0.042, 0.03], [0.06, 0.12], [0.055, 0.2], [0.04, 0.29], [0.018, 0.37], [0.0001, 0.42]];
+const blade = new THREE.LatheGeometry(leaf.map(([r, y]) => new THREE.Vector2(r, y)), 4);   // 4 sides = midrib ridge
+blade.scale(1, 1, 0.38); part(blade, glaze, 1.80);
+const vane = new THREE.Shape([[0.014, 0], [0.11, 0.02], [0.12, 0.12], [0.09, 0.3], [0.05, 0.46], [0.014, 0.56]]
+  .map(([x, y]) => new THREE.Vector2(x, y)));
+const vaneGeo = new THREE.ExtrudeGeometry(vane, { depth: 0.008, bevelEnabled: false }).translate(0, 0, -0.004);
+for (const a of [0, 120, 240]) part(vaneGeo, feather, -1.64).rotation.y = THREE.MathUtils.degToRad(a);
+arrow.position.y = -0.22;                                 // centre the 4 m arrow on its middle
+
+const roll = new THREE.Group(); roll.add(arrow);          // spins about the arrow's own axis
+const flight = new THREE.Group(); flight.add(roll);
+flight.rotation.z = -Math.PI / 2 + 0.12;                  // tip to the right, slightly rising
+const scene = new THREE.Scene(); scene.add(flight);
+scene.add(new THREE.HemisphereLight(PARCHMENT, CLAY, 1.0));
+const key = new THREE.DirectionalLight('#ffffff', 2.4); key.position.set(-1, 2, 3); scene.add(key);
+const camera = new THREE.OrthographicCamera();
+camera.position.z = 10;
+
+function fit() {
+  const w = canvas.clientWidth, h = canvas.clientHeight;
+  renderer.setSize(w, h, false);
+  const spanX = 4.4 / (w < 600 ? 0.9 : 0.62);             // arrow fills 62% of a wide hero, 90% on phones
+  const spanY = spanX * h / w;
+  camera.left = -spanX / 2; camera.right = spanX / 2;
+  camera.top = spanY / 2 - 17 * spanY / h;                // centre the arrow above the 34 px wave band
+  camera.bottom = camera.top - spanY;
+  camera.updateProjectionMatrix();
+  outlinePx.value = 1.6 * spanX / w;                     // ~1.6 px of ink at any width
+}
+
+const still = matchMedia('(prefers-reduced-motion: reduce)');
+const clock = new THREE.Clock();
+let visible = true;
+function frame() {
+  const t = clock.getElapsedTime();
+  roll.rotation.y = 0.6 + (still.matches ? 0 : t * 0.5);
+  flight.position.y = still.matches ? 0 : Math.sin(t * 0.8) * 0.06;
+  renderer.render(scene, camera);
+  if (!still.matches && visible) requestAnimationFrame(frame);
+}
+new IntersectionObserver(([e]) => { const was = visible; visible = e.isIntersecting; if (visible && !was) frame(); })
+  .observe(canvas);
+addEventListener('resize', () => { fit(); if (still.matches) frame(); });
+still.addEventListener('change', frame);
+fit(); frame();
+</script>
+</body>
+</html>

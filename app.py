@@ -1,8 +1,11 @@
+import base64
 import csv
 import html
 import json
+import math
 import os
 import secrets
+import urllib.request
 from datetime import datetime
 from pathlib import Path
 
@@ -374,6 +377,8 @@ def page_start():
     """First visit: the quiz, then create an account (or look around as a guest)."""
     if st.session_state.user is not None:
         st.switch_page(PAGES["homes"])
+    if not st.session_state.get("welcome"):
+        st.iframe(HERO, height=200, alt=HERO_ALT)
     masthead("Find your way home.")
     if not st.session_state.get("welcome"):                 # first: guest, or sign in if you have an account
         _, mid, _ = st.columns([1, 5, 1])
@@ -621,17 +626,75 @@ def home_card(pos, home):
             st.checkbox(step_text, key=f"chk_{home.listing_id}_{step_no}")
 
 
-# Opens on the whole metro, tilted, and can't zoom out past it. Each home is a 3D column as tall as its
-# walk-away bid. Click a column to zoom into that home.
+# Opens on the whole metro, tilted, and can't zoom out past it. Each home is a 3D arrow (the hero's arrow,
+# arrow.glb) standing on it, as long as its walk-away bid. Click an arrow to zoom into that home.
 # ponytail: deck.gl can't hard-lock panning at the edges; the zoom-out cap keeps it metro-sized.
 MIN_ZOOM, CLOSE_ZOOM = 8.4, 14.5
 TILT, TURN = 45, -20                                       # map pitch and bearing in degrees
-# Column radius (meters) and height (meters per $1,000 of bid) for the metro view and the street view.
-# The best 3 are drawn BEST_WIDER times wider so the other homes never hide them.
-# ponytail: deck.gl columns have no pixel min/max, so manual scroll-zoom makes them thick or thin; a
-# zoom-aware size needs a custom deck.gl layer.
-COLUMN = {"metro": (550, 60), "street": (22, 2.5)}
+# Arrow shaft radius (meters) and length (meters per $1,000 of bid) for the metro view and the street view.
+# The best 3 are drawn BEST_WIDER times thicker so the other homes never hide them.
+# ponytail: sizes are in meters, so manual scroll-zoom makes arrows thick or thin; a zoom-aware size
+# needs a custom deck.gl layer.
+COLUMN = {"metro": (190, 60), "street": (8, 2.5)}
 BEST_WIDER = 2
+HERE = Path(__file__).parent
+ARROW = "data:model/gltf-binary;base64," + base64.b64encode((HERE / "arrow.glb").read_bytes()).decode()
+ARROW_LONG, ARROW_RADIUS = 4.0, 0.024          # arrow.glb: tip at its origin, nock 4 units up, shaft radius
+HERO = (HERE / "hero_arrow.html").read_text()
+HERO_ALT = ("A terracotta arrow with a black leaf-shaped head, turning slowly above a band of Greek wave scrolls. "
+            "The arrow comes from a red-figure drawing of Odysseus drawing his bow.")
+SEA, LAND, ROUTE = "#2E8E8A", "#C27C5E", [178, 230, 222]
+CARTO_LIGHT = "https://basemaps.cartocdn.com/gl/positron-gl-style/style.json"
+
+
+@st.cache_resource
+def _voyage_style():
+    """Carto's light base map recoloured after Tyler Miles Lockett's map "The Route of the Argonauts":
+    teal sea, rust land, ink labels, as a data: URL (Streamlit only takes a style URL string).
+    Raises when Carto can't be reached, so a failure isn't cached."""
+    with urllib.request.urlopen(CARTO_LIGHT, timeout=5) as r:
+        style = json.load(r)
+    style["layers"] = [l for l in style["layers"] if not l["id"].startswith(("tunnel", "bridge", "aeroway"))]
+    for layer in style["layers"]:
+        lid, kind, paint = layer["id"], layer["type"], layer.setdefault("paint", {})
+        if kind == "background":
+            paint["background-color"] = LAND
+        elif "water" in lid and kind in ("fill", "line"):
+            paint[f"{kind}-color"] = SEA
+        elif kind == "fill":                                   # parks, land use, buildings: darker rust
+            paint["fill-color"] = "rgba(122, 59, 38, 0.18)"
+            paint.pop("fill-outline-color", None)
+        elif kind == "line":                                   # roads light on rust, borders dark
+            paint["line-color"] = ("#7A3B26" if "boundary" in lid else
+                                   "#A9604A" if "case" in lid else "#E2B597")
+        elif kind == "symbol":
+            water = "water" in lid
+            paint["text-color"] = "#F3E9D8" if water else "#1A1410"
+            paint["text-halo-color"] = SEA if water else "rgba(243, 233, 216, 0.75)"
+    packed = json.dumps(style, separators=(",", ":")).encode()
+    return "data:application/json;base64," + base64.b64encode(packed).decode()
+
+
+def voyage_style():
+    try:
+        return _voyage_style()
+    except (OSError, ValueError):
+        return "light"                                         # Carto unreachable: plain light map
+
+
+def voyage_route(best):
+    """Paths joining the best homes I -> II -> III, with an arrowhead halfway along each leg."""
+    stops = best[["lon", "lat"]].values.tolist()
+    paths = [{"path": stops}] if len(stops) > 1 else []
+    for (x0, y0), (x1, y1) in zip(stops, stops[1:]):
+        k = math.cos(math.radians(y0))                         # a degree of longitude is shorter than one of latitude
+        dx, dy = (x1 - x0) * k, y1 - y0
+        n = math.hypot(dx, dy) or 1
+        ux, uy, a = dx / n, dy / n, min(n * 0.15, 0.02)        # arrowhead arm length, degrees
+        tx, ty = (x0 + x1) / 2 * k + ux * a / 2, (y0 + y1) / 2 + uy * a / 2
+        arm = lambda c, s: [(tx - a * (ux * c - uy * s)) / k, ty - a * (uy * c + ux * s)]
+        paths.append({"path": [arm(0.87, 0.5), [tx / k, ty], arm(0.87, -0.5)]})   # +-30 degrees
+    return paths
 
 
 def homes_map(homes, market):
@@ -662,33 +725,40 @@ def homes_map(homes, market):
         radius, per_k = COLUMN["metro"]
         st.markdown("<p class='summary'><b>Where they are</b></p>", unsafe_allow_html=True)
     best = pts[pts["rank"] != ""].assign(
-        top=lambda d: d.height * per_k * 1.12,                                   # numeral floats above its column
+        top=lambda d: d.height * per_k * 1.12,                                   # numeral floats above its arrow
         nudge=lambda d: d["rank"].map({"I": [-24, 0], "II": [24, 0], "III": [0, -28]}))  # nearby homes' labels fan out
-    column = dict(get_position="[lon, lat]", get_elevation="height", elevation_scale=per_k, disk_resolution=24,
-                  extruded=True, pickable=True, auto_highlight=True)
+    pts["long"] = pts.height * per_k / ARROW_LONG                              # arrow length = bid, in meters
+    pts["wide"] = radius / ARROW_RADIUS
+    best = best.assign(long=pts["long"], wide=pts["wide"] * BEST_WIDER)
+    arrow = dict(scenegraph=f'"{ARROW}"', _lighting='"flat"',       # quoted: pydeck turns bare strings into code
+                 get_position="[lon, lat]", get_orientation=[0, 0, 90],   # glTF y-up -> map up
+                 get_scale="[wide, long, wide]", pickable=True, auto_highlight=True)
 
     deck = pdk.Deck(
-        map_style="light",
+        map_style=voyage_style(),
         initial_view_state=view,
         layers=[
-            pdk.Layer("ColumnLayer", id="homes", data=pts[pts["rank"] == ""], radius=radius,
-                      get_fill_color=[92, 75, 59, 150], **column),                  # other homes: thin, see-through
-            pdk.Layer("ColumnLayer", id="best", data=best, radius=radius * BEST_WIDER,
-                      get_fill_color=[168, 74, 51, 250], **column),                 # best 3: wide terracotta
+            pdk.Layer("PathLayer", id="route", data=voyage_route(best), get_path="path", get_color=ROUTE,
+                      get_width=3, width_units='"pixels"', cap_rounded=True, joint_rounded=True),
+            pdk.Layer("ScenegraphLayer", id="homes", data=pts[pts["rank"] == ""],
+                      get_color=[60, 40, 30, 230], **arrow),                          # other homes: dark arrows
+            pdk.Layer("ScenegraphLayer", id="best", data=best,
+                      get_color=[251, 245, 234, 255], **arrow),                       # best 3: thick parchment arrows
             pdk.Layer("TextLayer", id="ranks", data=best, get_position="[lon, lat, top]", get_text="rank",
                       get_color=[26, 20, 16], get_size=18, font_weight=700, get_pixel_offset="nudge", background=True,
                       get_background_color=[251, 245, 234, 235], background_padding=[6, 2, 6, 2],
-                      parameters={"depthCompare": "always"}),                       # never hidden behind a column
+                      parameters={"depthCompare": "always"}),                       # never hidden behind an arrow
         ],
         tooltip={"html": "<b>{neighborhood}</b><br/>{city} · walk-away {bid_txt}<br/><i>Click to zoom in</i>",
                  "style": {"backgroundColor": "#1A1410", "color": "#FBF5EA", "fontSize": "14px"}},
     )
     st.pydeck_chart(deck, on_select="rerun", selection_mode="single-object", key=key, height=440,
-                    alt=f"3D map of {m['name']} with {len(pts)} sample homes as columns; taller columns have a higher "
-                        "walk-away bid. The best three are the cards listed above.")
-    st.caption("Wide terracotta: your best 3. Thin brown: other homes that fit. Taller column = higher walk-away bid. "
-               "Click a column to zoom in. To tilt or turn the map, right-click and drag (or Ctrl + drag); "
-               "on a phone, use two fingers. The cards above list the same homes.")
+                    alt=f"3D map of {m['name']} with {len(pts)} sample homes as arrows; longer arrows have a higher "
+                        "walk-away bid. A route joins the best three, which are the cards listed above.")
+    st.caption("Thick light arrows: your best 3, joined I → II → III. Dark arrows: other homes that fit. Longer arrow = "
+               "higher walk-away bid. Click an arrow to zoom in. To tilt or turn the map, right-click and drag (or Ctrl + drag); "
+               "on a phone, use two fingers. The cards above list the same homes. Map colours and route lines after "
+               "Tyler Miles Lockett's map *The Route of the Argonauts*.")
     if picked and st.button(f"Back to all of {m['short']}"):
         st.session_state.map_v += 1                        # new key = selection cleared
         st.rerun()
