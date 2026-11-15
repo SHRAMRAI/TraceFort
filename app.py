@@ -59,13 +59,17 @@ header[data-testid="stHeader"] { background: transparent; }
    The ☰ is Streamlit's own side-panel button, restyled and pinned into the bar's left slot. ---------- */
 .st-key-topbar { position: fixed; top: 0; left: 0; right: 0; z-index: 990; background: var(--paper);
                  border-bottom: 1px solid var(--line); padding: 10px 20px 10px 68px; }
-header[data-testid="stHeader"] { background: transparent; z-index: 995; pointer-events: none; }
+/* Streamlit's header/toolbar is an invisible strip over our bar: make it click-through (it was swallowing
+   clicks on Sign in / Create account), and keep only the ☰ button clickable. */
+header[data-testid="stHeader"], [data-testid="stToolbar"] { background: transparent; pointer-events: none !important; }
+header[data-testid="stHeader"] { z-index: 995; }
 [data-testid="stExpandSidebarButton"] {
-  pointer-events: auto; position: fixed !important; top: 10px; left: 12px; width: 46px; height: 46px;
-  border: 1px solid var(--ink) !important; border-radius: 8px; background: #fff !important; color: var(--ink) !important;
+  pointer-events: auto !important; position: fixed !important; top: 10px; left: 12px; width: 46px; height: 46px;
+  border: none !important; border-radius: 8px; background: transparent !important; color: var(--ink) !important;
   display: flex !important; align-items: center; justify-content: center; padding: 0 !important; }
+[data-testid="stExpandSidebarButton"]:hover { background: var(--wash) !important; }
 [data-testid="stExpandSidebarButton"] span { font-size: 0 !important; }          /* hide the » icon ... */
-[data-testid="stExpandSidebarButton"]::before { content: "☰"; font-size: 22px; line-height: 1; }  /* ... show ☰ */
+[data-testid="stExpandSidebarButton"]::before { content: "☰"; font-size: 26px; line-height: 1; }  /* ... show ☰ */
 .brand { font-family: 'Cinzel', Georgia, serif; font-weight: 700; letter-spacing: .18em; font-size: 1.3rem;
          color: var(--ink); line-height: 46px; white-space: nowrap; overflow: hidden; text-overflow: clip; }
 .brand span { color: var(--red); }
@@ -170,6 +174,13 @@ button:focus-visible, input:focus-visible, a:focus-visible { outline: 3px solid 
   .st-key-top_create button p::after { content: "Sign up"; font-size: .82rem; }   /* wordmark still fits */
   [data-testid="stExpandSidebarButton"] { left: 10px; top: 12px; height: 42px; width: 42px; }
   .st-key-chat_fab { right: 12px; bottom: 12px; }
+}
+@media (max-width: 380px) {                                   /* small phones (320-380px): keep the wordmark whole */
+  .brand { font-size: .8rem; letter-spacing: .03em; }
+  .st-key-topbar { padding-left: 54px; }
+  .st-key-topbar [data-testid="stHorizontalBlock"] { gap: 6px; }
+  .st-key-topbar .stButton > button { padding: 0 7px; }
+  [data-testid="stExpandSidebarButton"] { left: 6px; }
 }
 </style>
 """,
