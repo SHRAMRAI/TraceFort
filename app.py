@@ -16,7 +16,8 @@ import estimates
 import site_text
 from logic import *
 
-st.set_page_config(page_title="TraceFort · Know your walk-away bid", page_icon="🏛️", layout="wide")
+st.set_page_config(page_title="TraceFort · Know your walk-away bid", page_icon="🏛️", layout="wide",
+                   initial_sidebar_state="collapsed")       # the side panel opens from the ☰ button
 
 # ----------------------------------------------------------------------------------------------
 # Look: black and white with one red accent (a single red line under each page title). Lexend
@@ -44,9 +45,8 @@ html, body, .stApp, .stApp p, .stApp label, .stApp li, .stApp input, .stApp butt
   font-family: 'Lexend', 'Segoe UI', Arial, sans-serif;
 }
 .stApp { background: var(--paper); color: var(--ink); }
-/* top: room for Streamlit Cloud's own toolbar (Share, GitHub...) so it never covers our Menu button;
-   bottom: room for the floating Ask TraceFort button */
-.block-container { padding-top: 3.25rem; padding-bottom: calc(var(--space) * 12); max-width: 1240px; }
+/* top: room for the fixed top bar; bottom: room for the floating Ask TraceFort button */
+.block-container { padding-top: 88px; padding-bottom: calc(var(--space) * 12); max-width: 1240px; }
 ::selection { background: var(--red); color: #fff; }
 a { color: var(--red); text-underline-offset: 3px; }
 a:visited { color: var(--red-dark); }
@@ -55,17 +55,26 @@ a:visited { color: var(--red-dark); }
 [data-testid="stAppDeployButton"], #MainMenu, footer { display: none !important; }
 header[data-testid="stHeader"] { background: transparent; }
 
-/* ---------- top bar: wordmark left, ☰ menu right, one row on every screen ---------- */
-[data-testid="stSidebarCollapsedControl"], [data-testid="stSidebar"] { display: none !important; }  /* menu lives in ☰ */
+/* ---------- top bar: ☰ + wordmark left, Sign in / Create account right. Fixed: stays put while you scroll.
+   The ☰ is Streamlit's own side-panel button, restyled and pinned into the bar's left slot. ---------- */
+.st-key-topbar { position: fixed; top: 0; left: 0; right: 0; z-index: 990; background: var(--paper);
+                 border-bottom: 1px solid var(--line); padding: 10px 20px 10px 68px; }
+header[data-testid="stHeader"] { background: transparent; z-index: 995; pointer-events: none; }
+[data-testid="stExpandSidebarButton"] {
+  pointer-events: auto; position: fixed !important; top: 10px; left: 12px; width: 46px; height: 46px;
+  border: 1px solid var(--ink) !important; border-radius: 8px; background: #fff !important; color: var(--ink) !important;
+  display: flex !important; align-items: center; justify-content: center; padding: 0 !important; }
+[data-testid="stExpandSidebarButton"] span { font-size: 0 !important; }          /* hide the » icon ... */
+[data-testid="stExpandSidebarButton"]::before { content: "☰"; font-size: 22px; line-height: 1; }  /* ... show ☰ */
 .brand { font-family: 'Cinzel', Georgia, serif; font-weight: 700; letter-spacing: .18em; font-size: 1.3rem;
-         color: var(--ink); line-height: 46px; white-space: nowrap; }
+         color: var(--ink); line-height: 46px; white-space: nowrap; overflow: hidden; text-overflow: clip; }
 .brand span { color: var(--red); }
-.st-key-topbar [data-testid="stHorizontalBlock"] { flex-wrap: nowrap !important; align-items: center; gap: 12px; }
-.st-key-topbar [data-testid="stColumn"] { min-width: 0 !important; width: auto !important; }
-.st-key-topbar [data-testid="stColumn"]:last-child { flex: 0 0 auto !important; }
+.st-key-topbar [data-testid="stHorizontalBlock"] { flex-wrap: nowrap !important; align-items: center; gap: 8px; }
+.st-key-topbar [data-testid="stColumn"] { min-width: 0 !important; width: auto !important; flex: 1 1 auto !important; }
+.st-key-topbar [data-testid="stColumn"]:not(:first-child) { flex: 0 0 auto !important; }
 .st-key-topbar [data-testid="stMarkdownContainer"] { margin-bottom: 0 !important; }   /* Streamlit adds -17px */
-.st-key-topbar [data-testid="stPopover"] button { min-height: 46px; font-weight: 700; border-radius: 8px; }
-.menu-who { font-weight: 700; margin: 0 0 4px; }
+.who { font-weight: 700; white-space: nowrap; }
+[data-testid="stSidebar"] .menu-who { font-weight: 700; margin: 0 0 4px; }
 
 /* ---------- Ask TraceFort: floating button on every page ---------- */
 .st-key-chat_fab { position: fixed; right: 20px; bottom: 20px; z-index: 999; width: auto !important; }
@@ -154,7 +163,12 @@ button:focus-visible, input:focus-visible, a:focus-visible { outline: 3px solid 
   .bid { width: 100%; text-align: left; }
   .nums { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .nums div:nth-child(3) { border-left: none; padding-left: 0; }
-  .brand { font-size: 1.1rem; letter-spacing: .14em; }
+  .brand { font-size: .95rem; letter-spacing: .08em; }
+  .st-key-topbar { padding: 10px 10px 10px 64px; }
+  .st-key-topbar .stButton > button { padding: 0 10px; font-size: .82rem; min-height: 42px; }
+  .st-key-top_create button p { font-size: 0 !important; }            /* phones: short label so the */
+  .st-key-top_create button p::after { content: "Sign up"; font-size: .82rem; }   /* wordmark still fits */
+  [data-testid="stExpandSidebarButton"] { left: 10px; top: 12px; height: 42px; width: 42px; }
   .st-key-chat_fab { right: 12px; bottom: 12px; }
 }
 </style>
@@ -921,31 +935,50 @@ def cookie_notice():
 
 # ======================================= site frame ===============================================
 
-def top_bar(page):
-    """Wordmark left, ☰ menu right. One row on phones too (CSS above stops the columns from stacking).
-    The menu's key follows the page, so after you pick a page the menu starts closed instead of covering it."""
+def top_bar():
+    """☰ (side panel) + wordmark left; Sign in / Create account right (or "Hi, name" + Account).
+    One row on phones too: CSS stops the columns from stacking, and the bar is fixed so it stays put."""
     user = st.session_state.user
+    signed_in = user is not None and user["token"]
     with st.container(key="topbar"):
-        left, right = st.columns([5, 1], vertical_alignment="center")
-        left.markdown("<div class='brand' role='img' aria-label='TraceFort'>TRACE<span>FORT</span></div>",
-                      unsafe_allow_html=True)
-        with right.popover("Menu", icon=":material/menu:", key=f"menu_{page.url_path or 'home'}"):
-            if user is None:                                    # brand new visitor
-                st.page_link(PAGES["start"], label="Start here (guest)", icon=":material/explore:")
+        cols = st.columns([6, 1, 1], vertical_alignment="center")
+        cols[0].markdown("<div class='brand' role='img' aria-label='TraceFort'>TRACE<span>FORT</span></div>",
+                         unsafe_allow_html=True)
+        if not signed_in:
+            if cols[1].button("Sign in", key="top_sign_in"):
+                st.switch_page(PAGES["sign_in"])
+            if cols[2].button("Create account", key="top_create", type="primary"):
+                st.switch_page(PAGES["create"])                        # a real form; guests keep their answers
+        else:
+            cols[1].markdown(f"<div class='who'>Hi, {html.escape(user['name'])}</div>", unsafe_allow_html=True)
+            if cols[2].button("Account", key="top_account"):
+                st.switch_page(PAGES["account"])
+
+
+def side_menu():
+    """What the ☰ button opens."""
+    user = st.session_state.user
+    with st.sidebar:
+        st.markdown("<div class='brand'>TRACE<span>FORT</span></div>", unsafe_allow_html=True)
+        if user is None:                                        # brand new visitor
+            st.page_link(PAGES["start"], label="Start here (guest)", icon=":material/explore:")
+            st.page_link(PAGES["sign_in"], label="Sign in", icon=":material/login:")
+            st.page_link(PAGES["create"], label="Create account", icon=":material/person_add:")
+        else:
+            who = html.escape(user["name"]) if user["token"] else "Guest"
+            st.markdown(f"<p class='menu-who'>Hi, {who}</p>", unsafe_allow_html=True)
+            for key, icon in (("homes", "home"), ("investor", "query_stats"), ("prefs", "tune"),
+                              ("account", "person")):
+                st.page_link(PAGES[key], icon=f":material/{icon}:")
+            if not user["token"]:                               # guests can save or switch to their account
+                st.page_link(PAGES["create"], label="Create account to save", icon=":material/person_add:")
                 st.page_link(PAGES["sign_in"], label="Sign in", icon=":material/login:")
-                st.page_link(PAGES["create"], label="Create account", icon=":material/person_add:")
-            else:
-                who = html.escape(user["name"]) if user["token"] else "Guest"
-                st.markdown(f"<p class='menu-who'>Hi, {who}</p>", unsafe_allow_html=True)
-                for key, icon in (("homes", "home"), ("investor", "query_stats"), ("prefs", "tune"),
-                                  ("account", "person")):
-                    st.page_link(PAGES[key], icon=f":material/{icon}:")
-                if not user["token"]:                           # guests can save or switch to their account
-                    st.page_link(PAGES["create"], label="Create account to save", icon=":material/person_add:")
-                    st.page_link(PAGES["sign_in"], label="Sign in", icon=":material/login:")
-            st.divider()
-            for key in ("about", "how", "contact"):
-                st.page_link(PAGES[key])
+        st.divider()
+        for key in ("about", "how", "contact"):
+            st.page_link(PAGES[key])
+        st.divider()
+        for key in ("terms", "privacy", "cookies", "access"):
+            st.page_link(PAGES[key])
 
 
 def site_footer():
@@ -957,7 +990,11 @@ def site_footer():
         for col, (key, label) in zip(st.columns(4), row):
             col.page_link(PAGES[key], label=label)
     st.markdown(
-        "<div class='foot'>© 2026 TraceFort, a student project from HackUTA 2026. "
+        "<div class='foot'>Built by <a href='https://github.com/SHRAMRAI' target='_blank'>Shramika Rai</a>, "
+        "<a href='https://github.com/gyawaliprajita50' target='_blank'>Prajita Gyawali</a> and "
+        "<a href='https://github.com/forbidynaliew' target='_blank'>Prashna Pandey</a> · "
+        "<a href='https://github.com/SHRAMRAI/TraceFort' target='_blank'>Code on GitHub</a><br>"
+        "© 2026 TraceFort, a student project from HackUTA 2026. "
         "Built for the Xome challenge; not affiliated with or endorsed by Xome. "
         f"{ESTIMATE_NOTE}<br>Home values: Zillow Home Value Index. "
         "Map data © OpenStreetMap contributors, map tiles © CARTO. Homes shown are samples.</div>",
@@ -994,8 +1031,15 @@ nav = st.navigation({
                                                                           "investor", "prefs", "account")],
     "TraceFort": [PAGES[k] for k in ("about", "how", "contact", "inbox")],
     "Legal": [PAGES[k] for k in ("terms", "privacy", "cookies", "access")],
-}, position="hidden")                                    # pages are reached from the ☰ menu and footer instead
-top_bar(nav)
+}, position="hidden")                                    # pages are reached from the ☰ side panel and footer
+top_bar()
+side_menu()
+if st.session_state.get("last_page") != nav.url_path:   # picked a page: on phones, close the side panel
+    st.session_state.last_page = nav.url_path            # (desktop keeps it open beside the page)
+    st.iframe(f"<!-- {html.escape(nav.url_path or 'home')} --><script>const d = window.parent.document; "   # unique per page,
+              "if (window.parent.innerWidth < 768) "                                     # or Streamlit reuses the frame
+              "d.querySelector('[data-testid=stSidebarCollapseButton] button, button[data-testid=stSidebarCollapseButton]')"
+              "?.click();</script>", height=1)
 cookie_notice()
 if "flash" in st.session_state:
     st.success(st.session_state.pop("flash"))

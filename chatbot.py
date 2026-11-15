@@ -1,8 +1,8 @@
 """Ask TraceFort: a Claude-powered helper that explains auctions and the buyer's homes in plain English.
 
-- Model: Claude Opus 5.5 at low effort (chat replies, quick), streamed so text appears as it's written.
+- Model: Claude Haiku 5.5 at low effort (short chat replies, quick and cheap), streamed so text appears as it's written.
 - Safety: firm rules in the system prompt (education only, no financial/legal advice, never collect personal
-  details, homes are samples) + server-side refusal fallbacks.
+  details, homes are samples); a declined request gets a polite redirect.
 - Scope gate: off-topic requests (math homework, code, essays, "ignore your instructions") get a warning before
   the main model is called: free rules first, then a ~$0.00002 Claude Haiku 5.5 check only when unclear.
 - No key or no internet: falls back to built-in quick answers so the demo never breaks.
@@ -14,7 +14,7 @@ import re
 
 import anthropic
 
-MODEL = "claude-opus-5-5"
+MODEL = "claude-haiku-5-5"      # fast + cheap (~$0.0004/message); quality is plenty for short help answers
 GATE_MODEL = "claude-haiku-5-5"  # tiny on/off-topic check (~$0.00002) before the main model is ever called
 MAX_USER_MESSAGES = 20          # per visit, keeps cost and abuse in check
 MAX_CHARS = 1000                # per message
@@ -190,12 +190,10 @@ def stream_reply(client, history, context):
         yield gate_warning(label)
         return
     try:
-        with client.beta.messages.stream(
+        with client.messages.stream(
             model=MODEL,
             max_tokens=2048,                                   # chat answers are short by design
-            output_config={"effort": "low"},                   # quick replies; Opus 5.5 always thinks a little
-            betas=["server-side-fallback-2026-07-01"],
-            fallbacks="default",                               # a declined request is retried on a fallback model
+            output_config={"effort": "low"},                   # quick replies (Haiku 5.5's default is medium)
             system=[{"type": "text", "text": SYSTEM, "cache_control": {"type": "ephemeral"}},
                     {"type": "text", "text": context}],
             messages=history,

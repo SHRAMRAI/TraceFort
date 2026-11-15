@@ -26,7 +26,10 @@ TraceFort gives everyone the same head start: a clear walk-away bid, worked out 
   Real auction data isn't public, so these are made up for the demo.
 
 ### Who we are
-TraceFort is a student project built by Prajita, Shramika and Prashna at HackUTA 2026 for the Xome challenge.
+TraceFort is a student project built at HackUTA 2026 for the Xome challenge by
+[Shramika Rai](https://github.com/SHRAMRAI), [Prajita Gyawali](https://github.com/gyawaliprajita50) and
+[Prashna Pandey](https://github.com/forbidynaliew). The code is on
+[GitHub](https://github.com/SHRAMRAI/TraceFort).
 It is not affiliated with or endorsed by Xome.
 """
 
