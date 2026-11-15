@@ -51,8 +51,8 @@ html, body, .stApp, .stApp p, .stApp label, .stApp li, .stApp input, .stApp butt
 a { color: var(--red); text-underline-offset: 3px; }
 a:visited { color: var(--red-dark); }
 
-/* hide builder chrome */
-[data-testid="stAppDeployButton"], #MainMenu, footer { display: none !important; }
+/* hide builder chrome, incl. the Fullscreen/download toolbar Streamlit puts on the map and tables */
+[data-testid="stAppDeployButton"], #MainMenu, footer, [data-testid="stElementToolbar"] { display: none !important; }
 header[data-testid="stHeader"] { background: transparent; }
 
 /* ---------- top bar: ☰ + wordmark left, Sign in / Create account right. Fixed: stays put while you scroll.
