@@ -13,7 +13,7 @@ Auctions move fast. Experienced investors arrive with numbers; first-time buyers
 TraceFort gives everyone the same head start: a clear walk-away bid, worked out before the auction begins.
 
 ### What it does
-1. You answer six quick questions about your budget and what you need.
+1. You answer seven quick questions about your budget and what you need.
 2. We check every home in our list against your answers.
 3. You get your best three homes, each with a walk-away bid, a repair estimate, a risk level, a map and a checklist.
 
@@ -39,8 +39,8 @@ Decide your number before the auction starts, and stop when bidding passes it.
 We start from what the home is worth once it's fixed, keep a safety cushion for your goal and risk level,
 then subtract the repairs. Fixing up to resell keeps a 30% cushion, the "70% rule" many investors use.
 
-Winning costs more than the bid: Xome adds a buyer's premium (5% of the bid or $2,500, whichever is more) and
-you pay about 2% in closing costs. Your walk-away bid leaves room for both, so the bid, the fees and the
+Winning costs more than the bid: Xome usually adds a buyer's premium (often 5% of the bid or $2,500, whichever
+is more; check each listing's terms) and you pay about 2% in closing costs. Your walk-away bid leaves room for both, so the bid, the fees and the
 repairs together never go over your budget.
 
 Repairs often cost more than planned, so we add a buffer: 10% more, or 25% if nobody has seen inside the home.
@@ -113,7 +113,8 @@ PRIVACY = f"""
 *Last updated {UPDATED}*
 
 **In short:** we collect as little as we can: a first name, a scrambled PIN and your home preferences.
-We don't sell or share your data, show ads, or track you across other sites.
+We don't sell or share your data or show ads, and TraceFort's own code doesn't track you. Our free host,
+Streamlit Community Cloud, runs its own analytics on this site; see "Our host" below.
 
 ### What we collect
 - **A first name** you choose. A nickname is fine.
@@ -129,7 +130,7 @@ We don't sell or share your data, show ads, or track you across other sites.
 - **We never track your location.** No GPS, no location from your browser, no location from your IP address.
   If you give us a work ZIP code, that ZIP is all we keep.
 - No email, phone number, home address, ID, bank or payment details.
-- No analytics, advertising or third-party tracking.
+- TraceFort's own code adds no analytics, advertising or tracking. Our host adds its own; see "Our host" below.
 
 ### How we use it
 To show homes that fit you, remember your preferences, keep you signed in, protect your account from
@@ -148,6 +149,14 @@ sign-in code. Contact messages are read only by the TraceFort team, in a PIN-pro
 We don't sell or share your personal data. The map loads tiles from CARTO and the fonts load from Google Fonts;
 like any website, those services see your device's IP address.
 
+### Our host (Streamlit Community Cloud)
+TraceFort runs on Streamlit Community Cloud, a free hosting service owned by Snowflake. The page that holds
+TraceFort loads Snowflake's own analytics and monitoring tools (including Google Analytics, Segment, Heap and
+Datadog), and they set their own cookies in your browser. We didn't add these tools, can't turn them off on this
+free host, and never see what they collect. Snowflake handles that data under its own privacy notice:
+[streamlit.io/privacy-policy](https://streamlit.io/privacy-policy). To block them, use your browser's tracking
+protection or a content blocker.
+
 ### How long we keep it
 Until you delete your account. Signing out removes this device's sign-in right away.
 Contact messages are kept until the team deletes them.
@@ -160,7 +169,8 @@ Contact messages are kept until the team deletes them.
 
 ### Cookies
 We use a few small cookies to keep you signed in, remember the cookie notice and protect forms.
-There are no advertising or tracking cookies. Details are in the Cookie Policy.
+None of TraceFort's own cookies are for advertising or tracking. Our host sets its own analytics cookies.
+Details are in the Cookie Policy.
 
 ### Children
 TraceFort is for people 18 and older. We don't knowingly collect data from anyone younger.
@@ -176,8 +186,11 @@ If we change this policy, we'll update the date at the top. For significant chan
 COOKIES = f"""
 *Last updated {UPDATED}*
 
-A cookie is a small text file a website saves in your browser. TraceFort uses only the cookies it needs to
-work. **No advertising, analytics or tracking cookies, and no cookies from other companies.**
+A cookie is a small text file a website saves in your browser. TraceFort's own code sets only the cookies it
+needs to work, and none of them are for advertising, analytics or tracking. Our free host, Streamlit Community
+Cloud, sets more cookies of its own; they're listed further down.
+
+### TraceFort's cookies
 
 | Cookie | What it does | How long it lasts |
 | --- | --- | --- |
@@ -191,7 +204,22 @@ work. **No advertising, analytics or tracking cookies, and no cookies from other
   but you'll need to sign in each time.
 
 Because these cookies are needed for the site to work, we don't ask for permission before setting them.
-If we ever add any other kind of cookie, we'll ask you first.
+If TraceFort's own code ever adds any other kind of cookie, we'll ask you first.
+
+### Cookies from our host
+TraceFort runs on Streamlit Community Cloud, owned by Snowflake. Its hosting page sets these cookies on every
+visit, without asking, and we can't turn them off on this free host. We never see what they collect.
+Snowflake can change them at any time; this is what we saw on November 14, 2026.
+
+| Cookie | Set by | What it's for | About how long |
+| --- | --- | --- | --- |
+| `_ga`, `_gid`, `_dc_gtm_…` | Google Analytics | Counts visits and how people move around the site | Up to 13 months |
+| `ajs_anonymous_id` | Segment | Analytics: a random ID for your browser | 1 year |
+| `_dd_s` | Datadog | Monitors whether the hosting page loads and works | Up to 1 year |
+| `streamlit_session`, `_streamlit_csrf`, `proxy-tracking-id` | Streamlit | Runs the hosting service and protects its forms | Up to 1 month |
+
+Snowflake explains these in its privacy notice: [streamlit.io/privacy-policy](https://streamlit.io/privacy-policy).
+To block them, use your browser's tracking protection or a content blocker.
 """
 
 ACCESSIBILITY = """

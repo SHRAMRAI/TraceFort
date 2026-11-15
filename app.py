@@ -53,10 +53,25 @@ a:visited { color: var(--red-dark); }
 [data-testid="stAppDeployButton"], #MainMenu, footer { display: none !important; }
 header[data-testid="stHeader"] { background: transparent; }
 
-/* ---------- top bar ---------- */
-.brand { font-family: 'Cinzel', Georgia, serif; font-weight: 700; letter-spacing: .18em; font-size: 1.3rem; color: var(--ink); }
+/* ---------- top bar: wordmark left, ☰ menu right, one row on every screen ---------- */
+[data-testid="stSidebarCollapsedControl"], [data-testid="stSidebar"] { display: none !important; }  /* menu lives in ☰ */
+.brand { font-family: 'Cinzel', Georgia, serif; font-weight: 700; letter-spacing: .18em; font-size: 1.3rem;
+         color: var(--ink); line-height: 46px; white-space: nowrap; }
 .brand span { color: var(--red); }
-.who { text-align: right; font-weight: 700; padding-top: 10px; }
+.st-key-topbar [data-testid="stHorizontalBlock"] { flex-wrap: nowrap !important; align-items: center; gap: 12px; }
+.st-key-topbar [data-testid="stColumn"] { min-width: 0 !important; width: auto !important; }
+.st-key-topbar [data-testid="stColumn"]:last-child { flex: 0 0 auto !important; }
+.st-key-topbar [data-testid="stMarkdownContainer"] { margin-bottom: 0 !important; }   /* Streamlit adds -17px */
+.st-key-topbar [data-testid="stPopover"] button { min-height: 46px; font-weight: 700; border-radius: 8px; }
+.menu-who { font-weight: 700; margin: 0 0 4px; }
+
+/* ---------- Ask TraceFort: floating button on every page ---------- */
+.st-key-chat_fab { position: fixed; right: 20px; bottom: 20px; z-index: 999; width: auto !important; }
+.st-key-chat_fab button { border-radius: 99px; min-height: 54px; padding: 0 22px;
+                          box-shadow: 0 6px 18px rgba(0,0,0,.25); }
+
+/* ---------- welcome choice ---------- */
+.welcome-lead { font-size: 1.1rem; margin: 0 0 14px; }
 
 /* ---------- page title ---------- */
 .masthead {
@@ -137,7 +152,8 @@ button:focus-visible, input:focus-visible, a:focus-visible { outline: 3px solid 
   .bid { width: 100%; text-align: left; }
   .nums { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .nums div:nth-child(3) { border-left: none; padding-left: 0; }
-  .who { text-align: left; }
+  .brand { font-size: 1.1rem; letter-spacing: .14em; }
+  .st-key-chat_fab { right: 12px; bottom: 12px; }
 }
 </style>
 """,
@@ -257,13 +273,24 @@ def clean_prefs(p):
     return {k: (p[k] if ok[k] else DEMO[k]) for k in PREF_KEYS}
 
 
+USER_KEYS = ("answers", "quiz_step", "welcome", "prefs", "chat", "pool_cash", "map_v")
+USER_PREFIXES = ("w_", "q_", "chk_", "new_", "in_", "del_")   # widget values on prefs/quiz/checklist/forms
+
+
+def forget_answers(keep_prefs=False):
+    """Drop everything one person typed, widget values included. Streamlit keeps a widget's value under its
+    key even after the dict we save is gone, so without this the next person saw (and re-saved) old answers."""
+    for k in list(st.session_state):
+        if (k in USER_KEYS and not (keep_prefs and k == "prefs")) or k.startswith(USER_PREFIXES):
+            del st.session_state[k]
+
+
 def start_session(token, name, prefs):
     # Preferences live in one plain dict, not in widget keys: Streamlit forgets a widget's value when
     # its page isn't showing, and preferences now have their own page.
+    forget_answers()
     st.session_state.user = {"token": token, "name": name}
     st.session_state.prefs = clean_prefs(prefs)
-    for k in ("answers", "quiz_step"):
-        st.session_state.pop(k, None)
 
 
 def end_session(forget_device):
@@ -271,8 +298,7 @@ def end_session(forget_device):
     if token and forget_device:
         set_cookie(TOKEN_COOKIE, "", 0)                  # forget this browser
     st.session_state.user = None
-    for k in ("answers", "quiz_step", "prefs"):
-        st.session_state.pop(k, None)
+    forget_answers()
 
 
 if "user" not in st.session_state:                       # new tab / app reopened
@@ -309,6 +335,23 @@ def page_start():
     if st.session_state.user is not None:
         st.switch_page(PAGES["homes"])
     masthead("Find your way home.")
+    if not st.session_state.get("welcome"):                 # first: guest, or sign in if you have an account
+        _, mid, _ = st.columns([1, 5, 1])
+        with mid, st.container(border=True):
+            st.markdown("<div class='q-text'>Welcome to TraceFort</div><p class='welcome-lead'>Find foreclosure "
+                        "auction homes that fit you, and the most to bid on each. Answer 7 quick questions as a "
+                        "guest, or sign in if you already have an account.</p>", unsafe_allow_html=True)
+            if st.button("Continue as a guest", type="primary", width="stretch"):
+                st.session_state.welcome = True
+                st.rerun()
+            if st.button("I have an account: sign in", width="stretch"):
+                st.switch_page(PAGES["sign_in"])
+            if st.button("Create an account", width="stretch"):
+                st.switch_page(PAGES["create"])
+            if st.button("Just looking? See an example buyer", type="tertiary"):
+                start_session(None, None, DEMO)
+                st.switch_page(PAGES["homes"])
+        return
     ans = st.session_state.setdefault("answers", {})
     step = st.session_state.setdefault("quiz_step", 0)
     total = len(QUESTIONS) + 1                              # questions + "save your answers"
@@ -354,10 +397,13 @@ def page_start():
             if hint:
                 st.caption(hint)
             back, nxt = st.columns(2)
-            if step > 0 and back.button("Back", width="stretch"):
+            if back.button("Back", width="stretch"):
                 if val is not None:
                     ans[key] = val
-                st.session_state.quiz_step -= 1
+                if step == 0:
+                    st.session_state.welcome = False        # back to the guest / sign-in choice
+                else:
+                    st.session_state.quiz_step -= 1
                 st.rerun()
             if nxt.button("Next", type="primary", disabled=val is None, width="stretch"):
                 ans[key] = val
@@ -365,20 +411,18 @@ def page_start():
                 st.rerun()
             if val is None:
                 st.caption("Pick one to continue.")
-            if step == 0:
-                if st.button("Just looking? See an example buyer", type="tertiary"):
-                    start_session(None, None, DEMO)
-                    st.switch_page(PAGES["homes"])
         else:
-            st.markdown("<div class='q-count'>Last step</div><div class='q-text'>Create your account</div>",
+            st.markdown("<div class='q-count'>Last step</div><div class='q-text'>See your homes</div>",
                         unsafe_allow_html=True)
-            account_form(ans, then="homes")
+            if st.button("See my homes as a guest", type="primary", width="stretch",
+                         help="Nothing is saved. Create an account any time from the menu to keep your answers."):
+                start_session(None, None, ans)
+                st.switch_page(PAGES["homes"])
+            with st.expander("Or save your answers: create an account"):
+                account_form(ans, then="homes")
             if st.button("Back", width="stretch"):
                 st.session_state.quiz_step -= 1
                 st.rerun()
-            if st.button("Skip for now (your answers won't be saved)", type="tertiary"):
-                start_session(None, None, ans)
-                st.switch_page(PAGES["homes"])
 
 
 def account_form(prefs, then):
@@ -518,6 +562,8 @@ def home_card(pos, home):
         steps = bid_checklist(home)
         if getattr(home, "occupied", 0):
             steps.append("Someone may still live here: plan time and money for them to move out")
+            steps.append("Only a court eviction can make them leave. Never change the locks or shut off utilities. "
+                         "Renters usually get at least 90 days' notice (free help: TexasLawHelp.org)")
         if getattr(home, "interior_inspected", 1) == 0:
             steps.append("Nobody has seen the inside: keep extra cash for surprises")
         for step_no, step_text in enumerate(steps):
@@ -789,62 +835,70 @@ def anthropic_key():
         return os.environ.get("ANTHROPIC_API_KEY", "")
 
 
-def page_chat():
-    masthead("Ask TraceFort")
+@st.dialog("Ask TraceFort", width="large")
+def chat_window():
+    """The helper opens over whatever page you're on (floating button), so it's part of the site, not a menu page.
+    st.rerun(scope="fragment") redraws only this window, so it stays open between questions."""
     key = anthropic_key()
-    with reading_column():
-        st.caption("Answers come from Claude, an AI made by Anthropic, using your preferences and your top 3 sample "
-                   "homes. It can make mistakes. Estimates for education only, not financial advice. "
-                   "Don't share personal details. Chats aren't saved after you leave.")
-        if not key:
-            st.info("AI answers are off on this computer, so you'll get quick built-in answers.")
+    st.caption("Answers come from Claude, an AI made by Anthropic, using your preferences and your top 3 sample "
+               "homes. It can make mistakes. Estimates for education only, not financial advice. "
+               "Don't share personal details. Chats aren't saved after you leave.")
+    if not key:
+        st.info("AI answers are off on this computer, so you'll get quick built-in answers.")
 
-        prefs = st.session_state.get("prefs") if st.session_state.user else None
-        top, count = [], 0
-        if prefs:
-            ranked = my_ranked(prefs)
-            top = list(ranked.head(3).itertuples())
-            count = int(ranked["viable"].sum()) if not ranked.empty else 0
+    prefs = st.session_state.get("prefs") if st.session_state.user else None
+    top, count = [], 0
+    if prefs:
+        ranked = my_ranked(prefs)
+        top = list(ranked.head(3).itertuples())
+        count = int(ranked["viable"].sum()) if not ranked.empty else 0
 
-        chat = st.session_state.setdefault("chat", [])
-        thread = st.container()                          # messages go here, so the type box stays at the bottom
+    chat = st.session_state.setdefault("chat", [])
+    thread = st.container()                              # messages go here, so the type box stays below them
+    with thread:
+        for m in chat:
+            with st.chat_message(m["role"]):
+                st.markdown(m["content"])               # Markdown only: HTML in a reply is shown as text
+
+    asked = None
+    if not chat:
+        starters = st.container()
+        starters.write("Try one of these, or type your own question below.")
+        cols = starters.columns(2)
+        for i, starter in enumerate(CHAT_STARTERS):
+            if cols[i % 2].button(starter, key=f"starter_{i}", width="stretch"):
+                asked = starter
+    used = sum(m["role"] == "user" for m in chat)
+    full = used >= chatbot.MAX_USER_MESSAGES
+    typed = st.chat_input("Ask about auctions or your homes", max_chars=chatbot.MAX_CHARS, disabled=full)
+    if full:
+        st.caption("That's the chat limit for this visit. Clear the chat to start a new one.")
+    asked = asked or typed
+    if asked:
+        chat.append({"role": "user", "content": asked})
         with thread:
-            for m in chat:
-                with st.chat_message(m["role"]):
-                    st.markdown(m["content"])           # Markdown only: HTML in a reply is shown as text
+            with st.chat_message("user"):
+                st.markdown(asked)
+            with st.chat_message("assistant"):
+                client = chatbot.make_client(key) if key else None
+                if client:
+                    reply = st.write_stream(chatbot.stream_reply(client, chat,
+                                                                 chatbot.context_block(prefs, top, count)))
+                else:
+                    reply = chatbot.offline_answer(asked, top)
+                    st.markdown(reply)
+        chat.append({"role": "assistant", "content": reply if isinstance(reply, str) else "".join(map(str, reply))})
+        st.rerun(scope="fragment")                       # starter buttons go away; the window stays open
+    if chat and st.button("Clear chat", type="tertiary"):
+        st.session_state.chat = []
+        st.rerun(scope="fragment")
 
-        asked = None
-        if not chat:
-            starters = st.container()
-            starters.write("Try one of these, or type your own question below.")
-            cols = starters.columns(2)
-            for i, starter in enumerate(CHAT_STARTERS):
-                if cols[i % 2].button(starter, key=f"starter_{i}", width="stretch"):
-                    asked = starter
-        used = sum(m["role"] == "user" for m in chat)
-        full = used >= chatbot.MAX_USER_MESSAGES
-        typed = st.chat_input("Ask about auctions or your homes", max_chars=chatbot.MAX_CHARS, disabled=full)
-        if full:
-            st.caption("That's the chat limit for this visit. Clear the chat to start a new one.")
-        asked = asked or typed
-        if asked:
-            chat.append({"role": "user", "content": asked})
-            with thread:
-                with st.chat_message("user"):
-                    st.markdown(asked)
-                with st.chat_message("assistant"):
-                    client = chatbot.make_client(key) if key else None
-                    if client:
-                        reply = st.write_stream(chatbot.stream_reply(client, chat,
-                                                                     chatbot.context_block(prefs, top, count)))
-                    else:
-                        reply = chatbot.offline_answer(asked, top)
-                        st.markdown(reply)
-            chat.append({"role": "assistant", "content": reply if isinstance(reply, str) else "".join(map(str, reply))})
-            st.rerun()                                   # redraw so the starter buttons go away after the first question
-        if chat and st.button("Clear chat", type="tertiary"):
-            st.session_state.chat = []
-            st.rerun()
+
+def chat_button():
+    with st.container(key="chat_fab"):
+        if st.button("Ask TraceFort", icon=":material/chat:", type="primary", key="open_chat",
+                     help="Questions about auctions, your homes or this site"):
+            chat_window()
 
 
 def cookie_notice():
@@ -854,8 +908,8 @@ def cookie_notice():
     with st.container(border=True):
         text, ok = st.columns([5, 1], vertical_alignment="center")
         with text:
-            st.markdown("We use a few small cookies to keep you signed in and protect forms. "
-                        "No ads, no tracking.")
+            st.markdown("We use a few small cookies to keep you signed in and protect forms. No ads. "
+                        "Our free host, Streamlit, also sets its own analytics cookies.")
             st.page_link(PAGES["cookies"], label="Read the Cookie Policy")
         if ok.button("Got it", key="cookie_ok", type="primary", width="stretch"):
             st.session_state.notice_closed = True
@@ -865,24 +919,31 @@ def cookie_notice():
 
 # ======================================= site frame ===============================================
 
-def top_bar():
-    left, right = st.columns([3, 2], vertical_alignment="center")
-    with left:
-        st.markdown("<div class='brand' role='img' aria-label='TraceFort'>TRACE<span>FORT</span></div>",
-                    unsafe_allow_html=True)
-    with right:
-        user = st.session_state.user
-        if user is None or not user["token"]:
-            a, b = st.columns(2)
-            if a.button("Sign in", key="top_sign_in", width="stretch"):
-                st.switch_page(PAGES["sign_in"])
-            if b.button("Create account", key="top_create", type="primary", width="stretch"):
-                st.switch_page(PAGES["create"])                        # a real form; guests keep their answers
-        else:
-            a, b = st.columns([3, 2], vertical_alignment="center")
-            a.markdown(f"<div class='who'>Hi, {html.escape(user['name'])}</div>", unsafe_allow_html=True)
-            if b.button("Account", key="top_account", width="stretch"):
-                st.switch_page(PAGES["account"])
+def top_bar(page):
+    """Wordmark left, ☰ menu right. One row on phones too (CSS above stops the columns from stacking).
+    The menu's key follows the page, so after you pick a page the menu starts closed instead of covering it."""
+    user = st.session_state.user
+    with st.container(key="topbar"):
+        left, right = st.columns([5, 1], vertical_alignment="center")
+        left.markdown("<div class='brand' role='img' aria-label='TraceFort'>TRACE<span>FORT</span></div>",
+                      unsafe_allow_html=True)
+        with right.popover("Menu", icon=":material/menu:", key=f"menu_{page.url_path or 'home'}"):
+            if user is None:                                    # brand new visitor
+                st.page_link(PAGES["start"], label="Start here (guest)", icon=":material/explore:")
+                st.page_link(PAGES["sign_in"], label="Sign in", icon=":material/login:")
+                st.page_link(PAGES["create"], label="Create account", icon=":material/person_add:")
+            else:
+                who = html.escape(user["name"]) if user["token"] else "Guest"
+                st.markdown(f"<p class='menu-who'>Hi, {who}</p>", unsafe_allow_html=True)
+                for key, icon in (("homes", "home"), ("investor", "query_stats"), ("prefs", "tune"),
+                                  ("account", "person")):
+                    st.page_link(PAGES[key], icon=f":material/{icon}:")
+                if not user["token"]:                           # guests can save or switch to their account
+                    st.page_link(PAGES["create"], label="Create account to save", icon=":material/person_add:")
+                    st.page_link(PAGES["sign_in"], label="Sign in", icon=":material/login:")
+            st.divider()
+            for key in ("about", "how", "contact"):
+                st.page_link(PAGES[key])
 
 
 def site_footer():
@@ -919,7 +980,6 @@ PAGES.update({
     "about": st.Page(text_page("About TraceFort", site_text.ABOUT), title="About", url_path="about"),
     "how": st.Page(text_page("How it works", site_text.HOW), title="How it works", url_path="how-it-works"),
     "contact": st.Page(page_contact, title="Contact", url_path="contact"),
-    "chat": st.Page(page_chat, title="Ask TraceFort", url_path="ask"),
     "terms": st.Page(text_page("Terms of Use", site_text.TERMS), title="Terms of Use", url_path="terms"),
     "privacy": st.Page(text_page("Privacy Policy", site_text.PRIVACY), title="Privacy Policy", url_path="privacy"),
     "cookies": st.Page(text_page("Cookie Policy", site_text.COOKIES), title="Cookie Policy", url_path="cookies"),
@@ -930,12 +990,13 @@ PAGES.update({
 nav = st.navigation({
     ("Your account" if signed_in else "Get started"): [PAGES[k] for k in ("start", "sign_in", "create", "homes",
                                                                           "investor", "prefs", "account")],
-    "TraceFort": [PAGES[k] for k in ("chat", "about", "how", "contact", "inbox")],
+    "TraceFort": [PAGES[k] for k in ("about", "how", "contact", "inbox")],
     "Legal": [PAGES[k] for k in ("terms", "privacy", "cookies", "access")],
-})
-top_bar()
+}, position="hidden")                                    # pages are reached from the ☰ menu and footer instead
+top_bar(nav)
 cookie_notice()
 if "flash" in st.session_state:
     st.success(st.session_state.pop("flash"))
 nav.run()
 site_footer()
+chat_button()

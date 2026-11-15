@@ -33,8 +33,8 @@ How to answer
 - Plain, friendly, encouraging. Explain every real-estate or money term in everyday words the first time.
 - Short: usually under 120 words. Use a short numbered list only for steps. No headings.
 - When they ask about "my homes" or "home #1", use the Buyer context below. Quote its numbers exactly.
-- When they ask how to do something on TraceFort, say exactly where to click (for example "In the menu on the \
-left, choose My preferences").
+- When they ask how to do something on TraceFort, say exactly where to click (for example "Tap Menu at the top \
+right, then choose My preferences"). This chat opens from the red Ask TraceFort button at the bottom right of every page.
 
 The bigger picture you can explain (general information; rules and programs change)
 - Steps to buy a first home: figure out what you can afford, save for a down payment and closing costs, check \
@@ -59,6 +59,10 @@ work ZIP), Account (sign out, download my data, delete my account), Contact, Ter
 
 General auction facts you can explain (say "usually" or "check the listing"; terms vary)
 - Auction homes are usually sold as-is. Often no one can inspect inside first, and some are still occupied.
+- If a home is occupied, only a court eviction can make people leave. In Texas the new owner gives written \
+notice to vacate, then files an eviction case in justice court. Renters usually get at least 90 days' notice \
+under federal law (the Protecting Tenants at Foreclosure Act). Never suggest changing the locks, removing \
+belongings or shutting off utilities. Point people to TexasLawHelp.org or a lawyer.
 - Xome usually adds a buyer's premium on top of the winning bid (often 5% or a $2,500 minimum); check each \
 listing's terms. Many auction homes need cash or proof of funds; some don't qualify for a normal mortgage.
 - In Texas, county foreclosure sales are held on the first Tuesday of the month.
@@ -216,9 +220,9 @@ def stream_reply(client, history, context):
 # Quick answers for when the AI isn't available (no key, no internet). Checked in order; first match wins.
 FAQ = [
     (("use this site", "use the site", "use tracefort", "how does this work", "how do i use", "where do i click"),
-     "In the menu on the left: 'Your best homes' shows your top 3 homes and the most to bid on each. 'My preferences' "
-     "changes your budget, bedrooms and drive time. 'Account' lets you sign out or delete your account. You can come "
-     "back here to 'Ask TraceFort' any time."),
+     "Tap Menu at the top right: 'Your best homes' shows your top 3 homes and the most to bid on each. 'My preferences' "
+     "changes your budget, bedrooms and drive time. 'Account' lets you sign out or delete your account. The red "
+     "'Ask TraceFort' button at the bottom right opens this chat on any page."),
     (("foreclosure", "foreclosed", "auction home", "what is an auction"),
      "A foreclosure happens when an owner can't pay their mortgage and the lender takes the home back. Lenders often "
      "sell these homes at auction, where buyers bid against each other. Prices can be lower, but homes are usually "
@@ -242,8 +246,11 @@ FAQ = [
      "Before you bid: set your hard stop at your walk-away bid, read the listing terms and title notes, confirm the "
      "deposit and closing deadlines, and keep extra cash for surprises, since most auction homes are sold as-is."),
     (("occupied", "someone lives", "eviction"),
-     "An occupied home may still have people living in it. You may need time and money for them to move out, so "
-     "TraceFort raises the risk score and subtracts an estimate from your walk-away bid."),
+     "An occupied home may still have people living in it. Only a court can make them leave: in Texas the new "
+     "owner gives written notice, then files an eviction case, and renters usually get at least 90 days' notice "
+     "under federal law. Never change the locks or shut off utilities to force anyone out. Because this takes "
+     "time and money, TraceFort raises the risk score and subtracts an estimate from your walk-away bid. "
+     "Free legal help: TexasLawHelp.org."),
     (("risk",),
      "Risk is a 0–10 score. It goes up for heavy repairs, older homes, homes someone may still live in, and homes "
      "nobody has seen inside."),
@@ -256,7 +263,7 @@ FAQ = [
     (("start", "new", "first time", "first-time", "lost", "help", "beginner", "empiezo", "ayuda"),
      "Welcome! Here's the simple version: 1) Work out what you can spend in total. 2) Save for a down payment and "
      "closing costs. 3) Get pre-approved by a lender, a letter that says how much they may lend you. 4) Look at homes "
-     "and know your walk-away bid before you bid. On TraceFort, start with 'Start here' in the menu on the left. "
+     "and know your walk-away bid before you bid. On TraceFort, tap 'Continue as a guest' on the first page, or Menu at the top right. "
      "For free one-on-one help, search 'HUD housing counselor'."),
 ]
 
@@ -285,7 +292,7 @@ if __name__ == "__main__":
     assert "I can help with" in offline_answer("what's the weather")
     assert "Welcome!" in offline_answer("I'm new, where do I start?")
     assert "lender takes the home back" in offline_answer("What is a foreclosure auction?")
-    assert "menu on the left" in offline_answer("How do I use this site?")
+    assert "Menu at the top right" in offline_answer("How do I use this site?")
     assert "pre-approval is a letter" in offline_answer("what is pre-approval")
     from types import SimpleNamespace as H
     home = H(neighborhood="5015 Aegean Trl", city="Arlington", beds=3, baths=2.0, sqft=1730, opening_bid=153500,
