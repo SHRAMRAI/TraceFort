@@ -293,12 +293,6 @@ if ops:                                                 # names and values are o
                                   for n, v, a in ops) + "</script>"
     st.iframe(script, height=1)
 
-if not st.session_state.get("main_url_checked"):          # one version only: the main page. The ?embed=true
-    st.session_state.main_url_checked = True              # link (with Streamlit's "Fullscreen" strip) is sent
-    st.iframe("<script>try { const t = window.top, u = new URL(t.location.href);"   # back to the main address
-              " if (u.searchParams.has('embed') || u.searchParams.has('embed_options')) {"
-              " u.searchParams.delete('embed'); u.searchParams.delete('embed_options'); t.location.replace(u.href); }"
-              " } catch (e) {}</script>", height=1)
 
 
 def clean_prefs(p):
