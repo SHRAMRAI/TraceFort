@@ -20,9 +20,10 @@ st.set_page_config(page_title="TraceFort · Know your walk-away bid", page_icon=
                    initial_sidebar_state="collapsed")       # the side panel opens from the ☰ button
 
 # ----------------------------------------------------------------------------------------------
-# Look: black and white with one red accent (a single red line under each page title). Lexend
-# (made for easy reading, plain zeros so money reads cleanly) for everything people read; Cinzel
-# only for the wordmark and rank numerals. 18px base so it reads well at any age.
+# Look: Greek black-figure pottery: black glaze, cream parchment, one terracotta accent (a single
+# terracotta line under each page title). Lexend (made for easy reading, plain zeros so money reads
+# cleanly) for everything people read; Cinzel only for the wordmark and rank numerals. 18px base.
+# Terracotta #A84A33 passes WCAG AA both ways: white text on it 5.7:1, as text on the cream 4.7:1.
 # ----------------------------------------------------------------------------------------------
 st.markdown(
     """
@@ -30,13 +31,14 @@ st.markdown(
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;700&family=Cinzel:wght@700&display=swap');
 
 :root {
-  --ink: #111111;
-  --paper: #FFFFFF;
-  --wash: #F4F4F4;
-  --line: #DEDEDE;
-  --muted: #555555;
-  --red: #C8102E;
-  --red-dark: #9E0B24;
+  --ink: #1A1410;        /* black glaze */
+  --paper: #F3E9D8;      /* parchment */
+  --card: #FBF5EA;
+  --wash: #E9DCC6;
+  --line: #D6C4A6;
+  --muted: #5C4B3B;
+  --red: #A84A33;        /* terracotta (kept the old name so every rule below still points at the accent) */
+  --red-dark: #7E3524;
   --space: 8px;
 }
 html { font-size: 18px; }
@@ -106,7 +108,7 @@ header[data-testid="stHeader"] { z-index: 995; }
 .sample-note { color: var(--muted); font-size: .95rem; margin: 0 0 4px; }
 
 /* ---------- home card ---------- */
-.home { border: 1px solid var(--line); border-radius: 12px; padding: 22px 24px 18px; margin: 18px 0 8px; background: #fff; }
+.home { border: 1px solid var(--line); border-radius: 12px; padding: 22px 24px 18px; margin: 18px 0 8px; background: var(--card); }
 .home-top { display: flex; gap: 18px; align-items: flex-start; }
 .rank {
   font-family: 'Cinzel', Georgia, serif; font-weight: 700; flex: none;
@@ -117,16 +119,16 @@ header[data-testid="stHeader"] { z-index: 995; }
 .addr { font-size: 1.4rem; font-weight: 700; line-height: 1.2; }
 .where { color: var(--muted); font-size: .95rem; margin-top: 4px; }
 .tag { display: inline-block; font-size: .72rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
-       border: 1px solid #B9B9B9; color: var(--muted); border-radius: 4px; padding: 1px 6px; margin-right: 8px; vertical-align: 2px; }
+       border: 1px solid #B49A78; color: var(--muted); border-radius: 4px; padding: 1px 6px; margin-right: 8px; vertical-align: 2px; }
 .bid { background: var(--red); color: #fff; border-radius: 8px; padding: 12px 18px; text-align: right; flex: none; min-width: 210px; }
-.bid .lbl { font-size: .8rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: #FFE3E7; }
+.bid .lbl { font-size: .8rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: #F8E3D6; }
 .bid .amt { font-size: 1.9rem; font-weight: 700; line-height: 1.15; font-variant-numeric: tabular-nums; }
-.bid .note { font-size: .85rem; color: #FFE3E7; }
+.bid .note { font-size: .85rem; color: #F8E3D6; }
 .bid.skip { background: var(--wash); color: var(--ink); border: 1px solid var(--line); }
 .bid.skip .lbl, .bid.skip .note { color: var(--muted); }
 .facts { margin: 16px 0 0; color: var(--ink); font-size: 1rem; }
-.facts span + span::before { content: "·"; margin: 0 9px; color: #999; }
-.why { margin: 10px 0 0; font-size: 1.02rem; color: #333; max-width: 70ch; }
+.facts span + span::before { content: "·"; margin: 0 9px; color: #A8957C; }
+.why { margin: 10px 0 0; font-size: 1.02rem; color: #3A2E24; max-width: 70ch; }
 .why b { color: var(--ink); }
 .nums { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: 16px; border-top: 1px solid var(--line); }
 .nums div { padding: 12px 12px 0 0; }
@@ -145,7 +147,7 @@ button[data-testid="stBaseButton-primary"], button[data-testid="stBaseButton-pri
   background: var(--red); border: 1px solid var(--red); color: #fff; }
 button[data-testid="stBaseButton-primary"]:hover, button[data-testid="stBaseButton-primaryFormSubmit"]:hover {
   background: var(--red-dark); border-color: var(--red-dark); color: #fff; }
-button[data-testid="stBaseButton-secondary"] { background: #fff; color: var(--ink); border: 1px solid var(--ink); }
+button[data-testid="stBaseButton-secondary"] { background: var(--card); color: var(--ink); border: 1px solid var(--ink); }
 button[data-testid="stBaseButton-secondary"]:hover { background: var(--ink); color: #fff; border-color: var(--ink); }
 button[data-testid="stBaseButton-tertiary"] { color: var(--red); text-decoration: underline; text-underline-offset: 3px; padding: 0; }
 button:focus-visible, input:focus-visible, a:focus-visible { outline: 3px solid var(--red) !important; outline-offset: 2px; }
@@ -619,9 +621,17 @@ def home_card(pos, home):
             st.checkbox(step_text, key=f"chk_{home.listing_id}_{step_no}")
 
 
-# Opens on the whole metro and can't zoom out past it. Click a dot to zoom into that home.
+# Opens on the whole metro, tilted, and can't zoom out past it. Each home is a 3D column as tall as its
+# walk-away bid. Click a column to zoom into that home.
 # ponytail: deck.gl can't hard-lock panning at the edges; the zoom-out cap keeps it metro-sized.
 MIN_ZOOM, CLOSE_ZOOM = 8.4, 14.5
+TILT, TURN = 45, -20                                       # map pitch and bearing in degrees
+# Column radius (meters) and height (meters per $1,000 of bid) for the metro view and the street view.
+# The best 3 are drawn BEST_WIDER times wider so the other homes never hide them.
+# ponytail: deck.gl columns have no pixel min/max, so manual scroll-zoom makes them thick or thin; a
+# zoom-aware size needs a custom deck.gl layer.
+COLUMN = {"metro": (550, 60), "street": (22, 2.5)}
+BEST_WIDER = 2
 
 
 def homes_map(homes, market):
@@ -632,40 +642,53 @@ def homes_map(homes, market):
         return
     top = pts.index < 3                                    # ranked_homes is sorted best-first
     pts["rank"] = [ROMAN.get(i + 1, "") for i in pts.index]
-    pts["fill"] = [[200, 16, 46, 235] if t else [110, 110, 110, 170] for t in top]
-    pts["radius"] = [420 if t else 230 for t in top]        # meters; min/max pixels below keep them visible
     pts["bid_txt"] = [money(v) if ok else "skip" for v, ok in zip(pts.walk_away, pts.viable)]
-    pts = pts[["lat", "lon", "neighborhood", "city", "rank", "fill", "radius", "bid_txt"]]
+    pts["height"] = [v / 1000 if ok else 5 for v, ok in zip(pts.walk_away, pts.viable)]  # $k; skipped = short stub
+    pts = pts[["lat", "lon", "neighborhood", "city", "rank", "bid_txt", "height"]]
 
     st.session_state.setdefault("map_v", 0)
     key = f"map_{market}_{st.session_state.map_v}"     # new market = fresh map, no leftover selection
-    picked = (((st.session_state.get(key) or {}).get("selection") or {}).get("objects") or {}).get("homes") or []
+    chosen = ((st.session_state.get(key) or {}).get("selection") or {}).get("objects") or {}
+    picked = chosen.get("best") or chosen.get("homes") or []     # one layer for the best 3, one for the rest
     if picked:
         p = picked[0]
-        view = pdk.ViewState(latitude=p["lat"], longitude=p["lon"], zoom=CLOSE_ZOOM, min_zoom=MIN_ZOOM, max_zoom=17)
+        view = pdk.ViewState(latitude=p["lat"], longitude=p["lon"], zoom=CLOSE_ZOOM, min_zoom=MIN_ZOOM, max_zoom=17,
+                             pitch=TILT, bearing=TURN)
+        radius, per_k = COLUMN["street"]
         st.markdown(f"<p class='summary'><b>{html.escape(p['neighborhood'])}</b>, {html.escape(p['city'])}</p>",
                     unsafe_allow_html=True)
     else:
-        view = pdk.ViewState(**m["view"], min_zoom=MIN_ZOOM, max_zoom=17)
+        view = pdk.ViewState(**m["view"], min_zoom=MIN_ZOOM, max_zoom=17, pitch=TILT, bearing=TURN)
+        radius, per_k = COLUMN["metro"]
         st.markdown("<p class='summary'><b>Where they are</b></p>", unsafe_allow_html=True)
+    best = pts[pts["rank"] != ""].assign(
+        top=lambda d: d.height * per_k * 1.12,                                   # numeral floats above its column
+        nudge=lambda d: d["rank"].map({"I": [-24, 0], "II": [24, 0], "III": [0, -28]}))  # nearby homes' labels fan out
+    column = dict(get_position="[lon, lat]", get_elevation="height", elevation_scale=per_k, disk_resolution=24,
+                  extruded=True, pickable=True, auto_highlight=True)
 
     deck = pdk.Deck(
         map_style="light",
         initial_view_state=view,
         layers=[
-            pdk.Layer("ScatterplotLayer", id="homes", data=pts, get_position="[lon, lat]", get_fill_color="fill",
-                      get_radius="radius", radius_min_pixels=9, radius_max_pixels=24, stroked=True,
-                      get_line_color=[255, 255, 255], line_width_min_pixels=2, pickable=True, auto_highlight=True),
-            pdk.Layer("TextLayer", id="ranks", data=pts[pts["rank"] != ""], get_position="[lon, lat]",
-                      get_text="rank", get_color=[255, 255, 255], get_size=12, font_weight=700),
+            pdk.Layer("ColumnLayer", id="homes", data=pts[pts["rank"] == ""], radius=radius,
+                      get_fill_color=[92, 75, 59, 150], **column),                  # other homes: thin, see-through
+            pdk.Layer("ColumnLayer", id="best", data=best, radius=radius * BEST_WIDER,
+                      get_fill_color=[168, 74, 51, 250], **column),                 # best 3: wide terracotta
+            pdk.Layer("TextLayer", id="ranks", data=best, get_position="[lon, lat, top]", get_text="rank",
+                      get_color=[26, 20, 16], get_size=18, font_weight=700, get_pixel_offset="nudge", background=True,
+                      get_background_color=[251, 245, 234, 235], background_padding=[6, 2, 6, 2],
+                      parameters={"depthCompare": "always"}),                       # never hidden behind a column
         ],
         tooltip={"html": "<b>{neighborhood}</b><br/>{city} · walk-away {bid_txt}<br/><i>Click to zoom in</i>",
-                 "style": {"backgroundColor": "#111", "color": "#fff", "fontSize": "14px"}},
+                 "style": {"backgroundColor": "#1A1410", "color": "#FBF5EA", "fontSize": "14px"}},
     )
     st.pydeck_chart(deck, on_select="rerun", selection_mode="single-object", key=key, height=440,
-                    alt=f"Map of {m['name']} with {len(pts)} sample homes. The best three are the cards listed above.")
-    st.caption("Red: your best 3. Gray: other homes that fit. Click a dot to zoom in; scroll or use + and − to zoom. "
-               "The cards above list the same homes.")
+                    alt=f"3D map of {m['name']} with {len(pts)} sample homes as columns; taller columns have a higher "
+                        "walk-away bid. The best three are the cards listed above.")
+    st.caption("Wide terracotta: your best 3. Thin brown: other homes that fit. Taller column = higher walk-away bid. "
+               "Click a column to zoom in. To tilt or turn the map, right-click and drag (or Ctrl + drag); "
+               "on a phone, use two fingers. The cards above list the same homes.")
     if picked and st.button(f"Back to all of {m['short']}"):
         st.session_state.map_v += 1                        # new key = selection cleared
         st.rerun()

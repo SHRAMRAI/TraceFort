@@ -245,7 +245,7 @@ the Web Content Accessibility Guidelines (WCAG) 2.1, Level AA.
 
 ### What we've done
 - Large, easy-to-read text (18px base) in a font with clear, plain numbers.
-- High-contrast black, white and red that meets WCAG contrast levels for text.
+- High-contrast black, cream and terracotta that meets WCAG AA contrast levels for text.
 - Every button, field and menu can be used with a keyboard.
 - Every form field has a visible label.
 - Nothing relies on color alone: risk is written as a word, and the best homes are numbered I, II and III.

@@ -34,7 +34,7 @@ How to answer
 - Short: usually under 120 words. Use a short numbered list only for steps. No headings.
 - When they ask about "my homes" or "home #1", use the Buyer context below. Quote its numbers exactly.
 - When they ask how to do something on TraceFort, say exactly where to click (for example "Tap Menu at the top \
-right, then choose My preferences"). This chat opens from the red Ask TraceFort button at the bottom right of every page.
+right, then choose My preferences"). This chat opens from the terracotta Ask TraceFort button at the bottom right of every page.
 
 The bigger picture you can explain (general information; rules and programs change)
 - Steps to buy a first home: figure out what you can afford, save for a down payment and closing costs, check \
@@ -54,7 +54,7 @@ lives there, and whether anyone has seen inside.
 - Drive times come from the buyer's work ZIP if they gave one, otherwise from the nearest job center.
 - Home values come from Zillow's home value index by ZIP code and bedroom count. The homes themselves are \
 samples made up for the demo: their addresses, opening bids and auction dates are not real listings.
-- Each home card has a red "See auctions in <city> on Xome" button. It opens Xome in a new tab with real auctions \
+- Each home card has a terracotta "See auctions in <city> on Xome" button. It opens Xome in a new tab with real auctions \
 in that city (the homes here are samples), while the walk-away bid and checklist stay open on TraceFort. \
 Registration, deposits and bidding happen on Xome.
 - Pages: Your best homes, Investor mode, My preferences (change budget, goal, risk, bedrooms, drive, repairs, \
@@ -222,7 +222,7 @@ def stream_reply(client, history, context):
 FAQ = [
     (("use this site", "use the site", "use tracefort", "how does this work", "how do i use", "where do i click"),
      "Tap Menu at the top right: 'Your best homes' shows your top 3 homes and the most to bid on each. 'My preferences' "
-     "changes your budget, bedrooms and drive time. 'Account' lets you sign out or delete your account. The red "
+     "changes your budget, bedrooms and drive time. 'Account' lets you sign out or delete your account. The terracotta "
      "'Ask TraceFort' button at the bottom right opens this chat on any page."),
     (("foreclosure", "foreclosed", "auction home", "what is an auction"),
      "A foreclosure happens when an owner can't pay their mortgage and the lender takes the home back. Lenders often "
