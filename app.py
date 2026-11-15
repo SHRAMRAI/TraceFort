@@ -44,7 +44,9 @@ html, body, .stApp, .stApp p, .stApp label, .stApp li, .stApp input, .stApp butt
   font-family: 'Lexend', 'Segoe UI', Arial, sans-serif;
 }
 .stApp { background: var(--paper); color: var(--ink); }
-.block-container { padding-top: calc(var(--space) * 2); padding-bottom: calc(var(--space) * 6); max-width: 1240px; }
+/* top: room for Streamlit Cloud's own toolbar (Share, GitHub...) so it never covers our Menu button;
+   bottom: room for the floating Ask TraceFort button */
+.block-container { padding-top: 3.25rem; padding-bottom: calc(var(--space) * 12); max-width: 1240px; }
 ::selection { background: var(--red); color: #fff; }
 a { color: var(--red); text-underline-offset: 3px; }
 a:visited { color: var(--red-dark); }
