@@ -1,0 +1,1044 @@
+listing_id,neighborhood,city,opening_bid,est_value,repair_cost,roof_issue,foundation_issue,risk_score,beds,baths,sqft,drive_minutes,zip,year_built,condition,auction_date,lat,lon,occupied,interior_inspected,risk_score_100,store_name,store_miles,job_center,miles_to_job_center
+1,9774 Telemachus Ave,Houston,200500,328000,11800,0,0,5,3,1.0,1180,5,77003,1983,light,2026-12-01,29.73626,-95.35066,1,0,50,Walmart Supercenter,2.65,Downtown Houston,2.0
+2,206 Penelope Dr,Houston,262500,403000,41800,0,0,4,3,2.0,1670,5,77003,1951,medium,2027-01-05,29.74857,-95.3326,0,1,40,Walmart Supercenter,2.53,Downtown Houston,2.4
+3,7627 Calypso Cir,Houston,237500,358000,13700,0,0,0,3,1.0,1370,4,77003,1991,light,2027-01-05,29.75924,-95.34303,0,1,0,Walmart Supercenter,3.48,Downtown Houston,1.6
+4,1407 Argos Way,Houston,171500,264000,25000,0,0,6,2,2.0,1000,5,77003,1994,medium,2027-01-05,29.74859,-95.33654,1,0,60,Walmart Supercenter,2.65,Downtown Houston,2.2
+5,2903 Calypso Cir,Houston,277500,422000,18000,0,0,2,3,2.0,1800,4,77003,1994,light,2026-12-01,29.76358,-95.33863,0,0,20,Walmart Supercenter,3.62,Downtown Houston,1.9
+6,4486 Ithaca Ct,Houston,250500,367000,47800,1,0,3,3,1.5,1430,4,77003,1976,medium,2027-02-02,29.74938,-95.34252,0,1,30,Walmart Supercenter,2.9,Downtown Houston,1.8
+7,9297 Calypso Cir,Houston,244500,425000,50500,0,0,3,4,2.0,2020,5,77003,1975,medium,2027-02-02,29.75081,-95.3355,0,1,30,Walmart Supercenter,2.75,Downtown Houston,2.2
+8,1896 Penelope Dr,Houston,334000,418000,17500,0,0,4,3,2.0,1750,4,77004,1999,light,2027-02-02,29.72472,-95.3783,1,0,40,Walmart Supercenter,3.6,Texas Medical Center,1.6
+9,1976 Phaeacia Pkwy,Houston,269500,337000,12200,0,0,2,3,2.5,1220,3,77004,1997,light,2027-01-05,29.74037,-95.3629,0,0,20,Walmart Supercenter,3.22,Downtown Houston,1.4
+10,8301 Penelope Dr,Houston,229500,443000,51200,0,0,8,4,2.5,2050,3,77004,1962,medium,2026-12-01,29.72147,-95.38095,1,0,80,Costco,3.61,Texas Medical Center,1.4
+11,109 Laurel Bow Rd,Houston,226000,437000,50000,0,0,2,4,2.0,2000,4,77004,2012,medium,2026-12-01,29.7092,-95.36759,0,1,20,Walmart Supercenter,3.31,Texas Medical Center,1.8
+12,8827 Penelope Dr,Houston,174500,276000,10400,0,0,1,2,1.0,1040,4,77004,1987,light,2027-01-05,29.73027,-95.37992,0,1,10,Walmart Supercenter,3.21,Texas Medical Center,1.9
+13,5207 Telemachus Ave,Houston,262500,420000,46800,0,0,5,4,3.0,1870,3,77004,1981,medium,2027-02-02,29.7187,-95.38042,0,0,50,Costco,3.69,Texas Medical Center,1.3
+14,1263 Olive Tree Ln,Houston,257000,408000,16800,0,0,0,3,2.0,1680,6,77004,2005,light,2026-12-01,29.72582,-95.3548,0,1,0,Walmart Supercenter,2.6,Downtown Houston,2.6
+15,9455 Laurel Bow Rd,Houston,348000,550000,8700,0,0,0,2,1.0,870,5,77005,1990,light,2027-01-05,29.72425,-95.42643,0,1,0,Costco,1.03,Texas Medical Center,2.1
+16,1712 Odyssey Ln,Houston,1246500,1847000,18900,0,0,2,4,2.0,1890,6,77005,1960,light,2027-01-05,29.71156,-95.43871,0,1,20,Costco,1.56,Texas Medical Center,2.5
+17,1335 Aegean Trl,Houston,1255500,1799000,18100,0,0,5,4,3.0,1810,3,77005,1979,light,2027-02-02,29.71119,-95.42156,1,0,50,Costco,1.91,Texas Medical Center,1.5
+18,3602 Telemachus Ave,Houston,471000,661000,29500,0,0,4,2,2.0,1180,4,77005,2017,medium,2026-12-01,29.71137,-95.42282,0,0,40,Costco,1.86,Texas Medical Center,1.6
+19,9205 Phaeacia Pkwy,Houston,713000,1283000,92500,0,1,9,3,2.0,1550,6,77005,1981,heavy,2026-12-01,29.71666,-95.44014,1,0,90,Costco,1.21,Texas Medical Center,2.7
+20,8801 Penelope Dr,Houston,356500,584000,36000,1,0,4,2,1.0,960,4,77005,1955,medium,2027-02-02,29.70514,-95.42383,0,1,40,Costco,2.21,Texas Medical Center,1.6
+21,9840 Odyssey Ln,Houston,370000,576000,23500,0,0,4,2,1.5,940,2,77005,1956,medium,2027-01-05,29.71883,-95.40467,0,1,40,Costco,2.33,Texas Medical Center,0.9
+22,5015 Aegean Trl,Houston,430000,675000,17300,0,0,0,3,2.0,1730,3,77006,2014,light,2026-12-01,29.74696,-95.38374,0,1,0,Walmart Supercenter,2.08,Downtown Houston,1.2
+23,6154 Athena Blvd,Houston,262500,419000,11700,0,0,4,2,1.0,1170,5,77006,1960,light,2027-02-02,29.75271,-95.40423,0,0,40,Walmart Supercenter,1.4,Downtown Houston,2.1
+24,1991 Ithaca Ct,Houston,522000,687000,17800,0,0,2,3,2.0,1780,2,77006,2015,light,2026-12-01,29.75206,-95.3768,0,0,20,Walmart Supercenter,2.06,Downtown Houston,0.7
+25,932 Ithaca Ct,Houston,361500,684000,44200,0,0,3,3,2.0,1770,4,77006,1974,medium,2027-01-05,29.75093,-95.39915,0,1,30,Walmart Supercenter,1.52,Downtown Houston,1.9
+26,1332 Olive Tree Ln,Houston,209000,385000,25500,0,0,4,2,2.0,1020,3,77006,1964,medium,2027-02-02,29.75221,-95.39051,0,1,40,Walmart Supercenter,1.57,Downtown Houston,1.4
+27,5962 Argos Way,Houston,237000,390000,10400,0,0,2,2,1.5,1040,5,77006,2018,light,2027-02-02,29.7508,-95.40502,0,0,20,Walmart Supercenter,1.54,Downtown Houston,2.2
+28,3000 Telemachus Ave,Houston,237000,435000,62500,0,0,4,2,1.0,1250,5,77006,2000,heavy,2027-02-02,29.74302,-95.39898,0,1,40,Walmart Supercenter,2.07,Downtown Houston,2.1
+29,734 Aegean Trl,Houston,691000,1005000,62500,0,0,2,4,2.0,2500,5,77007,2000,medium,2027-01-05,29.78359,-95.39776,0,1,20,Walmart Supercenter,0.77,Downtown Houston,2.3
+30,8446 Telemachus Ave,Houston,287000,461000,13800,0,0,3,3,2.0,1380,3,77007,1976,light,2027-02-02,29.76847,-95.38956,0,0,30,Walmart Supercenter,0.77,Downtown Houston,1.3
+31,5763 Olive Tree Ln,Houston,167500,420000,71000,1,0,8,3,2.0,1180,6,77007,1962,heavy,2027-01-05,29.76878,-95.41116,0,0,80,Walmart Supercenter,0.65,Downtown Houston,2.5
+32,8921 Phaeacia Pkwy,Houston,319500,517000,53800,1,0,6,3,2.0,1670,6,77007,1962,medium,2027-02-02,29.77222,-95.4093,0,0,60,Walmart Supercenter,0.48,Downtown Houston,2.5
+33,5020 Calypso Cir,Houston,322000,455000,33800,0,0,4,3,2.0,1350,5,77007,1994,medium,2027-01-05,29.78162,-95.39742,0,0,40,Walmart Supercenter,0.65,Downtown Houston,2.2
+34,9424 Athena Blvd,Houston,290000,551000,46500,0,0,3,3,2.0,1860,4,77007,1985,medium,2026-12-01,29.77849,-95.39354,0,1,30,Walmart Supercenter,0.61,Downtown Houston,1.9
+35,2880 Phaeacia Pkwy,Houston,286000,457000,46000,1,0,2,3,1.0,1360,5,77007,2003,medium,2027-02-02,29.75732,-95.41009,0,1,20,Walmart Supercenter,1.19,Downtown Houston,2.4
+36,857 Argos Way,Houston,482500,611000,17800,0,0,0,3,2.5,1780,8,77008,1990,light,2027-02-02,29.80764,-95.40255,0,1,0,Walmart Supercenter,2.17,Downtown Houston,3.8
+37,4097 Penelope Dr,Houston,620000,863000,17700,0,0,4,4,2.5,1770,7,77008,2006,light,2026-12-01,29.78375,-95.41634,1,0,40,Walmart Supercenter,1.17,Downtown Houston,3.2
+38,2088 Aegean Trl,Houston,417000,1081000,156000,1,1,8,4,2.0,2580,8,77008,1961,heavy,2027-01-05,29.78716,-95.42175,0,0,80,Walmart Supercenter,1.57,Downtown Houston,3.6
+39,9076 Aegean Trl,Houston,352000,599000,101000,0,1,7,3,2.5,1720,10,77008,1988,heavy,2027-02-02,29.80424,-95.42939,0,0,70,Walmart Supercenter,2.4,Downtown Houston,4.7
+40,7306 Ithaca Ct,Houston,662500,972000,54000,0,0,5,4,3.0,2160,7,77008,1981,medium,2026-12-01,29.79907,-95.40301,0,0,50,Walmart Supercenter,1.81,Downtown Houston,3.3
+41,5521 Calypso Cir,Houston,335500,547000,14800,0,0,0,3,2.0,1480,7,77008,2017,light,2026-12-01,29.79133,-95.41221,0,1,0,Walmart Supercenter,1.43,Downtown Houston,3.3
+42,196 Mentor St,Houston,282000,569000,91000,1,0,6,3,1.5,1580,6,77008,1997,heavy,2027-01-05,29.78713,-95.40496,0,0,60,Walmart Supercenter,1.01,Downtown Houston,2.8
+43,8056 Odyssey Ln,Houston,601500,811000,26800,0,0,2,4,2.0,2680,6,77009,2001,light,2027-02-02,29.7936,-95.35373,0,0,20,Walmart Supercenter,2.87,Downtown Houston,2.5
+44,544 Ithaca Ct,Houston,246000,413000,90000,1,0,6,3,2.0,1560,3,77009,1969,heavy,2026-12-01,29.78147,-95.37801,0,1,60,Walmart Supercenter,1.52,Downtown Houston,1.5
+45,7006 Athena Blvd,Houston,367500,658000,47200,0,0,4,4,3.0,1890,6,77009,1954,medium,2027-01-05,29.79246,-95.34909,0,1,40,Walmart Supercenter,3.08,Downtown Houston,2.5
+46,4151 Argos Way,Houston,139500,328000,56500,0,0,8,2,2.0,1130,6,77009,1954,heavy,2027-02-02,29.79572,-95.38376,0,0,80,Walmart Supercenter,1.9,Downtown Houston,2.6
+47,1976 Penelope Dr,Houston,177000,288000,22800,0,0,4,2,2.0,910,7,77009,2008,medium,2026-12-01,29.80287,-95.35233,0,0,40,Walmart Supercenter,2.39,Downtown Houston,3.1
+48,1769 Olive Tree Ln,Houston,294000,399000,14700,0,0,4,3,2.0,1470,4,77009,1996,light,2027-02-02,29.78527,-95.37953,1,0,40,Walmart Supercenter,1.57,Downtown Houston,1.8
+49,8131 Ithaca Ct,Houston,212500,365000,31800,0,0,4,3,2.0,1270,6,77009,1953,medium,2027-01-05,29.80129,-95.37708,0,1,40,Walmart Supercenter,1.98,Downtown Houston,2.9
+50,8021 Aegean Trl,Houston,145000,221000,52500,1,0,4,3,2.0,1620,9,77011,1967,medium,2027-02-02,29.7278,-95.31139,0,1,40,Walmart Supercenter,0.81,Downtown Houston,4.2
+51,6309 Mentor St,Houston,72500,209000,101000,1,1,5,3,1.0,1480,8,77011,1979,heavy,2027-01-05,29.73387,-95.31584,0,1,50,Walmart Supercenter,1.23,Downtown Houston,3.7
+52,3230 Ithaca Ct,Houston,83500,149000,24000,0,0,4,2,1.0,960,9,77011,1993,medium,2027-01-05,29.75211,-95.30644,0,0,40,Walmart Supercenter,2.51,Downtown Houston,3.8
+53,4086 Athena Blvd,Houston,156000,246000,48200,0,0,5,3,2.0,1930,10,77011,1978,medium,2027-01-05,29.74393,-95.3011,0,0,50,Walmart Supercenter,2.04,Downtown Houston,4.3
+54,2076 Olive Tree Ln,Houston,149500,227000,42200,0,0,4,3,1.5,1690,10,77011,1992,medium,2026-12-01,29.74291,-95.29669,0,0,40,Walmart Supercenter,2.09,Downtown Houston,4.5
+55,1747 Argos Way,Houston,182500,246000,19300,0,0,1,3,1.5,1930,8,77011,1971,light,2027-01-05,29.73054,-95.31709,0,1,10,Walmart Supercenter,1.02,Downtown Houston,3.8
+56,8142 Ithaca Ct,Houston,82500,140000,8600,0,0,4,2,2.0,860,8,77011,2016,light,2027-02-02,29.75181,-95.31084,1,0,40,Walmart Supercenter,2.46,Downtown Houston,3.6
+57,8156 Ithaca Ct,Houston,144000,182000,16400,0,0,2,3,2.0,1640,14,77012,2004,light,2027-02-02,29.72391,-95.27144,0,0,20,Walmart Supercenter,2.55,Downtown Houston,6.4
+58,8661 Telemachus Ave,Houston,77000,121000,9300,0,0,1,2,1.0,930,14,77012,1986,light,2027-01-05,29.70865,-95.28461,0,1,10,Walmart Supercenter,1.78,Downtown Houston,6.2
+59,3557 Athena Blvd,Houston,135500,189000,17500,0,0,2,3,2.0,1750,16,77012,2002,light,2026-12-01,29.72296,-95.25533,0,0,20,Walmart Supercenter,3.38,Downtown Houston,7.3
+60,4732 Olive Tree Ln,Houston,125500,187000,17200,0,0,2,3,2.5,1720,15,77012,1957,light,2026-12-01,29.71778,-95.27062,0,1,20,Walmart Supercenter,2.54,Downtown Houston,6.6
+61,2818 Athena Blvd,Houston,102000,167000,62500,1,1,5,3,2.0,1420,14,77012,1973,medium,2027-02-02,29.73277,-95.26624,0,0,50,Walmart Supercenter,3.03,Downtown Houston,6.5
+62,9898 Odyssey Ln,Houston,115000,208000,65800,1,0,4,4,3.0,2150,16,77012,1963,medium,2027-02-02,29.70671,-95.26853,0,1,40,Walmart Supercenter,2.75,Downtown Houston,7.1
+63,4515 Laurel Bow Rd,Houston,131500,166000,14100,0,0,2,3,1.0,1410,13,77012,1951,light,2026-12-01,29.73548,-95.27419,0,1,20,Walmart Supercenter,2.68,Downtown Houston,6.0
+64,5800 Telemachus Ave,Houston,76500,204000,118000,1,1,6,3,2.0,1820,20,77013,2004,heavy,2027-02-02,29.80551,-95.22635,0,0,60,Walmart Supercenter,3.67,Downtown Houston,9.1
+65,1542 Mentor St,Houston,82500,138000,23200,0,0,2,2,1.0,930,20,77013,1990,medium,2026-12-01,29.81003,-95.22998,0,1,20,Walmart Supercenter,3.9,Downtown Houston,9.1
+66,8267 Phaeacia Pkwy,Houston,98000,204000,64800,1,0,2,4,2.0,2110,19,77013,2013,medium,2026-12-01,29.79125,-95.23452,0,1,20,Walmart Supercenter,3.8,Downtown Houston,8.4
+67,4020 Olive Tree Ln,Houston,89000,197000,97500,1,0,6,3,1.5,1710,17,77013,1964,heavy,2027-02-02,29.78197,-95.24647,0,1,60,Walmart Supercenter,4.27,Downtown Houston,7.5
+68,2622 Aegean Trl,Houston,114000,149000,10600,0,0,6,2,2.0,1060,17,77013,1959,light,2027-01-05,29.78512,-95.24959,1,0,60,Walmart Supercenter,4.5,Downtown Houston,7.4
+69,8427 Olive Tree Ln,Houston,126500,177000,35800,0,0,2,3,2.5,1430,19,77013,2001,medium,2026-12-01,29.80477,-95.23983,0,1,20,Walmart Supercenter,4.48,Downtown Houston,8.4
+70,8122 Penelope Dr,Houston,88500,187000,78500,0,0,4,3,2.0,1570,18,77013,1991,heavy,2027-01-05,29.78715,-95.23967,0,1,40,Walmart Supercenter,3.98,Downtown Houston,8.0
+71,6830 Odyssey Ln,Houston,186000,237000,17200,0,0,2,3,2.0,1720,29,77014,2017,light,2027-01-05,29.97573,-95.4534,0,0,20,Walmart Supercenter,2.41,The Woodlands,13.1
+72,9769 Mentor St,Houston,124000,222000,104000,1,1,4,3,2.5,1540,27,77014,1997,heavy,2027-01-05,29.99402,-95.44592,0,1,40,Walmart Supercenter,2.31,The Woodlands,11.9
+73,5646 Laurel Bow Rd,Houston,65000,147000,69000,0,1,6,2,1.5,1080,26,77014,1949,heavy,2027-02-02,29.99373,-95.46262,0,1,60,Walmart Supercenter,1.32,The Woodlands,11.9
+74,1221 Argos Way,Houston,92500,142000,10200,0,0,2,2,1.5,1020,26,77014,2016,light,2027-01-05,29.99787,-95.45578,0,0,20,Walmart Supercenter,1.7,The Woodlands,11.6
+75,574 Odyssey Ln,Houston,150000,298000,61500,0,0,6,4,2.0,2460,29,77014,1959,medium,2026-12-01,29.97804,-95.47253,0,0,60,Walmart Supercenter,1.56,The Woodlands,13.0
+76,6367 Laurel Bow Rd,Houston,154000,221000,15300,0,0,2,3,2.0,1530,27,77014,2003,light,2027-01-05,29.98834,-95.45604,0,0,20,Walmart Supercenter,1.81,The Woodlands,12.3
+77,9055 Penelope Dr,Houston,136000,251000,46200,0,0,3,4,2.0,1850,26,77014,1977,medium,2027-01-05,29.99473,-95.47045,0,1,30,Walmart Supercenter,0.85,The Woodlands,11.8
+78,6348 Laurel Bow Rd,Houston,143500,243000,50200,0,0,4,4,2.0,2010,28,77015,2002,medium,2027-01-05,29.77742,-95.15992,0,0,40,Walmart Supercenter,1.21,Downtown Houston,12.6
+79,903 Laurel Bow Rd,Houston,125500,243000,100000,0,0,10,4,3.0,2000,25,77015,1950,heavy,2027-01-05,29.75969,-95.18528,1,0,100,Walmart Supercenter,0.76,Downtown Houston,11.1
+80,2340 Phaeacia Pkwy,Houston,148000,238000,19400,0,0,2,4,2.0,1940,24,77015,1993,light,2027-02-02,29.75841,-95.18734,0,0,20,Walmart Supercenter,0.91,Downtown Houston,10.9
+81,6907 Penelope Dr,Houston,127000,192000,14700,0,0,4,3,1.5,1470,29,77015,2004,light,2027-02-02,29.75714,-95.15449,1,0,40,Walmart Supercenter,1.55,Downtown Houston,12.9
+82,4935 Olive Tree Ln,Houston,158500,248000,20700,0,0,4,4,3.0,2070,26,77015,2015,light,2026-12-01,29.78044,-95.178,1,0,40,Walmart Supercenter,0.85,Downtown Houston,11.6
+83,9231 Mentor St,Houston,66500,172000,76500,0,1,8,3,1.0,1230,25,77015,1966,heavy,2027-01-05,29.77103,-95.18183,0,0,80,Walmart Supercenter,0.35,Downtown Houston,11.3
+84,1875 Phaeacia Pkwy,Houston,86000,134000,28000,0,0,4,2,1.0,1120,26,77015,1963,medium,2026-12-01,29.7795,-95.17807,0,1,40,Walmart Supercenter,0.79,Downtown Houston,11.6
+85,5051 Phaeacia Pkwy,Houston,65000,168000,101000,0,1,9,3,2.0,1720,20,77016,1989,heavy,2026-12-01,29.87574,-95.30755,1,0,90,Walmart Supercenter,5.23,Downtown Houston,8.8
+86,6178 Phaeacia Pkwy,Houston,36000,102000,58500,0,1,9,2,2.0,870,18,77016,1986,heavy,2027-02-02,29.85269,-95.28826,1,0,90,Walmart Supercenter,5.55,Downtown Houston,8.0
+87,6170 Argos Way,Houston,105500,204000,118500,1,0,8,4,2.0,2130,20,77016,1967,heavy,2026-12-01,29.85932,-95.27864,0,0,80,Walmart Supercenter,5.55,Downtown Houston,8.8
+88,7550 Ithaca Ct,Houston,147000,185000,18000,0,0,0,4,2.5,1800,20,77016,1995,light,2027-02-02,29.8679,-95.29167,0,1,0,Walmart Supercenter,5.28,Downtown Houston,8.8
+89,9180 Argos Way,Houston,52500,134000,58500,0,0,10,3,2.0,1170,20,77016,1954,heavy,2026-12-01,29.87432,-95.29144,1,0,100,Walmart Supercenter,4.88,Downtown Houston,9.2
+90,522 Penelope Dr,Houston,101500,142000,47500,0,1,4,3,1.0,1300,21,77016,1948,medium,2026-12-01,29.87443,-95.28632,0,1,40,Walmart Supercenter,4.73,Downtown Houston,9.3
+91,6031 Calypso Cir,Houston,81500,134000,11700,0,0,1,3,2.0,1170,18,77016,1970,light,2027-01-05,29.85829,-95.29612,0,1,10,Walmart Supercenter,5.23,Downtown Houston,8.1
+92,7947 Telemachus Ave,Houston,122500,207000,101000,1,0,6,3,2.0,1780,18,77017,1953,heavy,2026-12-01,29.70567,-95.24711,0,1,60,Walmart Supercenter,2.36,Downtown Houston,8.3
+93,9690 Calypso Cir,Houston,81000,194000,107000,1,1,10,3,2.0,1600,19,77017,1957,heavy,2027-01-05,29.6876,-95.25524,1,0,100,Walmart Supercenter,2.72,Downtown Houston,8.5
+94,9133 Olive Tree Ln,Houston,154000,246000,68000,1,0,7,4,3.0,2240,17,77017,1985,medium,2027-01-05,29.70075,-95.26363,1,0,70,Walmart Supercenter,3.15,Downtown Houston,7.6
+95,6232 Penelope Dr,Houston,120500,177000,13800,0,0,0,3,2.0,1380,18,77017,2000,light,2027-01-05,29.68621,-95.26149,0,1,0,Walmart Supercenter,3.11,Texas Medical Center,8.2
+96,9301 Calypso Cir,Houston,99000,165000,12800,0,0,4,2,1.0,1280,19,77017,1958,light,2026-12-01,29.68088,-95.25795,0,0,40,Walmart Supercenter,2.99,Texas Medical Center,8.5
+97,3585 Penelope Dr,Houston,137000,210000,57800,1,0,4,3,2.0,1830,19,77017,2002,medium,2026-12-01,29.68288,-95.25581,0,0,40,Walmart Supercenter,2.83,Texas Medical Center,8.6
+98,9221 Odyssey Ln,Houston,149500,233000,20600,0,0,0,4,2.5,2060,17,77017,1995,light,2027-02-02,29.69341,-95.26514,0,1,0,Walmart Supercenter,3.27,Downtown Houston,7.8
+99,9378 Phaeacia Pkwy,Houston,678000,923000,19700,0,0,2,4,2.0,1970,13,77018,1951,light,2026-12-01,29.82833,-95.42724,0,1,20,Walmart Supercenter,3.01,Downtown Houston,5.8
+100,9399 Laurel Bow Rd,Houston,153500,399000,86000,1,1,6,3,1.0,1180,14,77018,1959,heavy,2026-12-01,29.82553,-95.4381,0,1,60,Walmart Supercenter,3.02,Downtown Houston,6.1
+101,8494 Ithaca Ct,Houston,186000,463000,62000,0,0,6,2,1.0,1240,12,77018,1954,heavy,2026-12-01,29.82573,-95.41291,0,1,60,Walmart Supercenter,2.17,Downtown Houston,5.2
+102,3560 Penelope Dr,Houston,337000,520000,18400,0,0,2,3,2.0,1840,13,77018,2010,light,2027-01-05,29.82855,-95.4216,0,0,20,Walmart Supercenter,2.67,Downtown Houston,5.6
+103,5902 Ithaca Ct,Houston,208500,399000,29000,0,0,4,3,2.0,1160,15,77018,2011,medium,2027-02-02,29.83356,-95.43838,0,0,40,Walmart Supercenter,3.49,Downtown Houston,6.5
+104,1987 Telemachus Ave,Houston,215500,372000,70000,1,1,4,2,1.0,860,11,77018,2006,heavy,2027-01-05,29.81467,-95.41775,0,1,40,Walmart Supercenter,2.65,Downtown Houston,4.7
+105,9748 Telemachus Ave,Houston,313000,447000,29200,0,0,6,2,1.5,1170,12,77018,2006,medium,2027-01-05,29.82807,-95.40769,1,0,60,Walmart Supercenter,1.84,Downtown Houston,5.2
+106,3276 Mentor St,Houston,1669000,2221000,24600,0,0,4,4,2.0,2460,6,77019,1991,light,2027-02-02,29.73976,-95.4159,1,0,40,Costco,1.45,Texas Medical Center,2.5
+107,8195 Aegean Trl,Houston,1200500,1926000,19400,0,0,4,4,3.0,1940,4,77019,1961,light,2027-02-02,29.75957,-95.39831,0,0,40,Walmart Supercenter,0.94,Downtown Houston,1.7
+108,5061 Athena Blvd,Houston,376500,741000,86500,0,0,9,3,2.0,1730,6,77019,1989,heavy,2027-01-05,29.7491,-95.411,1,0,90,Walmart Supercenter,1.74,Downtown Houston,2.6
+109,9833 Calypso Cir,Houston,398000,672000,14700,0,0,0,3,2.0,1470,8,77019,2007,light,2027-02-02,29.76328,-95.42755,0,1,0,Walmart Supercenter,1.7,Downtown Houston,3.5
+110,1113 Aegean Trl,Houston,530000,786000,59800,1,0,4,3,1.0,1910,4,77019,1953,medium,2027-01-05,29.76034,-95.40163,0,1,40,Walmart Supercenter,0.86,Downtown Houston,1.9
+111,6062 Mentor St,Houston,898000,1835000,56800,1,0,4,4,3.0,1790,7,77019,2012,medium,2027-01-05,29.74363,-95.42209,0,0,40,Costco,1.22,Texas Medical Center,2.9
+112,4755 Athena Blvd,Houston,349500,680000,75000,0,0,10,3,2.0,1500,7,77019,1954,heavy,2027-02-02,29.75102,-95.4184,1,0,100,Costco,1.71,Downtown Houston,3.0
+113,6521 Penelope Dr,Houston,126000,203000,58000,0,0,8,4,2.5,2320,8,77020,1967,medium,2026-12-01,29.77837,-95.31136,1,0,80,Walmart Supercenter,4.3,Downtown Houston,3.7
+114,7037 Calypso Cir,Houston,108500,208000,77000,0,0,6,3,2.0,1540,8,77020,1990,heavy,2027-01-05,29.7541,-95.31171,0,0,60,Walmart Supercenter,2.62,Downtown Houston,3.5
+115,1757 Calypso Cir,Houston,90500,194000,83500,0,1,8,3,2.0,1370,9,77020,1991,heavy,2027-02-02,29.774,-95.30551,1,0,80,Walmart Supercenter,4.02,Downtown Houston,4.0
+116,2812 Olive Tree Ln,Houston,86500,171000,114000,1,1,4,4,2.0,1740,7,77020,1991,heavy,2027-01-05,29.7657,-95.31695,0,1,40,Walmart Supercenter,3.43,Downtown Houston,3.2
+117,7784 Argos Way,Houston,118000,235000,94500,0,0,7,3,2.0,1890,10,77020,1978,heavy,2027-02-02,29.76887,-95.2993,0,0,70,Walmart Supercenter,3.73,Downtown Houston,4.3
+118,4196 Odyssey Ln,Houston,117000,195000,54200,0,0,3,4,2.5,2170,7,77020,1984,medium,2027-01-05,29.76215,-95.31444,0,1,30,Walmart Supercenter,3.18,Downtown Houston,3.3
+119,7267 Ithaca Ct,Houston,101000,184000,31500,0,0,2,3,2.5,1260,11,77020,2014,medium,2026-12-01,29.77824,-95.29374,0,1,20,Walmart Supercenter,4.44,Downtown Houston,4.7
+120,3778 Odyssey Ln,Houston,145000,326000,145000,0,1,4,4,2.0,2600,6,77021,1992,heavy,2026-12-01,29.70785,-95.3508,0,1,40,Walmart Supercenter,2.34,Texas Medical Center,2.8
+121,7785 Aegean Trl,Houston,157500,307000,59000,0,0,4,4,2.5,2360,7,77021,1990,medium,2026-12-01,29.70776,-95.34411,0,0,40,Walmart Supercenter,1.96,Texas Medical Center,3.2
+122,882 Argos Way,Houston,80500,123000,24000,0,0,4,2,1.0,960,7,77021,1967,medium,2027-02-02,29.69548,-95.3467,0,1,40,Walmart Supercenter,2.48,Texas Medical Center,3.1
+123,5880 Argos Way,Houston,105500,181000,12600,0,0,0,3,2.0,1260,6,77021,2011,light,2026-12-01,29.69248,-95.35364,0,1,0,Walmart Supercenter,2.94,Texas Medical Center,2.8
+124,6497 Aegean Trl,Houston,61000,179000,89000,1,1,4,3,1.0,1240,6,77021,2015,heavy,2027-01-05,29.68213,-95.36354,0,1,40,Walmart Supercenter,3.84,Texas Medical Center,2.6
+125,5547 Penelope Dr,Houston,136500,275000,49000,0,0,6,4,2.0,1960,5,77021,1950,medium,2027-02-02,29.69356,-95.36007,0,0,60,Walmart Supercenter,3.23,Texas Medical Center,2.4
+126,7598 Odyssey Ln,Houston,118000,225000,102500,1,0,5,3,1.5,1810,6,77021,1970,heavy,2026-12-01,29.70335,-95.35049,0,1,50,Walmart Supercenter,2.42,Texas Medical Center,2.8
+127,3231 Athena Blvd,Houston,159000,287000,80200,0,1,6,4,2.0,2610,13,77022,1953,medium,2026-12-01,29.84324,-95.37641,0,0,60,Walmart Supercenter,0.92,Downtown Houston,5.7
+128,3160 Aegean Trl,Houston,163500,247000,20400,0,0,3,4,2.5,2040,9,77022,1982,light,2027-01-05,29.81914,-95.36716,0,0,30,Walmart Supercenter,0.95,Downtown Houston,4.1
+129,9037 Athena Blvd,Houston,140500,261000,123500,1,0,9,4,2.0,2230,12,77022,1982,heavy,2026-12-01,29.83752,-95.39353,1,0,90,Walmart Supercenter,1.12,Downtown Houston,5.5
+130,5876 Laurel Bow Rd,Houston,145500,223000,48200,1,0,7,3,2.5,1450,9,77022,1987,medium,2027-01-05,29.82064,-95.3752,1,0,70,Walmart Supercenter,0.65,Downtown Houston,4.2
+131,7279 Odyssey Ln,Houston,88500,200000,75500,0,1,8,3,1.0,1210,12,77022,1957,heavy,2026-12-01,29.83841,-95.378,0,0,80,Walmart Supercenter,0.59,Downtown Houston,5.4
+132,1359 Laurel Bow Rd,Houston,176000,250000,20800,0,0,2,4,2.0,2080,9,77022,1994,light,2027-01-05,29.81984,-95.36549,0,0,20,Walmart Supercenter,0.98,Downtown Houston,4.1
+133,4388 Athena Blvd,Houston,154500,255000,18200,0,0,1,3,2.0,1820,10,77022,1983,light,2026-12-01,29.82157,-95.38427,0,1,10,Walmart Supercenter,0.72,Downtown Houston,4.3
+134,1538 Phaeacia Pkwy,Houston,188500,309000,19900,0,0,4,4,3.0,1990,8,77023,2010,light,2027-01-05,29.72018,-95.32638,1,0,40,Walmart Supercenter,0.85,Downtown Houston,3.8
+135,2952 Mentor St,Houston,163500,297000,47000,0,0,4,3,2.0,1880,8,77023,1956,medium,2026-12-01,29.71732,-95.33433,0,1,40,Walmart Supercenter,1.29,Downtown Houston,3.7
+136,2226 Laurel Bow Rd,Houston,245000,356000,25100,0,0,2,4,3.0,2510,8,77023,1965,light,2026-12-01,29.73365,-95.31973,0,1,20,Walmart Supercenter,1.27,Downtown Houston,3.5
+137,7472 Aegean Trl,Houston,222500,297000,18800,0,0,0,3,2.0,1880,8,77023,2009,light,2027-01-05,29.71109,-95.33367,0,1,0,Walmart Supercenter,1.29,Texas Medical Center,3.8
+138,2134 Calypso Cir,Houston,117500,224000,31800,0,0,2,2,1.0,1270,9,77023,2018,medium,2026-12-01,29.73743,-95.31175,0,1,20,Walmart Supercenter,1.47,Downtown Houston,3.8
+139,9124 Athena Blvd,Houston,171000,217000,12100,0,0,3,2,1.0,1210,9,77023,1976,light,2027-01-05,29.71607,-95.3258,0,0,30,Walmart Supercenter,0.77,Downtown Houston,4.0
+140,5631 Laurel Bow Rd,Houston,143500,231000,31000,0,0,2,3,1.0,1240,7,77023,2012,medium,2026-12-01,29.73304,-95.32742,0,1,20,Walmart Supercenter,1.45,Downtown Houston,3.2
+141,4845 Phaeacia Pkwy,Houston,160000,241000,29500,0,0,5,2,2.0,1180,17,77024,1981,medium,2027-01-05,29.75859,-95.51576,0,0,50,Walmart Supercenter,1.61,Energy Corridor,7.8
+142,3442 Mentor St,Houston,495500,831000,18500,0,0,4,3,2.0,1850,16,77024,1999,light,2027-01-05,29.75567,-95.50431,1,0,40,Walmart Supercenter,1.46,Texas Medical Center,7.3
+143,4482 Aegean Trl,Houston,692000,1926000,116500,0,1,4,4,2.0,2030,16,77024,1992,heavy,2026-12-01,29.75754,-95.50326,0,1,40,Walmart Supercenter,1.6,Texas Medical Center,7.3
+144,5223 Argos Way,Houston,173500,225000,10500,0,0,4,2,2.0,1050,17,77024,2001,light,2027-01-05,29.75836,-95.511,1,0,40,Walmart Supercenter,1.57,Texas Medical Center,7.7
+145,4044 Argos Way,Houston,1205500,2011000,66500,1,0,6,4,2.5,2180,16,77024,2011,medium,2026-12-01,29.75663,-95.50229,1,0,60,Walmart Supercenter,1.56,Texas Medical Center,7.2
+146,6092 Telemachus Ave,Houston,134500,231000,11000,0,0,4,2,1.0,1100,16,77024,2008,light,2027-01-05,29.76657,-95.49833,1,0,40,Walmart Supercenter,2.28,Texas Medical Center,7.3
+147,2046 Penelope Dr,Houston,152000,236000,11400,0,0,1,2,2.0,1140,17,77024,1972,light,2027-01-05,29.77303,-95.51885,0,1,10,Costco,1.24,Energy Corridor,7.4
+148,5556 Aegean Trl,Houston,215000,407000,37500,0,0,2,3,2.0,1500,6,77025,1994,medium,2026-12-01,29.68812,-95.43153,0,1,20,Walmart,1.74,Texas Medical Center,2.5
+149,5002 Laurel Bow Rd,Houston,273000,435000,42000,0,0,8,3,2.0,1680,8,77025,1965,medium,2027-02-02,29.68455,-95.45464,1,0,80,Walmart,0.56,Texas Medical Center,3.8
+150,536 Laurel Bow Rd,Houston,225500,466000,47000,0,0,3,3,2.0,1880,5,77025,1986,medium,2027-02-02,29.68173,-95.42268,0,1,30,Walmart,2.12,Texas Medical Center,2.4
+151,6329 Penelope Dr,Houston,692000,1116000,74200,1,0,7,4,3.0,2490,8,77025,1977,medium,2026-12-01,29.67564,-95.44561,1,0,70,Walmart,0.72,Texas Medical Center,3.7
+152,7826 Olive Tree Ln,Houston,185500,274000,12100,0,0,2,2,2.0,1210,7,77025,1962,light,2027-02-02,29.67785,-95.43487,0,1,20,Walmart,1.36,Texas Medical Center,3.1
+153,9050 Mentor St,Houston,110500,238000,60000,1,0,7,2,1.5,960,7,77025,1989,heavy,2027-02-02,29.67417,-95.43757,0,0,70,Walmart,1.21,Texas Medical Center,3.4
+154,4976 Athena Blvd,Houston,243500,463000,46500,0,0,3,3,2.0,1860,6,77025,1981,medium,2027-02-02,29.69383,-95.43637,0,1,30,Walmart,1.73,Texas Medical Center,2.6
+155,6320 Telemachus Ave,Houston,125000,159000,14700,0,0,0,3,2.0,1470,7,77026,2009,light,2026-12-01,29.79749,-95.33515,0,1,0,Walmart Supercenter,3.37,Downtown Houston,3.3
+156,9308 Olive Tree Ln,Houston,92000,157000,36000,0,0,4,3,1.5,1440,7,77026,1958,medium,2026-12-01,29.7926,-95.33105,0,1,40,Walmart Supercenter,3.78,Downtown Houston,3.2
+157,7839 Ithaca Ct,Houston,128500,177000,17500,0,0,3,3,2.0,1750,8,77026,1978,light,2026-12-01,29.79678,-95.32651,0,0,30,Walmart Supercenter,3.8,Downtown Houston,3.6
+158,5362 Athena Blvd,Houston,87500,124000,55200,1,1,4,2,1.5,1130,9,77026,1968,medium,2026-12-01,29.80776,-95.3309,0,1,40,Walmart Supercenter,3.16,Downtown Houston,4.0
+159,2980 Odyssey Ln,Houston,105500,154000,46800,1,0,6,3,2.5,1390,8,77026,2016,medium,2027-01-05,29.78567,-95.3194,1,0,60,Walmart Supercenter,4.62,Downtown Houston,3.5
+160,9001 Calypso Cir,Houston,55000,171000,106500,1,0,5,4,2.5,1890,10,77026,1985,heavy,2026-12-01,29.79647,-95.30948,0,1,50,Walmart Supercenter,4.67,Downtown Houston,4.4
+161,3150 Odyssey Ln,Houston,112500,186000,21800,0,0,5,4,3.0,2180,9,77026,1982,light,2027-01-05,29.79965,-95.31533,1,0,50,Walmart Supercenter,4.25,Downtown Houston,4.2
+162,1662 Penelope Dr,Houston,867500,1129000,19200,0,0,3,3,2.5,1920,9,77027,1972,light,2027-01-05,29.74999,-95.43897,0,0,30,Costco,1.09,Texas Medical Center,3.9
+163,287 Athena Blvd,Houston,501000,934000,47000,1,0,6,3,2.0,1400,9,77027,1948,medium,2027-02-02,29.73769,-95.45727,0,0,60,Costco,1.11,Texas Medical Center,4.2
+164,2023 Phaeacia Pkwy,Houston,568500,1097000,45800,0,0,6,3,2.5,1830,11,77027,1963,medium,2027-01-05,29.74135,-95.46515,0,0,60,Walmart Supercenter,1.27,Texas Medical Center,4.7
+165,7814 Calypso Cir,Houston,429000,926000,81000,1,0,7,3,2.0,1380,9,77027,1976,heavy,2026-12-01,29.73615,-95.45811,0,0,70,Walmart Supercenter,1.0,Texas Medical Center,4.2
+166,8381 Argos Way,Houston,1338000,2205000,60000,0,0,6,4,2.5,2400,9,77027,1958,medium,2026-12-01,29.74208,-95.45233,0,0,60,Costco,0.96,Texas Medical Center,4.1
+167,1011 Aegean Trl,Houston,313000,429000,12900,0,0,0,2,1.0,1290,6,77027,2014,light,2027-01-05,29.72378,-95.44005,0,1,0,Costco,0.72,Texas Medical Center,2.8
+168,3670 Laurel Bow Rd,Houston,474000,856000,30200,0,0,6,3,1.0,1210,9,77027,2007,medium,2027-01-05,29.74809,-95.44623,1,0,60,Costco,1.05,Texas Medical Center,4.1
+169,6798 Penelope Dr,Houston,89000,148000,61000,0,0,8,3,2.0,1220,17,77028,2017,heavy,2027-02-02,29.84159,-95.28252,1,0,80,Walmart Supercenter,5.73,Downtown Houston,7.7
+170,8935 Penelope Dr,Houston,165500,213000,23600,0,0,2,4,2.5,2360,17,77028,2001,light,2027-01-05,29.83448,-95.28041,0,0,20,Walmart Supercenter,5.8,Downtown Houston,7.4
+171,9020 Telemachus Ave,Houston,88000,119000,11200,0,0,0,2,1.5,1120,15,77028,1998,light,2026-12-01,29.82434,-95.28348,0,1,0,Walmart Supercenter,5.63,Downtown Houston,6.8
+172,356 Argos Way,Houston,117500,167000,37500,0,0,4,3,1.5,1500,15,77028,1967,medium,2026-12-01,29.81145,-95.2776,0,1,40,Walmart Supercenter,6.1,Downtown Houston,6.6
+173,2395 Calypso Cir,Houston,103000,175000,16100,0,0,2,3,2.5,1610,14,77028,1954,light,2026-12-01,29.82758,-95.30354,0,1,20,Walmart Supercenter,4.41,Downtown Houston,6.1
+174,8640 Argos Way,Houston,145000,218000,61200,0,0,3,4,2.0,2450,17,77028,1988,medium,2027-01-05,29.84134,-95.28804,0,1,30,Walmart Supercenter,5.4,Downtown Houston,7.4
+175,8692 Mentor St,Houston,70500,121000,40800,1,0,5,2,1.5,1150,12,77028,1970,medium,2027-01-05,29.81712,-95.30348,0,0,50,Walmart Supercenter,4.5,Downtown Houston,5.6
+176,1044 Calypso Cir,Jacinto City,67500,114000,26000,0,0,3,2,1.0,1040,13,77029,1971,medium,2027-01-05,29.76439,-95.27245,0,1,30,Walmart Supercenter,4.12,Downtown Houston,5.8
+177,3220 Odyssey Ln,Jacinto City,87500,140000,12900,0,0,2,3,1.5,1290,17,77029,1997,light,2027-02-02,29.77275,-95.24651,0,0,20,Walmart Supercenter,4.18,Downtown Houston,7.4
+178,5555 Athena Blvd,Jacinto City,99500,133000,11900,0,0,2,3,2.5,1190,14,77029,1957,light,2026-12-01,29.76758,-95.26677,0,1,20,Walmart Supercenter,4.5,Downtown Houston,6.2
+179,4021 Calypso Cir,Jacinto City,78000,143000,79000,1,0,8,3,2.0,1340,17,77029,1963,heavy,2027-01-05,29.74775,-95.24646,0,0,80,Walmart Supercenter,4.33,Downtown Houston,7.4
+180,5346 Argos Way,Jacinto City,109000,165000,17000,0,0,0,3,2.0,1700,13,77029,1993,light,2027-01-05,29.75668,-95.27431,0,1,0,Walmart Supercenter,3.63,Downtown Houston,5.7
+181,3314 Mentor St,Jacinto City,63000,130000,32200,0,0,3,2,1.0,1290,17,77029,1976,medium,2027-02-02,29.75523,-95.24031,0,1,30,Walmart Supercenter,3.89,Downtown Houston,7.8
+182,8137 Aegean Trl,Jacinto City,120500,187000,67200,1,0,4,4,2.0,2210,13,77029,2018,medium,2027-01-05,29.74861,-95.27193,0,0,40,Walmart Supercenter,3.33,Downtown Houston,5.9
+183,1317 Phaeacia Pkwy,Houston,186000,238000,12200,0,0,2,2,1.0,1220,1,77030,2017,light,2026-12-01,29.70968,-95.40073,0,0,20,Costco,2.87,Texas Medical Center,0.3
+184,8016 Phaeacia Pkwy,Houston,590500,963000,18000,0,0,1,3,2.0,1800,1,77030,1977,light,2026-12-01,29.70278,-95.4055,0,1,10,Costco,2.97,Texas Medical Center,0.6
+185,7154 Penelope Dr,Houston,655500,887000,15700,0,0,2,3,1.0,1570,3,77030,1949,light,2026-12-01,29.70159,-95.41519,0,1,20,Costco,2.67,Texas Medical Center,1.2
+186,7620 Laurel Bow Rd,Houston,447500,828000,35000,0,0,5,3,1.5,1400,1,77030,1972,medium,2027-02-02,29.71029,-95.40318,0,0,50,Costco,2.72,Texas Medical Center,0.4
+187,1019 Phaeacia Pkwy,Houston,565500,979000,119500,1,1,6,3,1.0,1850,2,77030,1958,heavy,2026-12-01,29.69543,-95.40576,0,1,60,Costco,3.35,Texas Medical Center,1.0
+188,3864 Argos Way,Houston,137000,245000,32000,0,0,4,2,2.0,1280,3,77030,2003,medium,2027-02-02,29.71993,-95.41097,0,0,40,Costco,1.96,Texas Medical Center,1.2
+189,5252 Odyssey Ln,Houston,814000,1365000,21900,0,0,3,4,3.0,2190,2,77030,1982,light,2027-02-02,29.71833,-95.39867,0,0,30,Costco,2.67,Texas Medical Center,0.8
+190,8956 Mentor St,Houston,42000,102000,75500,1,0,4,2,1.0,1270,24,77031,1998,heavy,2027-02-02,29.64511,-95.56277,0,1,40,Walmart Supercenter,0.63,Energy Corridor,10.7
+191,5680 Laurel Bow Rd,Houston,70500,99000,42000,1,0,8,2,2.0,1200,22,77031,1958,medium,2027-02-02,29.65828,-95.55746,1,0,80,Walmart Supercenter,1.36,Energy Corridor,10.0
+192,7175 Penelope Dr,Houston,175500,274000,19400,0,0,1,3,2.0,1940,22,77031,1989,light,2027-02-02,29.66188,-95.55054,0,1,10,Walmart Supercenter,1.36,Texas Medical Center,9.8
+193,2627 Olive Tree Ln,Houston,178500,274000,48500,0,0,7,3,2.0,1940,23,77031,1985,medium,2027-01-05,29.65058,-95.55386,1,0,70,Walmart Supercenter,1.24,Texas Medical Center,10.2
+194,9225 Calypso Cir,Houston,53000,80000,36200,0,1,7,2,1.5,850,22,77031,1987,medium,2026-12-01,29.64754,-95.54375,1,0,70,Walmart Supercenter,1.78,Texas Medical Center,9.7
+195,1487 Olive Tree Ln,Houston,64000,90000,10300,0,0,0,2,2.0,1030,21,77031,2018,light,2026-12-01,29.64505,-95.53922,0,1,0,Walmart Supercenter,2.04,Texas Medical Center,9.6
+196,5011 Aegean Trl,Houston,138500,217000,13200,0,0,0,3,2.0,1320,21,77031,1996,light,2027-01-05,29.65105,-95.53816,0,1,0,Walmart Supercenter,2.16,Texas Medical Center,9.3
+197,5543 Laurel Bow Rd,Houston,111500,179000,14000,0,0,4,3,2.0,1400,30,77032,2011,light,2027-01-05,29.99498,-95.3493,1,0,40,Walmart Supercenter,4.06,The Woodlands,13.6
+198,5328 Athena Blvd,Houston,120500,193000,39800,0,0,4,3,2.0,1590,33,77032,1965,medium,2027-02-02,29.97999,-95.34075,0,1,40,Walmart Supercenter,3.98,The Woodlands,14.7
+199,9039 Penelope Dr,Houston,131000,204000,17400,0,0,1,3,2.0,1740,32,77032,1979,light,2027-02-02,29.99108,-95.32737,0,1,10,Walmart Supercenter,2.91,The Woodlands,14.5
+200,6803 Phaeacia Pkwy,Houston,53000,139000,88000,1,1,6,2,1.0,1220,31,77032,2007,heavy,2027-02-02,29.98851,-95.35011,0,0,60,Walmart Supercenter,4.24,The Woodlands,13.9
+201,6666 Calypso Cir,Houston,100000,180000,82500,1,0,10,3,2.0,1410,32,77032,1967,heavy,2027-02-02,29.96871,-95.34319,1,0,100,Walmart Supercenter,4.54,Downtown Houston,14.5
+202,5916 Penelope Dr,Houston,109500,162000,41800,1,0,4,3,2.0,1190,32,77032,1994,medium,2026-12-01,29.98594,-95.33916,0,0,40,Walmart Supercenter,3.7,The Woodlands,14.4
+203,8599 Calypso Cir,Houston,87500,209000,102500,1,0,4,3,2.0,1810,32,77032,1999,heavy,2027-02-02,29.98683,-95.33959,0,1,40,Walmart Supercenter,3.7,The Woodlands,14.3
+204,4940 Telemachus Ave,Houston,97000,133000,15300,0,0,0,3,2.5,1530,12,77033,1998,light,2026-12-01,29.65104,-95.33641,0,1,0,Walmart Supercenter,4.72,Texas Medical Center,5.3
+205,7512 Mentor St,Houston,71000,126000,30500,0,0,4,2,1.0,1220,10,77033,1966,medium,2026-12-01,29.6767,-95.33177,0,1,40,Walmart Supercenter,2.95,Texas Medical Center,4.4
+206,2958 Calypso Cir,Houston,82500,160000,91000,0,0,6,4,2.0,1820,12,77033,1950,heavy,2027-02-02,29.66897,-95.31874,0,1,60,Walmart Supercenter,3.28,Texas Medical Center,5.4
+207,3332 Aegean Trl,Houston,87000,138000,52500,1,0,7,3,2.0,1620,12,77033,1977,medium,2027-01-05,29.65714,-95.32868,1,0,70,Walmart Supercenter,4.19,Texas Medical Center,5.4
+208,6093 Mentor St,Houston,80000,109000,9600,0,0,1,2,1.0,960,11,77033,1974,light,2026-12-01,29.65317,-95.34269,0,1,10,Walmart Supercenter,4.71,Texas Medical Center,4.9
+209,7601 Laurel Bow Rd,Houston,58000,140000,94500,1,0,4,3,1.5,1650,11,77033,2015,heavy,2027-02-02,29.66479,-95.33315,0,1,40,Walmart Supercenter,3.75,Texas Medical Center,4.8
+210,2416 Calypso Cir,Houston,53500,129000,99500,1,1,10,3,2.0,1450,11,77033,1958,heavy,2027-02-02,29.66415,-95.33368,1,0,100,Walmart Supercenter,3.8,Texas Medical Center,4.8
+211,8122 Athena Blvd,Houston,110000,153000,10500,0,0,2,2,1.0,1050,31,77034,2002,light,2027-01-05,29.59833,-95.19995,0,0,20,Walmart Supercenter,3.19,Texas Medical Center,14.0
+212,8209 Telemachus Ave,Houston,165500,273000,143500,1,1,6,4,2.5,2330,31,77034,1954,heavy,2027-01-05,29.60472,-95.19786,0,1,60,Walmart Supercenter,2.99,Texas Medical Center,13.9
+213,4829 Penelope Dr,Houston,152000,216000,16000,0,0,0,3,2.0,1600,31,77034,2010,light,2027-02-02,29.61519,-95.18961,0,1,0,Walmart Supercenter,2.75,Texas Medical Center,14.0
+214,6110 Calypso Cir,Houston,146000,241000,19300,0,0,4,3,2.0,1930,28,77034,2011,light,2026-12-01,29.6215,-95.20896,1,0,40,Walmart Supercenter,1.84,Texas Medical Center,12.7
+215,628 Aegean Trl,Houston,176000,261000,21500,0,0,2,4,2.0,2150,29,77034,2017,light,2026-12-01,29.62081,-95.20023,0,0,20,Walmart Supercenter,2.35,Texas Medical Center,13.2
+216,2381 Argos Way,Houston,139500,188000,12700,0,0,3,3,2.0,1270,32,77034,1978,light,2026-12-01,29.60247,-95.18636,0,0,30,Walmart Supercenter,3.4,Texas Medical Center,14.6
+217,8528 Phaeacia Pkwy,Houston,116500,224000,42500,0,0,3,3,2.0,1700,29,77034,1983,medium,2026-12-01,29.62728,-95.19764,0,1,30,Walmart Supercenter,2.41,Texas Medical Center,13.2
+218,5377 Argos Way,Houston,239000,387000,125000,0,0,4,4,3.0,2500,11,77035,2000,heavy,2027-02-02,29.65554,-95.45304,0,1,40,Walmart,1.5,Texas Medical Center,4.9
+219,6700 Calypso Cir,Houston,148000,260000,32500,0,0,7,3,2.0,1300,15,77035,1982,medium,2027-02-02,29.65734,-95.48938,1,0,70,Walmart,2.34,Texas Medical Center,6.5
+220,7611 Phaeacia Pkwy,Houston,145000,347000,104000,0,0,8,4,2.5,2080,15,77035,2006,heavy,2027-01-05,29.65385,-95.48917,1,0,80,Walmart,2.48,Texas Medical Center,6.7
+221,9067 Laurel Bow Rd,Houston,307500,388000,25100,0,0,0,4,2.0,2510,12,77035,2016,light,2027-01-05,29.65343,-95.46054,0,1,0,Walmart,1.63,Texas Medical Center,5.3
+222,7579 Odyssey Ln,Houston,285500,398000,26200,0,0,2,4,3.0,2620,10,77035,1954,light,2027-01-05,29.66467,-95.45551,0,1,20,Walmart,0.85,Texas Medical Center,4.6
+223,1450 Mentor St,Houston,132500,323000,105000,1,0,8,3,2.0,1860,13,77035,1964,heavy,2027-02-02,29.6521,-95.46696,0,0,80,Walmart,1.8,Texas Medical Center,5.7
+224,1376 Penelope Dr,Houston,69000,104000,38200,1,0,3,2,1.5,1050,12,77035,1987,medium,2027-02-02,29.65673,-95.46565,0,1,30,Walmart,1.48,Texas Medical Center,5.4
+225,6376 Ithaca Ct,Houston,126000,223000,70000,1,0,6,3,2.0,1160,18,77036,1949,heavy,2026-12-01,29.70475,-95.53337,0,1,60,Walmart Supercenter,2.43,Texas Medical Center,8.2
+226,8791 Laurel Bow Rd,Houston,60000,80000,10400,0,0,1,2,1.0,1040,17,77036,1986,light,2027-02-02,29.70985,-95.52091,0,1,10,Walmart Supercenter,1.86,Texas Medical Center,7.5
+227,1746 Penelope Dr,Houston,41500,80000,25800,0,0,5,2,2.0,1030,17,77036,1975,medium,2027-02-02,29.71284,-95.52689,0,0,50,Walmart Supercenter,1.82,Texas Medical Center,7.8
+228,4768 Olive Tree Ln,Houston,157500,258000,15100,0,0,0,3,1.0,1510,20,77036,2002,light,2027-02-02,29.68858,-95.54526,0,1,0,Walmart Supercenter,1.16,Energy Corridor,8.8
+229,4021 Aegean Trl,Houston,147000,280000,59800,1,0,4,4,2.0,1910,17,77036,2014,medium,2026-12-01,29.70323,-95.55357,0,0,40,Walmart Supercenter,1.72,Energy Corridor,7.7
+230,9412 Telemachus Ave,Houston,202000,283000,44000,0,0,6,3,2.0,1760,18,77036,1957,medium,2027-02-02,29.7031,-95.54209,0,0,60,Walmart Supercenter,2.01,Energy Corridor,8.2
+231,8400 Athena Blvd,Houston,49500,83000,10900,0,0,2,2,1.5,1090,19,77036,1957,light,2027-02-02,29.70009,-95.54128,0,1,20,Walmart Supercenter,1.87,Energy Corridor,8.4
+232,3429 Penelope Dr,Houston,154500,221000,21300,0,0,0,4,2.5,2130,19,77037,1999,light,2027-01-05,29.88172,-95.39135,0,1,0,Walmart Supercenter,2.9,Downtown Houston,8.5
+233,2000 Aegean Trl,Houston,129500,221000,48200,0,0,4,3,2.0,1930,22,77037,1956,medium,2026-12-01,29.89903,-95.39508,0,1,40,Walmart Supercenter,1.8,Downtown Houston,9.7
+234,4347 Penelope Dr,Houston,161000,219000,19100,0,0,1,3,2.0,1910,18,77037,1970,light,2027-02-02,29.87457,-95.39338,0,1,10,Walmart Supercenter,3.24,Downtown Houston,8.0
+235,9547 Phaeacia Pkwy,Houston,69500,212000,126000,1,1,6,4,2.0,1980,20,77037,1963,heavy,2027-01-05,29.89034,-95.39549,0,1,60,Walmart Supercenter,2.26,Downtown Houston,9.1
+236,1989 Argos Way,Houston,87000,167000,42200,1,0,6,3,2.0,1210,22,77037,2011,medium,2026-12-01,29.90341,-95.40144,1,0,60,Walmart Supercenter,1.32,Downtown Houston,10.1
+237,9158 Olive Tree Ln,Houston,134000,196000,12900,0,0,2,2,2.0,1290,22,77037,1949,light,2027-01-05,29.90186,-95.40567,0,1,20,Walmart Supercenter,1.26,Downtown Houston,10.0
+238,962 Penelope Dr,Houston,75500,182000,97000,1,1,4,3,1.5,1400,20,77037,2001,heavy,2027-02-02,29.88859,-95.3967,0,1,40,Walmart Supercenter,2.33,Downtown Houston,9.0
+239,230 Mentor St,Houston,189000,277000,26800,0,0,2,4,2.0,2680,25,77038,1999,light,2027-02-02,29.90993,-95.44496,0,0,20,Walmart Supercenter,1.84,Downtown Houston,11.3
+240,4116 Penelope Dr,Houston,163500,263000,61500,0,0,5,4,2.0,2460,27,77038,1979,medium,2027-01-05,29.92556,-95.44639,0,0,50,Walmart Supercenter,1.92,Downtown Houston,12.3
+241,6264 Olive Tree Ln,Houston,80000,124000,28200,0,0,6,2,2.0,1130,27,77038,1992,medium,2026-12-01,29.91989,-95.4528,1,0,60,Walmart Supercenter,2.09,Downtown Houston,12.1
+242,8615 Telemachus Ave,Houston,116500,196000,13900,0,0,2,3,2.0,1390,27,77038,2001,light,2027-01-05,29.924,-95.44411,0,0,20,Walmart Supercenter,1.76,Downtown Houston,12.1
+243,2241 Argos Way,Houston,143000,238000,48000,0,0,4,3,1.5,1920,28,77038,1958,medium,2027-01-05,29.9317,-95.43531,0,1,40,Walmart Supercenter,1.51,Downtown Houston,12.5
+244,9679 Ithaca Ct,Houston,153000,239000,21000,0,0,5,4,2.0,2100,27,77038,1989,light,2026-12-01,29.92079,-95.45007,1,0,50,Walmart Supercenter,2.07,Downtown Houston,12.1
+245,1581 Penelope Dr,Houston,133500,203000,14700,0,0,0,3,2.0,1470,28,77038,2000,light,2027-01-05,29.92644,-95.45212,0,1,0,Walmart Supercenter,2.26,Downtown Houston,12.5
+246,6592 Calypso Cir,Houston,177500,231000,24100,0,0,6,4,2.0,2410,25,77039,1953,light,2027-01-05,29.92277,-95.35313,1,0,60,Walmart Supercenter,3.76,Downtown Houston,11.3
+247,2390 Ithaca Ct,Houston,96500,167000,66500,0,0,6,3,1.0,1330,24,77039,1951,heavy,2026-12-01,29.91269,-95.34611,0,1,60,Walmart Supercenter,4.18,Downtown Houston,10.6
+248,457 Ithaca Ct,Houston,86000,120000,12700,0,0,0,2,1.0,1270,23,77039,1999,light,2027-02-02,29.91179,-95.35922,0,1,0,Walmart Supercenter,3.4,Downtown Houston,10.5
+249,2852 Laurel Bow Rd,Houston,92500,163000,91000,1,1,10,3,2.0,1280,22,77039,1959,heavy,2027-02-02,29.90491,-95.34879,1,0,100,Walmart Supercenter,4.1,Downtown Houston,10.1
+250,667 Laurel Bow Rd,Houston,81500,156000,29500,0,0,2,3,2.0,1180,24,77039,1996,medium,2026-12-01,29.91523,-95.35689,0,1,20,Walmart Supercenter,3.52,Downtown Houston,10.7
+251,8714 Argos Way,Houston,113500,191000,41500,0,0,6,3,2.0,1660,22,77039,2000,medium,2027-02-02,29.89899,-95.34376,1,0,60,Walmart Supercenter,4.5,Downtown Houston,9.7
+252,527 Mentor St,Houston,141500,212000,79200,1,1,2,4,2.5,2090,23,77039,1993,medium,2026-12-01,29.90713,-95.33851,0,1,20,Walmart Supercenter,4.68,Downtown Houston,10.3
+253,1740 Argos Way,Houston,294500,369000,25000,0,0,3,4,2.5,2500,22,77040,1983,light,2027-01-05,29.8937,-95.53551,0,0,30,Walmart Supercenter,3.17,Energy Corridor,9.9
+254,2946 Penelope Dr,Houston,157500,261000,122000,1,1,8,3,1.5,1900,21,77040,1955,heavy,2027-01-05,29.8865,-95.53719,0,0,80,Walmart Supercenter,2.81,Energy Corridor,9.5
+255,3184 Aegean Trl,Houston,118500,361000,132500,1,0,6,4,2.5,2410,19,77040,1993,heavy,2026-12-01,29.8645,-95.53806,0,0,60,Walmart Supercenter,1.88,Energy Corridor,8.4
+256,2237 Mentor St,Houston,127000,202000,12400,0,0,2,3,2.0,1240,23,77040,1955,light,2027-01-05,29.88155,-95.51391,0,1,20,Walmart Supercenter,1.93,Energy Corridor,10.2
+257,6581 Laurel Bow Rd,Houston,96000,167000,46000,0,0,8,2,1.0,920,21,77040,1966,heavy,2027-01-05,29.88648,-95.53662,0,0,80,Walmart Supercenter,2.79,Energy Corridor,9.5
+258,5946 Argos Way,Houston,148500,209000,32800,0,0,2,3,2.0,1310,18,77040,2003,medium,2026-12-01,29.8706,-95.55076,0,1,20,Walmart Supercenter,2.75,Energy Corridor,8.1
+259,9397 Odyssey Ln,Houston,193000,261000,19000,0,0,3,3,1.5,1900,22,77040,1985,light,2027-01-05,29.88742,-95.53269,0,0,30,Walmart Supercenter,2.71,Energy Corridor,9.7
+260,5334 Penelope Dr,Houston,236500,468000,67200,0,0,3,4,2.5,2690,14,77041,1976,medium,2026-12-01,29.85501,-95.58113,0,1,30,Walmart Supercenter,4.31,Energy Corridor,6.1
+261,120 Odyssey Ln,Houston,237000,436000,71800,1,0,2,4,2.0,2390,15,77041,1990,medium,2027-02-02,29.86464,-95.57934,0,1,20,Walmart Supercenter,4.06,Energy Corridor,6.7
+262,3795 Penelope Dr,Houston,146500,221000,13200,0,0,0,3,2.0,1320,14,77041,2000,light,2026-12-01,29.86569,-95.59619,0,1,0,Walmart Supercenter,3.42,Energy Corridor,6.3
+263,9062 Ithaca Ct,Houston,81000,237000,86000,1,0,9,3,2.0,1480,13,77041,1981,heavy,2027-02-02,29.85658,-95.59793,1,0,90,Walmart Supercenter,3.52,Energy Corridor,5.7
+264,3212 Telemachus Ave,Houston,279500,439000,75500,0,1,4,4,2.5,2420,14,77041,1951,medium,2027-02-02,29.85582,-95.58167,0,1,40,Walmart Supercenter,4.35,Energy Corridor,6.2
+265,8143 Penelope Dr,Houston,232000,421000,56200,0,0,7,4,2.0,2250,12,77041,1981,medium,2026-12-01,29.84741,-95.58958,1,0,70,Walmart Supercenter,4.03,Energy Corridor,5.4
+266,1992 Athena Blvd,Houston,137000,234000,14500,0,0,4,3,2.0,1450,15,77041,2009,light,2027-01-05,29.86596,-95.58039,1,0,40,Walmart Supercenter,3.95,Energy Corridor,6.8
+267,7403 Odyssey Ln,Houston,319000,456000,18300,0,0,5,3,1.5,1830,15,77042,1981,light,2027-01-05,29.72945,-95.54647,1,0,50,Walmart Supercenter,2.13,Energy Corridor,6.9
+268,6882 Laurel Bow Rd,Houston,286500,391000,14200,0,0,6,3,1.5,1420,11,77042,1955,light,2026-12-01,29.74569,-95.57555,1,0,60,Walmart Supercenter,1.29,Energy Corridor,4.8
+269,1393 Telemachus Ave,Houston,514500,737000,25400,0,0,0,4,3.0,2540,15,77042,2014,light,2027-02-02,29.72446,-95.55746,0,1,0,Walmart Supercenter,2.12,Energy Corridor,6.5
+270,2838 Argos Way,Houston,86000,134000,40500,1,0,2,2,2.0,1140,14,77042,2014,medium,2026-12-01,29.74765,-95.54483,0,1,20,Walmart Supercenter,2.16,Energy Corridor,6.3
+271,1197 Ithaca Ct,Houston,88500,116000,8900,0,0,4,2,1.0,890,15,77042,2003,light,2027-01-05,29.73491,-95.54627,1,0,40,Walmart Supercenter,2.08,Energy Corridor,6.7
+272,6890 Penelope Dr,Houston,303500,393000,14300,0,0,2,3,1.0,1430,15,77042,2014,light,2027-02-02,29.7296,-95.55325,0,0,20,Walmart Supercenter,2.3,Energy Corridor,6.5
+273,6375 Phaeacia Pkwy,Houston,183000,363000,43200,1,0,4,3,2.0,1250,14,77042,1961,medium,2027-02-02,29.73196,-95.55402,0,1,40,Walmart Supercenter,2.25,Energy Corridor,6.4
+274,3992 Odyssey Ln,Houston,213000,339000,33200,0,0,3,3,2.0,1330,8,77043,1983,medium,2027-01-05,29.81886,-95.59333,0,1,30,Walmart Supercenter,2.46,Energy Corridor,3.8
+275,1709 Argos Way,Houston,174000,424000,113000,1,1,8,4,2.0,1720,7,77043,1991,heavy,2027-02-02,29.80688,-95.5979,1,0,80,Walmart Supercenter,2.19,Energy Corridor,3.1
+276,6771 Olive Tree Ln,Houston,226500,362000,52000,0,1,7,3,2.0,1480,9,77043,1982,medium,2027-02-02,29.82082,-95.59153,1,0,70,Walmart Supercenter,2.49,Energy Corridor,4.0
+277,9417 Odyssey Ln,Houston,277500,536000,75500,1,0,4,4,2.0,2540,8,77043,1955,medium,2026-12-01,29.81474,-95.59058,0,1,40,Walmart Supercenter,2.14,Energy Corridor,3.8
+278,2129 Phaeacia Pkwy,Houston,321500,459000,49000,0,0,4,4,2.0,1960,8,77043,1952,medium,2027-01-05,29.79516,-95.58522,0,1,40,Walmart Supercenter,1.23,Energy Corridor,3.5
+279,1580 Athena Blvd,Houston,175500,380000,95500,0,1,5,3,1.0,1610,11,77043,1970,heavy,2026-12-01,29.81006,-95.56632,0,1,50,Walmart Supercenter,1.17,Energy Corridor,4.9
+280,245 Aegean Trl,Houston,69000,134000,84000,1,1,5,2,2.0,1140,10,77043,1975,heavy,2027-02-02,29.82197,-95.58303,0,1,50,Walmart Supercenter,2.26,Energy Corridor,4.4
+281,6268 Mentor St,Houston,128500,180000,12600,0,0,4,2,1.0,1260,35,77044,1949,light,2026-12-01,29.90399,-95.16388,0,0,40,Walmart Supercenter,5.78,Downtown Houston,15.8
+282,6231 Calypso Cir,Houston,149500,260000,46000,0,0,6,3,2.0,1840,32,77044,2014,medium,2027-02-02,29.8998,-95.19279,1,0,60,Walmart Supercenter,4.4,Downtown Houston,14.3
+283,4995 Argos Way,Houston,146500,261000,61200,0,1,4,3,1.0,1850,32,77044,1961,medium,2026-12-01,29.90122,-95.18933,0,1,40,Walmart Supercenter,4.51,Downtown Houston,14.5
+284,6957 Telemachus Ave,Houston,242500,377000,63000,0,0,4,4,2.0,2520,36,77044,1999,medium,2026-12-01,29.90528,-95.16056,0,0,40,Walmart Supercenter,5.73,Downtown Houston,16.0
+285,5973 Calypso Cir,Houston,185000,251000,17400,0,0,3,3,2.0,1740,35,77044,1972,light,2026-12-01,29.91748,-95.1856,0,0,30,Walmart Supercenter,4.23,Downtown Houston,15.5
+286,5599 Phaeacia Pkwy,Houston,263000,385000,26000,0,0,3,4,2.0,2600,34,77044,1971,light,2027-01-05,29.9174,-95.18839,0,0,30,Walmart Supercenter,4.07,Downtown Houston,15.4
+287,9661 Laurel Bow Rd,Houston,126500,226000,48500,1,0,2,3,2.5,1460,33,77044,2001,medium,2026-12-01,29.89054,-95.17715,0,1,20,Walmart Supercenter,5.53,Downtown Houston,14.6
+288,3381 Mentor St,Houston,126000,173000,13500,0,0,0,3,2.0,1350,11,77045,2012,light,2027-02-02,29.64129,-95.41776,0,1,0,Walmart,3.43,Texas Medical Center,4.7
+289,1050 Odyssey Ln,Houston,148000,227000,54200,0,0,4,4,2.5,2170,11,77045,1966,medium,2026-12-01,29.63795,-95.41868,0,1,40,Walmart,3.56,Texas Medical Center,5.0
+290,6709 Telemachus Ave,Houston,138000,208000,46800,0,0,8,4,3.0,1870,15,77045,1968,medium,2027-01-05,29.62271,-95.44459,1,0,80,Walmart,3.82,Texas Medical Center,6.5
+291,167 Phaeacia Pkwy,Houston,122500,173000,28000,0,0,5,2,2.0,1120,11,77045,1973,medium,2026-12-01,29.64441,-95.43128,0,0,50,Walmart,2.74,Texas Medical Center,4.8
+292,4864 Aegean Trl,Houston,122000,184000,15000,0,0,1,3,2.0,1500,13,77045,1987,light,2027-02-02,29.62711,-95.41559,0,1,10,Walmart,4.26,Texas Medical Center,5.6
+293,6709 Odyssey Ln,Houston,132500,190000,51800,1,0,4,3,1.5,1590,11,77045,1965,medium,2027-02-02,29.64657,-95.4425,0,1,40,Walmart,2.28,Texas Medical Center,5.0
+294,4290 Calypso Cir,Houston,110000,211000,60000,1,0,6,4,2.5,1920,12,77045,1950,medium,2027-02-02,29.63422,-95.43563,0,0,60,Walmart,3.23,Texas Medical Center,5.6
+295,7872 Olive Tree Ln,Houston,99000,304000,131000,1,0,6,4,2.0,2380,16,77047,1961,heavy,2027-02-02,29.6004,-95.39047,0,1,60,Walmart Supercenter,2.95,Texas Medical Center,7.4
+296,1818 Calypso Cir,Houston,99500,197000,41000,1,0,5,3,2.0,1160,17,77047,1986,medium,2026-12-01,29.59794,-95.37869,0,0,50,Walmart Supercenter,2.76,Texas Medical Center,7.6
+297,4939 Penelope Dr,Houston,128000,205000,12600,0,0,0,3,1.0,1260,15,77047,2011,light,2027-01-05,29.6084,-95.39546,0,1,0,Walmart Supercenter,3.55,Texas Medical Center,6.8
+298,2543 Ithaca Ct,Houston,177500,306000,24000,0,0,2,4,3.0,2400,16,77047,2009,light,2026-12-01,29.60291,-95.40283,0,0,20,Walmart Supercenter,3.32,Texas Medical Center,7.2
+299,746 Athena Blvd,Houston,120500,204000,43200,1,0,3,3,2.0,1250,15,77047,1980,medium,2027-02-02,29.61215,-95.39099,0,1,30,Walmart Supercenter,3.76,Texas Medical Center,6.6
+300,2893 Mentor St,Houston,196500,263000,19100,0,0,6,3,2.0,1910,16,77047,1962,light,2027-01-05,29.60234,-95.40266,1,0,60,Walmart Supercenter,3.28,Texas Medical Center,7.3
+301,6419 Olive Tree Ln,Houston,153000,272000,61200,1,0,8,4,3.0,1970,17,77047,1959,medium,2027-01-05,29.60006,-95.38345,1,0,80,Walmart Supercenter,2.89,Texas Medical Center,7.4
+302,8008 Laurel Bow Rd,Houston,145000,196000,13200,0,0,4,3,2.0,1320,31,77049,1962,light,2026-12-01,29.83768,-95.15246,0,0,40,Walmart Supercenter,2.32,Downtown Houston,14.1
+303,8097 Ithaca Ct,Houston,170500,248000,48800,0,0,4,3,2.5,1950,31,77049,1993,medium,2027-01-05,29.8166,-95.14703,0,0,40,Walmart Supercenter,1.31,Downtown Houston,13.9
+304,5642 Calypso Cir,Houston,112500,146000,9800,0,0,3,2,1.5,980,34,77049,1988,light,2027-02-02,29.83534,-95.13221,0,0,30,Walmart Supercenter,2.83,Downtown Houston,15.2
+305,994 Odyssey Ln,Houston,140500,220000,39800,0,0,3,3,2.0,1590,31,77049,1979,medium,2026-12-01,29.84524,-95.16047,0,1,30,Walmart Supercenter,2.73,Downtown Houston,13.9
+306,3748 Calypso Cir,Houston,111000,223000,40800,0,0,2,3,2.0,1630,33,77049,2011,medium,2027-01-05,29.84921,-95.1429,0,1,20,Walmart Supercenter,3.27,Downtown Houston,14.9
+307,8248 Olive Tree Ln,Houston,171500,243000,17800,0,0,4,4,2.5,1780,33,77049,2006,light,2026-12-01,29.82798,-95.13609,1,0,40,Walmart Supercenter,2.31,Downtown Houston,14.8
+308,3489 Phaeacia Pkwy,Houston,111000,185000,11900,0,0,2,3,2.0,1190,31,77049,2018,light,2027-01-05,29.82334,-95.14962,0,0,20,Walmart Supercenter,1.52,Downtown Houston,13.9
+309,7514 Ithaca Ct,Houston,58500,140000,75000,0,1,5,3,1.0,1200,25,77050,1976,heavy,2027-02-02,29.89327,-95.25644,0,1,50,Walmart Supercenter,2.99,Downtown Houston,11.4
+310,850 Penelope Dr,Houston,98000,161000,102000,1,1,8,3,2.0,1500,24,77050,1993,heavy,2027-02-02,29.89916,-95.28314,1,0,80,Walmart Supercenter,3.15,Downtown Houston,10.9
+311,3222 Olive Tree Ln,Houston,87000,165000,54200,0,1,8,3,2.0,1570,27,77050,1961,medium,2027-01-05,29.90633,-95.25121,1,0,80,Walmart Supercenter,2.08,Downtown Houston,12.3
+312,8789 Olive Tree Ln,Houston,76500,168000,58500,0,0,8,2,1.0,1170,25,77050,1963,heavy,2027-01-05,29.89651,-95.26924,0,0,80,Walmart Supercenter,2.93,Downtown Houston,11.2
+313,5373 Calypso Cir,Houston,149000,213000,54800,0,0,2,4,3.0,2190,28,77050,2013,medium,2027-01-05,29.91538,-95.25832,0,1,20,Walmart Supercenter,1.49,Downtown Houston,12.6
+314,8493 Athena Blvd,Houston,188500,238000,26400,0,0,1,4,3.0,2640,25,77050,1979,light,2027-02-02,29.89747,-95.26548,0,1,10,Walmart Supercenter,2.8,Downtown Houston,11.3
+315,3013 Calypso Cir,Houston,120000,227000,60800,0,0,2,4,2.5,2430,24,77050,2018,medium,2027-02-02,29.8981,-95.27971,0,1,20,Walmart Supercenter,3.1,Downtown Houston,10.9
+316,8847 Athena Blvd,Houston,106500,172000,43800,1,0,4,3,2.5,1270,6,77051,1993,medium,2027-01-05,29.66733,-95.38886,0,0,40,Walmart,4.17,Texas Medical Center,2.8
+317,4795 Phaeacia Pkwy,Houston,169500,277000,22400,0,0,2,4,2.0,2240,8,77051,1961,light,2026-12-01,29.66411,-95.36401,0,1,20,Walmart Supercenter,4.73,Texas Medical Center,3.6
+318,3775 Olive Tree Ln,Houston,90500,186000,36200,0,0,3,3,2.0,1450,8,77051,1974,medium,2027-01-05,29.65504,-95.3973,0,1,30,Walmart,3.92,Texas Medical Center,3.6
+319,9146 Odyssey Ln,Houston,106000,216000,58500,1,0,3,3,1.0,1860,9,77051,1984,medium,2027-01-05,29.64999,-95.39501,0,1,30,Walmart,4.19,Texas Medical Center,4.0
+320,3318 Olive Tree Ln,Houston,155000,222000,60800,1,0,4,3,2.5,1950,10,77051,2004,medium,2027-01-05,29.64164,-95.38372,0,0,40,Walmart,5.06,Texas Medical Center,4.6
+321,2231 Penelope Dr,Houston,133000,215000,18500,0,0,2,3,2.0,1850,10,77051,1957,light,2027-01-05,29.64544,-95.38326,0,1,20,Walmart,4.96,Texas Medical Center,4.3
+322,5034 Aegean Trl,Houston,95000,121000,10900,0,0,4,2,2.0,1090,7,77051,1967,light,2027-02-02,29.66371,-95.39189,0,0,40,Walmart,4.04,Texas Medical Center,3.0
+323,6709 Ithaca Ct,Houston,153500,216000,46800,0,0,5,3,2.0,1870,22,77053,1988,medium,2026-12-01,29.57899,-95.4634,0,0,50,Walmart Supercenter,4.34,Texas Medical Center,9.7
+324,244 Ithaca Ct,Houston,149000,189000,14900,0,0,0,3,2.0,1490,22,77053,1994,light,2027-01-05,29.58586,-95.47625,0,1,0,Walmart Supercenter,4.18,Texas Medical Center,9.6
+325,6422 Athena Blvd,Houston,111500,212000,102500,1,0,9,3,2.0,1810,19,77053,1979,heavy,2027-01-05,29.60134,-95.46775,1,0,90,Walmart,5.26,Texas Medical Center,8.5
+326,1449 Ithaca Ct,Houston,106000,153000,11100,0,0,0,2,1.0,1110,21,77053,1995,light,2027-02-02,29.57968,-95.44667,0,1,0,Walmart Supercenter,4.12,Texas Medical Center,9.3
+327,7230 Phaeacia Pkwy,Houston,151500,211000,17900,0,0,4,3,2.0,1790,19,77053,1956,light,2026-12-01,29.59006,-95.44369,0,0,40,Walmart Supercenter,4.27,Texas Medical Center,8.6
+328,9243 Ithaca Ct,Houston,98000,175000,32800,0,0,8,3,2.0,1310,21,77053,1951,medium,2026-12-01,29.58679,-95.46575,1,0,80,Walmart Supercenter,4.62,Texas Medical Center,9.3
+329,1136 Olive Tree Ln,Houston,154500,231000,21200,0,0,0,4,2.5,2120,20,77053,1997,light,2027-02-02,29.59166,-95.46101,0,1,0,Walmart Supercenter,5.06,Texas Medical Center,8.9
+330,6573 Phaeacia Pkwy,Houston,757000,1005000,20700,0,0,0,4,2.0,2070,16,77055,2012,light,2026-12-01,29.78283,-95.48602,0,1,0,Walmart Supercenter,1.32,Downtown Houston,7.1
+331,6213 Odyssey Ln,Houston,322000,471000,32200,0,0,4,3,2.0,1290,19,77055,1998,medium,2027-02-02,29.8041,-95.49984,0,0,40,Costco,2.14,Downtown Houston,8.4
+332,5733 Argos Way,Houston,122000,212000,21800,0,0,4,2,1.0,870,19,77055,1948,medium,2027-02-02,29.79647,-95.50188,0,1,40,Costco,1.8,Downtown Houston,8.3
+333,991 Calypso Cir,Houston,670500,937000,18400,0,0,2,4,2.5,1840,18,77055,1968,light,2027-02-02,29.78391,-95.49945,0,1,20,Costco,1.87,Downtown Houston,7.9
+334,3942 Ithaca Ct,Houston,135000,256000,41800,1,0,6,2,1.0,1190,18,77055,1956,medium,2026-12-01,29.79196,-95.50325,0,0,60,Costco,1.64,Downtown Houston,8.3
+335,5282 Telemachus Ave,Houston,709000,991000,20200,0,0,0,4,2.0,2020,16,77055,2010,light,2027-01-05,29.78828,-95.48137,0,1,0,Walmart Supercenter,0.97,Downtown Houston,7.0
+336,5104 Aegean Trl,Houston,323000,490000,13800,0,0,0,3,2.0,1380,16,77055,2003,light,2026-12-01,29.78555,-95.48804,0,1,0,Walmart Supercenter,1.39,Downtown Houston,7.3
+337,1335 Odyssey Ln,Houston,255000,704000,61500,0,0,5,3,2.0,1230,12,77056,1983,heavy,2027-02-02,29.76272,-95.46023,0,1,50,Walmart Supercenter,1.82,Texas Medical Center,5.4
+338,8942 Aegean Trl,Houston,203000,382000,40800,1,0,6,2,1.5,1150,13,77056,1999,medium,2026-12-01,29.75518,-95.47527,1,0,60,Walmart Supercenter,2.31,Texas Medical Center,5.8
+339,4013 Laurel Bow Rd,Houston,520500,754000,13800,0,0,5,3,2.0,1380,12,77056,1985,light,2027-02-02,29.75867,-95.46814,1,0,50,Walmart Supercenter,2.08,Texas Medical Center,5.6
+340,762 Argos Way,Houston,207000,336000,35200,1,0,3,2,2.0,930,13,77056,1970,medium,2026-12-01,29.76201,-95.47534,0,1,30,Walmart Supercenter,1.94,Texas Medical Center,6.1
+341,860 Odyssey Ln,Houston,225000,360000,10400,0,0,1,2,2.0,1040,10,77056,1977,light,2027-01-05,29.73676,-95.46509,0,1,10,Walmart Supercenter,0.95,Texas Medical Center,4.6
+342,1375 Calypso Cir,Houston,150000,376000,83000,1,1,5,2,1.0,1120,9,77056,1983,heavy,2026-12-01,29.73888,-95.45682,0,1,50,Costco,1.1,Texas Medical Center,4.2
+343,1363 Calypso Cir,Houston,474000,796000,37800,0,0,2,3,2.0,1510,11,77056,1992,medium,2026-12-01,29.75148,-95.46251,0,1,20,Costco,1.84,Texas Medical Center,5.0
+344,7944 Aegean Trl,Houston,122500,181000,23200,0,0,2,2,1.0,930,13,77057,1994,medium,2026-12-01,29.75163,-95.48169,0,1,20,Walmart Supercenter,2.11,Texas Medical Center,6.0
+345,2506 Odyssey Ln,Houston,300500,494000,15700,0,0,2,3,1.5,1570,15,77057,1950,light,2026-12-01,29.7537,-95.4983,0,1,20,Walmart Supercenter,1.49,Texas Medical Center,6.9
+346,7823 Aegean Trl,Houston,265000,492000,105000,1,1,8,3,1.5,1560,14,77057,1950,heavy,2027-01-05,29.73772,-95.49499,0,0,80,Walmart Supercenter,1.01,Texas Medical Center,6.3
+347,9873 Laurel Bow Rd,Houston,317500,527000,43800,0,0,7,3,1.0,1750,15,77057,1971,medium,2027-01-05,29.75679,-95.49698,1,0,70,Walmart Supercenter,1.71,Texas Medical Center,6.9
+348,7896 Laurel Bow Rd,Houston,333000,433000,12600,0,0,2,3,2.0,1260,13,77057,1950,light,2027-02-02,29.7496,-95.4848,0,1,20,Walmart Supercenter,1.88,Texas Medical Center,6.0
+349,7169 Calypso Cir,Houston,222500,435000,31800,0,0,6,3,2.0,1270,16,77057,1959,medium,2026-12-01,29.74663,-95.50795,0,0,60,Walmart Supercenter,0.79,Texas Medical Center,7.2
+350,9539 Ithaca Ct,Houston,231500,498000,94500,0,1,5,3,2.0,1590,16,77057,1977,heavy,2027-01-05,29.75713,-95.49904,0,1,50,Walmart Supercenter,1.67,Texas Medical Center,7.0
+351,9569 Calypso Cir,Houston,187000,271000,49800,0,1,4,3,1.0,1390,43,77058,1958,medium,2026-12-01,29.56517,-95.11595,0,1,40,Costco,2.63,Texas Medical Center,19.5
+352,9351 Mentor St,Houston,135500,268000,34000,0,0,3,3,2.0,1360,46,77058,1988,medium,2027-02-02,29.55292,-95.10192,0,1,30,Costco,2.66,Texas Medical Center,20.7
+353,5124 Laurel Bow Rd,Houston,188500,268000,13600,0,0,4,3,2.0,1360,47,77058,2000,light,2027-02-02,29.54864,-95.0981,1,0,40,Costco,2.73,Texas Medical Center,21.0
+354,5644 Calypso Cir,Houston,118000,260000,76500,1,0,6,3,2.0,1290,47,77058,1963,heavy,2027-02-02,29.55505,-95.09421,0,1,60,Costco,3.13,Texas Medical Center,21.0
+355,7233 Ithaca Ct,Houston,84500,262000,65500,0,0,8,3,1.0,1310,45,77058,1997,heavy,2026-12-01,29.5675,-95.10305,1,0,80,Costco,3.24,Texas Medical Center,20.1
+356,1041 Penelope Dr,Houston,188000,314000,115500,1,1,8,3,2.0,1770,45,77058,1952,heavy,2027-01-05,29.57064,-95.10206,0,0,80,Costco,3.44,Texas Medical Center,20.1
+357,690 Mentor St,Houston,89500,152000,12800,0,0,0,2,1.0,1280,46,77058,2014,light,2026-12-01,29.56564,-95.09121,0,1,0,Costco,3.68,Texas Medical Center,20.8
+358,1224 Ithaca Ct,Houston,229500,406000,44800,0,0,3,4,2.5,1790,38,77059,1983,medium,2027-02-02,29.61266,-95.13246,0,1,30,Walmart Supercenter,2.92,Texas Medical Center,17.2
+359,176 Athena Blvd,Houston,389000,512000,26400,0,0,2,4,2.0,2640,41,77059,1992,light,2027-02-02,29.60403,-95.11046,0,0,20,Walmart Supercenter,4.24,Texas Medical Center,18.6
+360,9519 Athena Blvd,Houston,256000,325000,8900,0,0,2,2,1.5,890,37,77059,2012,light,2027-01-05,29.61998,-95.13539,0,0,20,Walmart Supercenter,2.41,Texas Medical Center,16.8
+361,2004 Athena Blvd,Houston,278500,392000,60500,1,0,3,3,1.0,1940,40,77059,1979,medium,2027-02-02,29.62681,-95.1155,0,1,30,Walmart Supercenter,2.93,Texas Medical Center,17.8
+362,4806 Ithaca Ct,Houston,187500,423000,108000,1,0,5,4,2.0,1920,42,77059,1977,heavy,2027-02-02,29.61247,-95.10143,0,1,50,Walmart Supercenter,3.76,Texas Medical Center,18.9
+363,3215 Aegean Trl,Houston,187000,404000,101000,1,0,6,4,3.0,1780,39,77059,2018,heavy,2026-12-01,29.62221,-95.1215,0,0,60,Walmart Supercenter,2.93,Texas Medical Center,17.5
+364,1385 Phaeacia Pkwy,Houston,248000,325000,14200,0,0,1,3,2.5,1420,41,77059,1974,light,2027-01-05,29.62488,-95.10604,0,1,10,Walmart Supercenter,2.93,Texas Medical Center,18.4
+365,9512 Athena Blvd,Houston,124500,217000,108500,1,0,4,3,2.0,1930,29,77060,2017,heavy,2027-02-02,29.9476,-95.41056,0,1,40,Walmart Supercenter,2.07,Downtown Houston,13.2
+366,2963 Aegean Trl,Houston,134500,178000,13800,0,0,2,3,2.5,1380,26,77060,1964,light,2027-02-02,29.92583,-95.38881,0,1,20,Walmart Supercenter,1.69,Downtown Houston,11.5
+367,9087 Athena Blvd,Houston,116000,185000,14700,0,0,2,3,1.5,1470,27,77060,1949,light,2027-01-05,29.93468,-95.38194,0,1,20,Walmart Supercenter,2.32,Downtown Houston,12.1
+368,7484 Penelope Dr,Houston,142500,212000,20500,0,0,2,4,2.5,2050,26,77060,1994,light,2027-02-02,29.92699,-95.39053,0,0,20,Walmart Supercenter,1.63,Downtown Houston,11.6
+369,7849 Odyssey Ln,Houston,81500,168000,89500,1,1,5,3,1.5,1250,27,77060,1982,heavy,2027-01-05,29.93439,-95.41553,0,1,50,Walmart Supercenter,1.13,Downtown Houston,12.3
+370,1721 Olive Tree Ln,Houston,74500,115000,12800,0,0,0,2,1.0,1280,29,77060,2014,light,2026-12-01,29.95091,-95.39213,0,1,0,Walmart Supercenter,2.67,Downtown Houston,13.2
+371,424 Telemachus Ave,Houston,123500,220000,66800,1,0,4,4,2.0,2190,27,77060,1960,medium,2027-02-02,29.9347,-95.37827,0,1,40,Walmart Supercenter,2.52,Downtown Houston,12.1
+372,1384 Telemachus Ave,Houston,194000,258000,19000,0,0,2,4,2.5,1900,17,77061,2016,light,2027-01-05,29.64613,-95.29013,0,0,20,Walmart Supercenter,3.33,Texas Medical Center,7.7
+373,1396 Penelope Dr,Houston,145000,206000,32500,0,0,6,3,2.0,1300,17,77061,1969,medium,2027-01-05,29.65639,-95.28322,0,0,60,Walmart Supercenter,3.26,Texas Medical Center,7.7
+374,8635 Aegean Trl,Houston,126500,220000,51200,0,1,5,3,2.0,1450,16,77061,1982,medium,2026-12-01,29.64693,-95.29559,0,0,50,Walmart Supercenter,3.66,Texas Medical Center,7.4
+375,1145 Aegean Trl,Houston,178000,252000,57800,1,0,3,4,2.5,1830,19,77061,1978,medium,2026-12-01,29.65282,-95.27127,0,1,30,Walmart Supercenter,2.53,Texas Medical Center,8.4
+376,3857 Argos Way,Houston,203500,284000,22400,0,0,6,4,3.0,2240,21,77061,1958,light,2027-01-05,29.63423,-95.26388,1,0,60,Walmart Supercenter,1.6,Texas Medical Center,9.4
+377,8956 Athena Blvd,Houston,99500,204000,32000,0,0,4,3,2.0,1280,20,77061,2015,medium,2026-12-01,29.63735,-95.2745,0,0,40,Walmart Supercenter,2.26,Texas Medical Center,8.8
+378,8845 Athena Blvd,Houston,211500,297000,24100,0,0,2,4,3.0,2410,19,77061,2017,light,2027-01-05,29.63424,-95.27841,0,0,20,Walmart Supercenter,2.46,Texas Medical Center,8.7
+379,2333 Mentor St,Houston,171500,256000,12400,0,0,4,3,1.5,1240,41,77062,2004,light,2027-02-02,29.57401,-95.13463,1,0,40,Walmart Supercenter,2.13,Texas Medical Center,18.2
+380,3189 Telemachus Ave,Houston,125500,168000,11000,0,0,0,2,2.0,1100,41,77062,2009,light,2027-01-05,29.56096,-95.13966,0,1,0,Walmart Supercenter,1.33,Texas Medical Center,18.4
+381,4554 Athena Blvd,Houston,141000,265000,33000,0,0,6,3,2.0,1320,41,77062,1997,medium,2027-02-02,29.5621,-95.13598,1,0,60,Walmart Supercenter,1.57,Texas Medical Center,18.6
+382,4558 Olive Tree Ln,Houston,129000,344000,106000,0,0,9,4,2.5,2120,40,77062,1972,heavy,2026-12-01,29.56553,-95.14509,1,0,90,Walmart Supercenter,1.27,Texas Medical Center,18.0
+383,234 Argos Way,Houston,86000,263000,65000,0,0,6,3,1.0,1300,41,77062,1954,heavy,2026-12-01,29.57009,-95.13167,0,1,60,Walmart Supercenter,2.08,Texas Medical Center,18.5
+384,2493 Odyssey Ln,Houston,216000,286000,15000,0,0,0,3,1.5,1500,43,77062,2001,light,2027-01-05,29.56831,-95.11876,0,1,0,Walmart Supercenter,2.69,Texas Medical Center,19.3
+385,4178 Telemachus Ave,Houston,128000,167000,10900,0,0,3,2,2.0,1090,40,77062,1971,light,2027-01-05,29.57647,-95.14127,0,0,30,Walmart Supercenter,2.02,Texas Medical Center,17.8
+386,5213 Mentor St,Houston,199000,299000,29500,0,0,5,3,1.5,1180,17,77063,1973,medium,2027-02-02,29.73069,-95.5341,0,0,50,Walmart Supercenter,1.39,Energy Corridor,7.4
+387,1950 Argos Way,Houston,96000,140000,11300,0,0,0,2,1.5,1130,17,77063,2014,light,2027-01-05,29.7337,-95.52555,0,1,0,Walmart Supercenter,0.85,Energy Corridor,7.8
+388,9868 Penelope Dr,Houston,85500,149000,31500,0,0,5,2,1.0,1260,16,77063,1983,medium,2026-12-01,29.73086,-95.53581,0,0,50,Walmart Supercenter,1.49,Energy Corridor,7.3
+389,2621 Olive Tree Ln,Houston,154500,366000,95000,1,0,8,3,2.0,1660,17,77063,1959,heavy,2026-12-01,29.73306,-95.51772,0,0,80,Walmart Supercenter,0.41,Texas Medical Center,7.5
+390,6289 Mentor St,Houston,71000,128000,75500,1,1,7,2,2.0,970,16,77063,1988,heavy,2027-01-05,29.73972,-95.50916,0,0,70,Walmart Supercenter,0.32,Texas Medical Center,7.1
+391,7774 Athena Blvd,Houston,428000,612000,22000,0,0,0,4,3.0,2200,15,77063,2004,light,2027-02-02,29.72995,-95.50837,0,1,0,Walmart Supercenter,0.44,Texas Medical Center,6.9
+392,8389 Telemachus Ave,Houston,383000,624000,22700,0,0,2,4,3.0,2270,17,77063,1968,light,2026-12-01,29.74622,-95.52153,0,1,20,Walmart Supercenter,0.95,Energy Corridor,7.7
+393,9135 Penelope Dr,Houston,141500,238000,15200,0,0,3,3,2.0,1520,24,77064,1978,light,2027-01-05,29.92105,-95.55002,0,0,30,Costco,2.32,Energy Corridor,11.0
+394,612 Argos Way,Houston,169500,234000,14800,0,0,6,3,1.0,1480,28,77064,1962,light,2026-12-01,29.93144,-95.52453,1,0,60,Costco,2.14,Energy Corridor,12.4
+395,1261 Odyssey Ln,Houston,114500,189000,28500,0,0,2,2,2.0,1140,24,77064,1997,medium,2026-12-01,29.91586,-95.54954,0,1,20,Costco,2.68,Energy Corridor,10.7
+396,1055 Laurel Bow Rd,Houston,103500,209000,30800,0,0,4,3,1.5,1230,25,77064,2007,medium,2026-12-01,29.91651,-95.53255,0,0,40,Walmart Supercenter,2.75,Energy Corridor,11.3
+397,3204 Argos Way,Houston,141000,232000,73000,0,0,10,3,2.0,1460,23,77064,1957,heavy,2026-12-01,29.90962,-95.54541,1,0,100,Costco,3.11,Energy Corridor,10.4
+398,1805 Penelope Dr,Houston,146000,220000,45200,1,0,4,3,2.0,1330,24,77064,2001,medium,2027-02-02,29.91106,-95.5346,0,0,40,Walmart Supercenter,2.87,Energy Corridor,10.9
+399,6190 Telemachus Ave,Houston,147500,236000,52500,0,1,6,3,2.0,1500,27,77064,1968,medium,2027-01-05,29.93703,-95.54233,0,0,60,Costco,1.26,Energy Corridor,12.2
+400,7431 Telemachus Ave,Houston,169500,319000,65800,0,1,5,4,2.0,2030,24,77065,1978,medium,2026-12-01,29.93498,-95.60621,0,0,50,Walmart Supercenter,1.07,Energy Corridor,10.7
+401,455 Olive Tree Ln,Houston,247000,344000,57800,0,0,4,4,3.0,2310,23,77065,1950,medium,2027-02-02,29.93152,-95.61124,0,1,40,Walmart Supercenter,0.96,Energy Corridor,10.4
+402,4193 Argos Way,Houston,184000,270000,17300,0,0,6,3,1.5,1730,23,77065,1967,light,2027-01-05,29.93335,-95.6104,1,0,60,Walmart Supercenter,1.05,Energy Corridor,10.5
+403,9540 Ithaca Ct,Houston,135500,207000,38200,1,0,3,2,1.5,1050,21,77065,1975,medium,2027-01-05,29.92062,-95.62074,0,1,30,Walmart Supercenter,1.1,Energy Corridor,9.5
+404,2074 Argos Way,Houston,137000,231000,12600,0,0,0,2,2.0,1260,21,77065,1996,light,2027-02-02,29.91286,-95.59472,0,1,0,Walmart Supercenter,0.67,Energy Corridor,9.4
+405,2609 Odyssey Ln,Houston,242000,348000,23500,0,0,0,4,2.5,2350,22,77065,1996,light,2027-01-05,29.92327,-95.61466,0,1,0,Walmart Supercenter,0.77,Energy Corridor,9.8
+406,907 Calypso Cir,Houston,241500,358000,24700,0,0,0,4,2.0,2470,21,77065,2012,light,2026-12-01,29.9165,-95.60204,0,1,0,Walmart Supercenter,0.24,Energy Corridor,9.5
+407,9294 Laurel Bow Rd,Houston,100000,215000,94500,0,1,10,3,2.5,1590,31,77066,1964,heavy,2027-02-02,29.94737,-95.50879,1,0,100,Costco,2.41,Energy Corridor,13.8
+408,5806 Argos Way,Houston,102000,183000,30500,0,0,3,3,2.0,1220,32,77066,1982,medium,2027-02-02,29.94458,-95.49572,0,1,30,Walmart Supercenter,2.24,Energy Corridor,14.2
+409,3925 Argos Way,Houston,159000,242000,19400,0,0,3,3,2.0,1940,31,77066,1987,light,2026-12-01,29.94444,-95.49753,0,0,30,Walmart Supercenter,2.25,Energy Corridor,14.1
+410,325 Mentor St,Houston,183000,309000,25700,0,0,4,4,2.5,2570,32,77066,1958,light,2026-12-01,29.96414,-95.52024,0,0,40,Costco,1.79,The Woodlands,14.4
+411,2415 Olive Tree Ln,Houston,143500,218000,52800,1,0,4,3,2.0,1630,30,77066,1950,medium,2026-12-01,29.94286,-95.50857,0,1,40,Walmart Supercenter,2.43,Energy Corridor,13.6
+412,236 Ithaca Ct,Houston,144500,234000,18300,0,0,2,3,2.0,1830,31,77066,2015,light,2027-01-05,29.97014,-95.49815,0,0,20,Walmart Supercenter,2.11,The Woodlands,13.7
+413,1731 Mentor St,Houston,76000,233000,106000,0,1,6,3,2.0,1820,32,77066,1994,heavy,2027-02-02,29.9511,-95.49674,0,0,60,Walmart Supercenter,2.69,Energy Corridor,14.5
+414,5565 Aegean Trl,Houston,109000,185000,33500,0,0,3,3,2.0,1340,30,77067,1973,medium,2026-12-01,29.94413,-95.44844,0,1,30,Walmart Supercenter,2.67,Downtown Houston,13.5
+415,4321 Telemachus Ave,Houston,120500,186000,12000,0,0,2,2,2.0,1200,32,77067,1993,light,2026-12-01,29.96108,-95.4426,0,0,20,Walmart Supercenter,3.39,The Woodlands,14.2
+416,3826 Telemachus Ave,Houston,173000,264000,26700,0,0,1,4,2.0,2670,29,77067,1983,light,2026-12-01,29.9379,-95.44883,0,1,10,Walmart Supercenter,2.42,Downtown Houston,13.1
+417,2362 Athena Blvd,Houston,100500,196000,36800,0,0,2,3,2.0,1470,31,77067,1990,medium,2027-02-02,29.95687,-95.43075,0,1,20,Walmart Supercenter,2.84,Downtown Houston,14.1
+418,2039 Penelope Dr,Houston,113000,231000,122000,0,1,10,4,2.0,2140,31,77067,1966,heavy,2026-12-01,29.9482,-95.44768,1,0,100,Walmart Supercenter,2.84,Downtown Houston,13.8
+419,4585 Penelope Dr,Houston,102500,231000,123500,1,1,5,3,2.0,1930,31,77067,1988,heavy,2026-12-01,29.96585,-95.45858,0,1,50,Walmart Supercenter,2.71,The Woodlands,13.8
+420,7908 Penelope Dr,Houston,95500,152000,48500,1,1,3,2,1.5,860,32,77067,1982,medium,2027-02-02,29.95509,-95.44506,0,1,30,Walmart Supercenter,3.11,Downtown Houston,14.2
+421,345 Athena Blvd,Houston,209500,315000,18200,0,0,0,3,2.5,1820,29,77069,1995,light,2026-12-01,29.98087,-95.51803,0,1,0,Walmart Supercenter,2.36,The Woodlands,13.2
+422,7596 Argos Way,Houston,208000,265000,13600,0,0,3,3,2.0,1360,29,77069,1974,light,2026-12-01,29.98229,-95.51069,0,0,30,Walmart Supercenter,1.93,The Woodlands,13.0
+423,730 Calypso Cir,Houston,224000,285000,15400,0,0,1,3,1.0,1540,30,77069,1988,light,2027-01-05,29.98385,-95.53863,0,1,10,Costco,2.1,The Woodlands,13.4
+424,907 Argos Way,Houston,202000,351000,55500,1,0,3,4,2.0,1740,30,77069,1979,medium,2027-01-05,29.9793,-95.53377,0,1,30,Costco,1.91,The Woodlands,13.6
+425,7500 Ithaca Ct,Houston,253000,435000,62200,0,0,3,4,3.0,2490,27,77069,1984,medium,2026-12-01,29.99565,-95.51196,0,1,30,Walmart Supercenter,1.67,The Woodlands,12.1
+426,3408 Aegean Trl,Houston,102000,152000,11500,0,0,0,2,1.0,1150,30,77069,2017,light,2027-01-05,29.9847,-95.53822,0,1,0,Costco,2.16,The Woodlands,13.3
+427,8682 Olive Tree Ln,Houston,115000,322000,109000,0,1,10,3,2.0,1880,29,77069,1968,heavy,2027-02-02,29.98021,-95.51301,1,0,100,Walmart Supercenter,2.13,The Woodlands,13.2
+428,2559 Penelope Dr,Houston,138000,234000,13100,0,0,4,3,2.5,1310,32,77070,1996,light,2026-12-01,29.98641,-95.58173,1,0,40,Walmart Supercenter,2.08,The Woodlands,14.3
+429,3423 Odyssey Ln,Houston,214000,289000,17500,0,0,0,4,2.5,1750,32,77070,2001,light,2027-01-05,29.9854,-95.5784,0,1,0,Walmart Supercenter,2.22,The Woodlands,14.3
+430,6819 Aegean Trl,Houston,112000,193000,11000,0,0,0,2,1.0,1100,30,77070,2011,light,2027-02-02,29.96626,-95.57097,0,1,0,Costco,1.59,Energy Corridor,13.3
+431,701 Penelope Dr,Houston,121000,197000,28200,0,0,3,2,2.0,1130,31,77070,1983,medium,2027-02-02,29.97563,-95.57966,0,1,30,Costco,2.38,Energy Corridor,13.8
+432,4759 Laurel Bow Rd,Houston,168000,280000,17700,0,0,5,3,2.0,1770,30,77070,1986,light,2027-02-02,29.98862,-95.55633,1,0,50,Costco,2.4,The Woodlands,13.5
+433,6308 Ithaca Ct,Houston,150500,276000,86000,0,0,5,3,2.0,1720,31,77070,1970,heavy,2027-02-02,29.97272,-95.55753,0,1,50,Costco,1.37,Energy Corridor,14.0
+434,1053 Ithaca Ct,Houston,147500,192000,10900,0,0,2,2,1.5,1090,32,77070,1965,light,2027-02-02,29.98148,-95.56442,0,1,20,Costco,2.1,The Woodlands,14.1
+435,4354 Calypso Cir,Houston,119500,191000,43000,1,0,4,3,2.0,1240,19,77071,2009,medium,2027-02-02,29.65834,-95.53061,0,0,40,Walmart Supercenter,2.34,Texas Medical Center,8.7
+436,3271 Odyssey Ln,Houston,140000,195000,12800,0,0,0,3,1.0,1280,21,77071,2011,light,2027-01-05,29.64829,-95.53503,0,1,0,Walmart Supercenter,2.31,Texas Medical Center,9.2
+437,285 Phaeacia Pkwy,Houston,139500,194000,46800,0,1,3,3,1.5,1270,21,77071,1974,medium,2027-01-05,29.64333,-95.53132,0,1,30,Walmart Supercenter,2.51,Texas Medical Center,9.2
+438,9421 Laurel Bow Rd,Houston,133000,190000,12200,0,0,1,3,2.5,1220,18,77071,1987,light,2026-12-01,29.64381,-95.51291,0,1,10,Walmart Supercenter,3.62,Texas Medical Center,8.2
+439,7646 Calypso Cir,Houston,48000,104000,79000,0,1,4,2,2.0,1280,18,77071,1991,heavy,2027-01-05,29.65537,-95.51382,0,1,40,Walmart Supercenter,3.29,Texas Medical Center,7.9
+440,5534 Mentor St,Houston,125000,305000,121000,0,1,6,4,2.0,2120,17,77071,1955,heavy,2026-12-01,29.65509,-95.50578,0,1,60,Walmart,3.27,Texas Medical Center,7.5
+441,5150 Olive Tree Ln,Houston,94500,186000,59000,0,0,4,3,2.5,1180,20,77071,1991,heavy,2027-02-02,29.64281,-95.52696,0,1,40,Walmart Supercenter,2.78,Texas Medical Center,9.0
+442,1938 Mentor St,Houston,62500,116000,38500,1,0,6,2,2.0,1060,16,77072,1959,medium,2026-12-01,29.69783,-95.57621,0,0,60,Walmart Supercenter,1.57,Energy Corridor,7.1
+443,8679 Athena Blvd,Houston,163500,238000,21500,0,0,0,4,3.0,2150,14,77072,2012,light,2026-12-01,29.6986,-95.60415,0,1,0,Walmart Supercenter,2.5,Energy Corridor,6.3
+444,167 Athena Blvd,Houston,109500,214000,45000,0,0,2,4,3.0,1800,17,77072,2014,medium,2027-02-02,29.68589,-95.58739,0,1,20,Walmart Supercenter,1.64,Energy Corridor,7.5
+445,468 Laurel Bow Rd,Houston,184500,266000,64800,0,0,8,4,3.0,2590,14,77072,1959,medium,2027-02-02,29.70002,-95.60254,1,0,80,Walmart Supercenter,2.38,Energy Corridor,6.3
+446,4583 Ithaca Ct,Houston,147500,230000,20300,0,0,1,4,2.0,2030,15,77072,1973,light,2027-02-02,29.70397,-95.57948,0,1,10,Walmart Supercenter,2.03,Energy Corridor,6.7
+447,2906 Ithaca Ct,Houston,110000,180000,31200,0,0,5,3,2.0,1250,16,77072,1974,medium,2027-01-05,29.68651,-95.59308,0,0,50,Walmart Supercenter,1.98,Energy Corridor,7.3
+448,9866 Laurel Bow Rd,Houston,136500,175000,12000,0,0,6,3,2.0,1200,14,77072,1964,light,2027-02-02,29.70967,-95.57864,1,0,60,Walmart Supercenter,1.79,Energy Corridor,6.4
+449,7729 Laurel Bow Rd,Houston,181500,239000,17800,0,0,2,3,1.0,1780,16,77074,1993,light,2027-02-02,29.70048,-95.51813,0,0,20,Walmart Supercenter,2.46,Texas Medical Center,7.3
+450,4327 Mentor St,Houston,147000,226000,40500,0,0,3,3,2.0,1620,17,77074,1987,medium,2027-02-02,29.69323,-95.52298,0,1,30,Walmart Supercenter,2.49,Texas Medical Center,7.6
+451,5811 Laurel Bow Rd,Houston,123000,252000,51000,0,0,3,4,2.5,2040,14,77074,1989,medium,2027-02-02,29.69358,-95.50378,0,1,30,Walmart Supercenter,2.94,Texas Medical Center,6.5
+452,4092 Calypso Cir,Houston,74000,116000,31800,0,0,4,2,1.0,1270,16,77074,1961,medium,2027-01-05,29.67853,-95.50917,0,1,40,Walmart,3.1,Texas Medical Center,7.0
+453,3969 Penelope Dr,Houston,107500,216000,90000,0,1,5,3,2.0,1500,17,77074,1974,heavy,2026-12-01,29.67312,-95.52063,0,1,50,Walmart Supercenter,2.47,Texas Medical Center,7.8
+454,6748 Ithaca Ct,Houston,175500,247000,18800,0,0,0,3,2.0,1880,15,77074,2010,light,2027-02-02,29.68381,-95.50325,0,1,0,Walmart,2.79,Texas Medical Center,6.6
+455,9615 Phaeacia Pkwy,Houston,205000,284000,24900,0,0,4,4,3.0,2490,15,77074,1996,light,2026-12-01,29.69316,-95.50857,1,0,40,Walmart Supercenter,2.94,Texas Medical Center,6.8
+456,5089 Telemachus Ave,Houston,176500,247000,16100,0,0,0,3,2.0,1610,24,77075,2016,light,2027-01-05,29.61646,-95.25114,0,1,0,Walmart Supercenter,1.28,Texas Medical Center,10.8
+457,970 Odyssey Ln,Houston,179500,298000,57500,0,0,6,4,3.0,2300,21,77075,1949,medium,2027-01-05,29.625,-95.27188,0,0,60,Walmart Supercenter,2.1,Texas Medical Center,9.4
+458,9031 Argos Way,Houston,105000,143000,9900,0,0,2,2,1.5,990,23,77075,1951,light,2027-01-05,29.61355,-95.26058,0,1,20,Walmart Supercenter,1.82,Texas Medical Center,10.4
+459,290 Ithaca Ct,Houston,88000,155000,55200,1,1,2,2,1.5,1130,22,77075,1997,medium,2026-12-01,29.63291,-95.25571,0,1,20,Walmart Supercenter,1.1,Texas Medical Center,9.9
+460,7074 Laurel Bow Rd,Houston,90500,251000,109500,1,1,8,3,1.5,1650,19,77075,2003,heavy,2027-02-02,29.63143,-95.2828,1,0,80,Walmart Supercenter,2.71,Texas Medical Center,8.6
+461,8320 Athena Blvd,Houston,153500,247000,16100,0,0,0,3,2.0,1610,23,77075,1997,light,2027-02-02,29.6228,-95.25062,0,1,0,Walmart Supercenter,0.96,Texas Medical Center,10.5
+462,2427 Olive Tree Ln,Houston,133000,205000,41500,1,0,8,3,2.0,1180,21,77075,1952,medium,2027-01-05,29.61706,-95.28189,1,0,80,Walmart Supercenter,2.82,Texas Medical Center,9.3
+463,8934 Laurel Bow Rd,Houston,84000,168000,45800,0,1,4,3,2.0,1230,18,77076,2014,medium,2026-12-01,29.87505,-95.37292,0,0,40,Walmart Supercenter,3.13,Downtown Houston,7.9
+464,4927 Athena Blvd,Houston,138000,229000,56200,0,0,6,4,2.0,2250,17,77076,1949,medium,2027-02-02,29.87096,-95.38537,0,0,60,Walmart Supercenter,2.88,Downtown Houston,7.7
+465,945 Phaeacia Pkwy,Houston,149000,242000,61800,0,0,7,4,3.0,2470,16,77076,1986,medium,2027-02-02,29.86584,-95.37013,1,0,70,Walmart Supercenter,2.52,Downtown Houston,7.3
+466,4309 Odyssey Ln,Houston,127000,184000,14400,0,0,0,3,2.0,1440,15,77076,2010,light,2027-02-02,29.8588,-95.37502,0,1,0,Walmart Supercenter,2.0,Downtown Houston,6.8
+467,3062 Calypso Cir,Houston,73000,169000,84500,1,1,10,2,2.0,1150,16,77076,1967,heavy,2027-01-05,29.86135,-95.36451,1,0,100,Walmart Supercenter,2.3,Downtown Houston,7.0
+468,7311 Olive Tree Ln,Houston,172500,255000,79200,1,0,6,4,2.5,2690,14,77076,1966,medium,2026-12-01,29.85172,-95.37355,0,0,60,Walmart Supercenter,1.52,Downtown Houston,6.3
+469,5037 Aegean Trl,Houston,125000,189000,37500,0,0,8,3,2.0,1500,14,77076,1954,medium,2027-02-02,29.85429,-95.37731,1,0,80,Walmart Supercenter,1.68,Downtown Houston,6.5
+470,5272 Calypso Cir,Houston,239500,391000,18500,0,0,0,3,2.0,1850,7,77077,1997,light,2026-12-01,29.73774,-95.63591,0,1,0,Walmart Supercenter,1.34,Energy Corridor,3.2
+471,1710 Athena Blvd,Houston,68000,151000,56000,0,0,6,2,1.5,1120,5,77077,1993,heavy,2027-01-05,29.75255,-95.63048,0,0,60,Walmart Supercenter,2.4,Energy Corridor,2.3
+472,3047 Mentor St,Houston,241500,389000,46000,0,0,7,3,2.0,1840,5,77077,1978,medium,2027-02-02,29.74993,-95.65283,1,0,70,Walmart Supercenter,2.02,Energy Corridor,2.4
+473,657 Odyssey Ln,Houston,79000,130000,34000,1,0,4,2,1.5,880,5,77077,1949,medium,2026-12-01,29.75346,-95.62495,0,1,40,Walmart Supercenter,2.45,Energy Corridor,2.3
+474,9374 Penelope Dr,Houston,246000,481000,130500,1,0,5,4,3.0,2370,3,77077,1975,heavy,2027-02-02,29.76466,-95.6285,0,1,50,Walmart Supercenter,3.11,Energy Corridor,1.6
+475,5398 Athena Blvd,Houston,70000,141000,25000,0,0,4,2,1.0,1000,6,77077,2007,medium,2026-12-01,29.74822,-95.65843,0,0,40,Walmart Supercenter,1.98,Energy Corridor,2.6
+476,3387 Laurel Bow Rd,Houston,242000,303000,12100,0,0,2,3,2.0,1210,4,77077,1996,light,2027-02-02,29.76028,-95.63844,0,0,20,Walmart Supercenter,2.76,Energy Corridor,1.6
+477,1294 Ithaca Ct,Houston,78500,147000,44500,1,0,4,3,2.0,1300,24,77078,2017,medium,2027-01-05,29.86578,-95.23456,0,0,40,Walmart Supercenter,5.0,Downtown Houston,10.9
+478,6511 Laurel Bow Rd,Houston,117000,162000,17200,0,0,2,4,2.0,1720,21,77078,2011,light,2027-02-02,29.85129,-95.25466,0,0,20,Walmart Supercenter,5.89,Downtown Houston,9.3
+479,7998 Ithaca Ct,Houston,144000,188000,22000,0,0,2,4,2.5,2200,23,77078,2009,light,2027-01-05,29.86684,-95.24451,0,0,20,Walmart Supercenter,4.84,Downtown Houston,10.5
+480,7630 Athena Blvd,Houston,126500,158000,14600,0,0,0,3,2.0,1460,23,77078,1999,light,2026-12-01,29.84544,-95.22918,0,1,0,Walmart Supercenter,4.71,Downtown Houston,10.3
+481,7275 Olive Tree Ln,Houston,108500,163000,15400,0,0,5,3,1.5,1540,21,77078,1972,light,2026-12-01,29.83967,-95.2434,1,0,50,Walmart Supercenter,5.24,Downtown Houston,9.4
+482,7461 Odyssey Ln,Houston,63500,128000,30500,0,0,3,2,1.0,1220,22,77078,1978,medium,2026-12-01,29.86047,-95.25746,0,1,30,Walmart Supercenter,5.26,Downtown Houston,9.7
+483,8891 Penelope Dr,Houston,97500,184000,59200,1,0,4,3,2.0,1890,22,77078,1953,medium,2026-12-01,29.86562,-95.25897,0,1,40,Walmart Supercenter,4.91,Downtown Houston,9.8
+484,335 Penelope Dr,Houston,398500,822000,43500,0,0,6,4,2.5,1740,4,77079,1966,medium,2027-01-05,29.77289,-95.61104,0,0,60,Walmart Supercenter,2.99,Energy Corridor,2.0
+485,9848 Laurel Bow Rd,Houston,570000,838000,45000,0,0,6,4,2.0,1800,7,77079,2006,medium,2026-12-01,29.78983,-95.59119,1,0,60,Walmart Supercenter,1.59,Energy Corridor,3.1
+486,846 Laurel Bow Rd,Houston,272500,343000,19000,0,0,0,3,1.5,1900,3,77079,1999,light,2026-12-01,29.78223,-95.62076,0,1,0,Walmart Supercenter,3.44,Energy Corridor,1.3
+487,2285 Ithaca Ct,Houston,108000,163000,9200,0,0,4,2,2.0,920,5,77079,2001,light,2027-02-02,29.77051,-95.60797,1,0,40,Walmart Supercenter,2.77,Energy Corridor,2.2
+488,9827 Athena Blvd,Houston,240000,349000,19500,0,0,6,3,2.0,1950,6,77079,1968,light,2027-01-05,29.78422,-95.59859,1,0,60,Walmart Supercenter,2.11,Energy Corridor,2.6
+489,3049 Olive Tree Ln,Houston,170000,281000,34000,0,0,6,3,2.0,1360,6,77079,1966,medium,2026-12-01,29.79119,-95.59944,0,0,60,Walmart Supercenter,2.08,Energy Corridor,2.6
+490,6029 Calypso Cir,Houston,180000,293000,36500,0,0,6,3,2.0,1460,5,77079,1992,medium,2027-01-05,29.79507,-95.60599,1,0,60,Walmart Supercenter,2.47,Energy Corridor,2.3
+491,2988 Penelope Dr,Houston,289500,465000,23800,0,0,3,4,2.5,2380,17,77080,1974,light,2026-12-01,29.80145,-95.51928,0,0,30,Costco,1.14,Energy Corridor,7.5
+492,959 Calypso Cir,Houston,103500,163000,10400,0,0,3,2,1.0,1040,18,77080,1984,light,2026-12-01,29.82763,-95.51421,0,0,30,Walmart Supercenter,1.84,Energy Corridor,8.2
+493,5436 Argos Way,Houston,159500,297000,75500,1,0,6,3,2.0,1270,16,77080,1957,heavy,2027-01-05,29.81491,-95.53045,0,1,60,Costco,1.86,Energy Corridor,7.0
+494,2474 Argos Way,Houston,179000,314000,34800,0,0,2,3,2.5,1390,16,77080,2000,medium,2027-01-05,29.8277,-95.5313,0,1,20,Walmart Supercenter,2.24,Energy Corridor,7.3
+495,4697 Penelope Dr,Houston,86000,163000,38000,1,0,4,2,1.0,1040,18,77080,1965,medium,2027-01-05,29.82823,-95.52011,0,1,40,Walmart Supercenter,1.89,Energy Corridor,7.9
+496,2884 Laurel Bow Rd,Houston,196000,304000,13200,0,0,4,3,2.5,1320,17,77080,1991,light,2026-12-01,29.83317,-95.52766,1,0,40,Walmart Supercenter,1.81,Energy Corridor,7.7
+497,4141 Argos Way,Houston,148500,186000,12900,0,0,2,2,1.0,1290,15,77080,2014,light,2027-02-02,29.8172,-95.53295,0,0,20,Costco,2.03,Energy Corridor,6.9
+498,8361 Odyssey Ln,Houston,217000,368000,100000,1,0,6,3,2.0,1760,14,77081,1967,heavy,2027-01-05,29.71103,-95.49835,0,1,60,Walmart Supercenter,1.87,Texas Medical Center,6.1
+499,2274 Mentor St,Houston,205000,381000,46500,0,0,4,3,1.5,1860,12,77081,1960,medium,2027-02-02,29.72698,-95.48382,0,1,40,Walmart Supercenter,1.16,Texas Medical Center,5.4
+500,7698 Penelope Dr,Houston,255500,492000,43000,0,0,2,4,3.0,1720,12,77081,2009,medium,2027-01-05,29.72597,-95.48077,0,1,20,Walmart Supercenter,0.97,Texas Medical Center,5.2
+501,5554 Calypso Cir,Houston,67500,104000,32500,0,0,6,2,1.0,1300,10,77081,1995,medium,2027-01-05,29.7025,-95.46802,1,0,60,Walmart Supercenter,1.43,Texas Medical Center,4.3
+502,8533 Phaeacia Pkwy,Houston,376500,602000,24100,0,0,2,4,2.0,2410,12,77081,2017,light,2026-12-01,29.72201,-95.48331,0,0,20,Walmart Supercenter,1.1,Texas Medical Center,5.3
+503,3454 Penelope Dr,Houston,51500,91000,26000,0,0,6,2,2.0,1040,10,77081,2007,medium,2026-12-01,29.72469,-95.4724,1,0,60,Walmart Supercenter,0.46,Texas Medical Center,4.7
+504,5350 Mentor St,Houston,247000,374000,45200,0,0,4,3,2.5,1810,13,77081,2009,medium,2027-02-02,29.71386,-95.49585,0,0,40,Walmart Supercenter,1.77,Texas Medical Center,6.0
+505,8830 Athena Blvd,Houston,147500,225000,14300,0,0,2,3,2.0,1430,9,77082,1954,light,2027-01-05,29.72297,-95.64679,0,1,20,Walmart Supercenter,0.13,Energy Corridor,4.2
+506,1360 Ithaca Ct,Houston,283500,366000,26700,0,0,6,4,2.0,2670,9,77082,1956,light,2026-12-01,29.72919,-95.62872,1,0,60,Walmart Supercenter,1.26,Energy Corridor,3.9
+507,2263 Aegean Trl,Houston,117000,246000,95000,1,0,6,3,2.0,1660,12,77082,1967,heavy,2027-01-05,29.70794,-95.64508,0,1,60,Walmart Supercenter,0.92,Energy Corridor,5.2
+508,9581 Mentor St,Houston,117500,201000,11700,0,0,3,3,2.0,1170,10,77082,1985,light,2027-01-05,29.71805,-95.62762,0,0,30,Walmart Supercenter,1.21,Energy Corridor,4.6
+509,4359 Argos Way,Houston,153000,261000,45800,0,0,2,3,2.0,1830,8,77082,2015,medium,2027-01-05,29.73179,-95.62432,0,1,20,Walmart Supercenter,1.57,Energy Corridor,3.7
+510,4773 Penelope Dr,Houston,167500,284000,43800,0,0,8,4,3.0,1750,10,77082,1966,medium,2027-02-02,29.72052,-95.6587,1,0,80,Walmart Supercenter,0.67,Energy Corridor,4.5
+511,3461 Calypso Cir,Houston,158000,261000,18300,0,0,2,3,2.0,1830,10,77082,1967,light,2027-02-02,29.7166,-95.63029,0,1,20,Walmart Supercenter,1.08,Energy Corridor,4.7
+512,6728 Aegean Trl,Houston,142500,234000,37500,0,0,8,3,2.0,1500,13,77083,1966,medium,2027-01-05,29.70237,-95.6531,1,0,80,Walmart Supercenter,1.34,Energy Corridor,5.7
+513,9499 Phaeacia Pkwy,Houston,130500,270000,93000,0,0,8,4,2.0,1860,13,77083,1948,heavy,2027-02-02,29.7015,-95.65445,0,0,80,Walmart Supercenter,1.42,Energy Corridor,5.7
+514,6680 Laurel Bow Rd,Houston,159500,243000,55000,0,1,2,3,2.0,1600,15,77083,1991,medium,2027-01-05,29.68938,-95.63395,0,1,20,Walmart Supercenter,2.34,Energy Corridor,6.5
+515,1469 Calypso Cir,Houston,122000,232000,52000,0,1,6,3,2.0,1480,13,77083,1955,medium,2027-02-02,29.69909,-95.63131,0,0,60,Walmart Supercenter,1.81,Energy Corridor,5.9
+516,6613 Penelope Dr,Houston,144000,209000,12400,0,0,0,3,2.0,1240,14,77083,2013,light,2027-01-05,29.69193,-95.65194,0,1,0,Walmart Supercenter,2.03,Energy Corridor,6.4
+517,7378 Olive Tree Ln,Houston,133500,237000,38200,0,0,6,3,2.5,1530,14,77083,1949,medium,2027-01-05,29.69328,-95.6537,0,0,60,Walmart Supercenter,1.96,Energy Corridor,6.3
+518,8706 Mentor St,Houston,156000,269000,47500,0,0,2,3,1.0,1900,14,77083,2002,medium,2027-02-02,29.69183,-95.64066,0,1,20,Walmart Supercenter,2.07,Energy Corridor,6.4
+519,2343 Argos Way,Houston,189500,271000,44800,0,0,4,4,2.0,1790,8,77084,1948,medium,2027-01-05,29.82797,-95.67681,0,1,40,Walmart Supercenter,3.27,Energy Corridor,3.7
+520,140 Penelope Dr,Houston,102500,250000,109500,1,1,6,3,1.5,1650,7,77084,1953,heavy,2027-02-02,29.82987,-95.6429,0,1,60,Walmart Supercenter,3.3,Energy Corridor,3.2
+521,2055 Athena Blvd,Houston,179500,305000,121000,1,0,6,4,2.5,2180,7,77084,1963,heavy,2026-12-01,29.82796,-95.6433,0,1,60,Walmart Supercenter,3.43,Energy Corridor,3.1
+522,8497 Olive Tree Ln,Houston,183500,238000,15200,0,0,0,3,2.0,1520,8,77084,2009,light,2027-01-05,29.83808,-95.64852,0,1,0,Walmart Supercenter,2.7,Energy Corridor,3.8
+523,6973 Phaeacia Pkwy,Houston,102000,148000,22000,0,0,8,2,2.0,880,7,77084,1966,medium,2027-01-05,29.82649,-95.6519,1,0,80,Walmart Supercenter,3.49,Energy Corridor,3.0
+524,2838 Calypso Cir,Houston,80000,160000,25000,0,0,6,2,1.0,1000,8,77084,2015,medium,2027-01-05,29.82876,-95.67574,1,0,60,Walmart Supercenter,3.28,Energy Corridor,3.7
+525,2343 Calypso Cir,Houston,237000,323000,24000,0,0,1,4,2.0,2400,8,77084,1986,light,2027-01-05,29.83387,-95.65059,0,1,10,Walmart Supercenter,2.98,Energy Corridor,3.5
+526,8712 Calypso Cir,Houston,136000,197000,13200,0,0,4,3,2.0,1320,20,77085,1961,light,2027-02-02,29.6157,-95.49922,0,0,40,Walmart Supercenter,4.85,Texas Medical Center,8.8
+527,6040 Penelope Dr,Houston,135500,227000,18200,0,0,2,4,3.0,1820,17,77085,2001,light,2027-02-02,29.61597,-95.4725,0,0,20,Walmart,4.3,Texas Medical Center,7.8
+528,3812 Athena Blvd,Houston,103500,213000,49500,1,0,3,3,1.0,1500,15,77085,1970,medium,2026-12-01,29.63059,-95.47089,0,1,30,Walmart,3.3,Texas Medical Center,6.9
+529,8512 Laurel Bow Rd,Houston,187500,250000,21400,0,0,2,4,2.0,2140,18,77085,1962,light,2026-12-01,29.62204,-95.49166,0,1,20,Walmart,4.31,Texas Medical Center,8.2
+530,9727 Argos Way,Houston,106500,221000,43500,0,0,8,4,2.0,1740,19,77085,1956,medium,2027-01-05,29.6156,-95.48953,1,0,80,Walmart,4.65,Texas Medical Center,8.4
+531,4062 Calypso Cir,Houston,56500,133000,73000,1,1,9,2,1.5,920,19,77085,1983,heavy,2026-12-01,29.61886,-95.49936,1,0,90,Walmart,4.73,Texas Medical Center,8.7
+532,1716 Argos Way,Houston,178000,273000,62000,0,0,4,4,3.0,2480,16,77085,1949,medium,2027-02-02,29.63561,-95.48486,0,1,40,Walmart,3.29,Texas Medical Center,7.2
+533,3610 Calypso Cir,Houston,166000,234000,46500,0,0,7,3,1.5,1860,28,77086,1971,medium,2026-12-01,29.9115,-95.4834,1,0,70,Walmart Supercenter,0.23,Downtown Houston,12.5
+534,1447 Mentor St,Houston,141000,233000,50500,0,0,4,4,2.5,2020,28,77086,1963,medium,2027-01-05,29.91741,-95.50221,0,1,40,Walmart Supercenter,0.97,Energy Corridor,12.5
+535,1240 Aegean Trl,Houston,155000,227000,44000,0,0,3,3,2.5,1760,27,77086,1987,medium,2027-01-05,29.90351,-95.4829,0,1,30,Walmart Supercenter,0.71,Downtown Houston,12.0
+536,9775 Ithaca Ct,Houston,89500,156000,30000,0,0,4,2,2.0,1200,28,77086,2010,medium,2026-12-01,29.91429,-95.48735,0,0,40,Walmart Supercenter,0.08,Downtown Houston,12.8
+537,9634 Laurel Bow Rd,Houston,104000,136000,9500,0,0,0,2,1.0,950,28,77086,1991,light,2027-02-02,29.9077,-95.49153,0,1,0,Walmart Supercenter,0.47,Energy Corridor,12.4
+538,2101 Athena Blvd,Houston,167000,236000,51500,0,0,2,4,2.5,2060,28,77086,2008,medium,2026-12-01,29.91263,-95.48944,0,1,20,Walmart Supercenter,0.16,Downtown Houston,12.7
+539,6369 Laurel Bow Rd,Houston,111000,188000,12900,0,0,6,3,2.0,1290,30,77086,1951,light,2026-12-01,29.93314,-95.49449,1,0,60,Walmart Supercenter,1.46,Energy Corridor,13.6
+540,8257 Aegean Trl,Houston,102000,197000,104500,0,1,6,3,2.0,1790,15,77087,1960,heavy,2027-02-02,29.68331,-95.29076,0,1,60,Walmart Supercenter,2.63,Texas Medical Center,6.6
+541,6265 Aegean Trl,Houston,143000,191000,17000,0,0,2,3,2.0,1700,13,77087,2017,light,2026-12-01,29.68081,-95.30179,0,0,20,Walmart Supercenter,2.53,Texas Medical Center,6.0
+542,9420 Phaeacia Pkwy,Houston,60000,163000,71500,1,0,5,2,1.0,1190,11,77087,1986,heavy,2027-02-02,29.68747,-95.31636,0,1,50,Walmart Supercenter,1.99,Texas Medical Center,5.0
+543,5879 Athena Blvd,Houston,148000,193000,17400,0,0,0,3,2.0,1740,12,77087,2008,light,2026-12-01,29.69855,-95.30648,0,1,0,Walmart Supercenter,1.28,Texas Medical Center,5.4
+544,1694 Telemachus Ave,Houston,119500,161000,12800,0,0,4,3,2.0,1280,15,77087,1994,light,2027-01-05,29.67761,-95.28804,1,0,40,Walmart Supercenter,3.06,Texas Medical Center,6.8
+545,5631 Penelope Dr,Houston,112500,156000,12100,0,0,3,3,1.0,1210,13,77087,1979,light,2027-01-05,29.68501,-95.2991,0,0,30,Walmart Supercenter,2.31,Texas Medical Center,6.1
+546,6288 Laurel Bow Rd,Houston,127000,163000,11900,0,0,2,2,1.0,1190,12,77087,2002,light,2027-02-02,29.6998,-95.30529,0,0,20,Walmart Supercenter,1.22,Texas Medical Center,5.5
+547,5007 Mentor St,Houston,47500,125000,67000,1,0,8,2,2.0,1100,22,77088,1960,heavy,2026-12-01,29.88859,-95.43843,0,0,80,Walmart Supercenter,2.45,Downtown Houston,9.8
+548,1606 Olive Tree Ln,Houston,116000,182000,12300,0,0,0,3,2.0,1230,21,77088,2016,light,2026-12-01,29.87043,-95.46531,0,1,0,Walmart Supercenter,2.87,Downtown Houston,9.5
+549,8368 Athena Blvd,Houston,121000,199000,35800,0,0,4,3,2.0,1430,22,77088,1956,medium,2027-02-02,29.88364,-95.45759,0,1,40,Walmart Supercenter,2.69,Downtown Houston,10.0
+550,8557 Penelope Dr,Houston,146500,211000,15700,0,0,0,3,2.0,1570,21,77088,1999,light,2026-12-01,29.87015,-95.46617,0,1,0,Walmart Supercenter,2.81,Downtown Houston,9.5
+551,1081 Calypso Cir,Houston,170500,237000,19100,0,0,2,3,1.5,1910,24,77088,2007,light,2027-01-05,29.89667,-95.46024,0,0,20,Walmart Supercenter,1.96,Downtown Houston,10.9
+552,4473 Athena Blvd,Houston,50000,113000,46500,0,0,7,2,1.5,930,24,77088,1986,heavy,2027-01-05,29.88934,-95.46577,0,0,70,Walmart Supercenter,2.07,Downtown Houston,10.6
+553,8052 Calypso Cir,Houston,120000,196000,13900,0,0,4,3,2.5,1390,20,77088,1999,light,2027-01-05,29.87572,-95.43599,1,0,40,Walmart Supercenter,3.17,Downtown Houston,8.9
+554,791 Olive Tree Ln,Houston,126500,207000,11900,0,0,3,3,2.0,1190,30,77089,1973,light,2026-12-01,29.59329,-95.21109,0,0,30,Walmart Supercenter,3.04,Texas Medical Center,13.6
+555,1579 Telemachus Ave,Houston,93000,135000,22200,0,0,3,2,2.0,890,29,77089,1988,medium,2027-02-02,29.5812,-95.23568,0,1,30,Walmart Supercenter,2.44,Texas Medical Center,13.0
+556,8705 Athena Blvd,Houston,182500,304000,48500,0,0,8,4,2.5,1940,30,77089,1962,medium,2026-12-01,29.57456,-95.23349,1,0,80,Walmart Supercenter,1.99,Texas Medical Center,13.4
+557,2463 Ithaca Ct,Houston,154000,217000,12800,0,0,3,3,1.5,1280,31,77089,1988,light,2027-01-05,29.57948,-95.22108,0,0,30,Walmart Supercenter,2.49,Texas Medical Center,13.8
+558,4650 Penelope Dr,Houston,131000,230000,35200,0,0,4,3,2.0,1410,29,77089,1955,medium,2027-02-02,29.58232,-95.23747,0,1,40,Walmart Supercenter,2.52,Texas Medical Center,12.9
+559,995 Olive Tree Ln,Houston,163000,234000,36500,0,0,8,3,2.5,1460,27,77089,1950,medium,2027-02-02,29.59149,-95.24199,1,0,80,Walmart Supercenter,2.73,Texas Medical Center,12.3
+560,7348 Telemachus Ave,Houston,205000,259000,17200,0,0,2,3,1.0,1720,29,77089,1997,light,2027-01-05,29.59103,-95.23078,0,0,20,Walmart Supercenter,2.78,Texas Medical Center,12.8
+561,7290 Phaeacia Pkwy,Houston,248500,316000,26400,0,0,1,4,2.0,2640,23,77090,1980,light,2027-02-02,30.01762,-95.42388,0,1,10,Walmart Supercenter,3.28,The Woodlands,10.5
+562,7020 Ithaca Ct,Houston,107500,190000,59000,0,0,5,3,2.0,1180,23,77090,1983,heavy,2027-02-02,30.01506,-95.45046,0,1,50,Walmart Supercenter,2.33,The Woodlands,10.4
+563,3110 Phaeacia Pkwy,Houston,127000,194000,42500,1,0,2,3,2.0,1220,24,77090,1993,medium,2027-02-02,30.0101,-95.45631,0,1,20,Walmart Supercenter,1.86,The Woodlands,10.8
+564,2231 Laurel Bow Rd,Houston,62500,113000,26500,0,0,7,2,1.5,1060,25,77090,1973,medium,2027-01-05,30.00213,-95.44043,1,0,70,Walmart Supercenter,2.63,The Woodlands,11.4
+565,3080 Telemachus Ave,Houston,163000,253000,62500,0,1,6,3,2.5,1900,25,77090,1965,medium,2027-02-02,30.00235,-95.43503,0,0,60,Walmart Supercenter,2.95,The Woodlands,11.4
+566,6670 Laurel Bow Rd,Houston,116500,190000,85500,1,1,9,3,2.0,1170,24,77090,1977,heavy,2027-01-05,30.01612,-95.42494,1,0,90,Walmart Supercenter,3.38,The Woodlands,10.6
+567,8196 Ithaca Ct,Houston,40000,112000,64000,1,0,6,2,1.0,1040,27,77090,1969,heavy,2026-12-01,29.99302,-95.43409,0,1,60,Walmart Supercenter,3.02,The Woodlands,12.0
+568,4736 Olive Tree Ln,Houston,95000,138000,12900,0,0,5,2,1.5,1290,16,77091,1982,light,2027-01-05,29.84005,-95.44688,1,0,50,Walmart Supercenter,3.71,Downtown Houston,7.2
+569,7606 Ithaca Ct,Houston,108000,136000,12600,0,0,2,2,1.0,1260,16,77091,1966,light,2026-12-01,29.84555,-95.44094,0,1,20,Walmart Supercenter,3.98,Downtown Houston,7.3
+570,1062 Odyssey Ln,Houston,241000,370000,67500,0,0,4,4,2.0,2700,17,77091,1998,medium,2026-12-01,29.86034,-95.43025,0,0,40,Walmart Supercenter,3.82,Downtown Houston,7.8
+571,9267 Odyssey Ln,Houston,193000,279000,15100,0,0,4,3,2.0,1510,17,77091,1953,light,2027-01-05,29.86267,-95.42383,0,0,40,Walmart Supercenter,3.6,Downtown Houston,7.8
+572,2014 Mentor St,Houston,45000,125000,67000,1,0,8,2,1.0,1100,17,77091,1991,heavy,2026-12-01,29.86103,-95.42461,1,0,80,Walmart Supercenter,3.57,Downtown Houston,7.7
+573,5228 Telemachus Ave,Houston,109500,271000,84000,1,0,6,3,2.5,1440,16,77091,1994,heavy,2027-01-05,29.85176,-95.41853,0,0,60,Walmart Supercenter,2.91,Downtown Houston,7.0
+574,3100 Odyssey Ln,Houston,206000,294000,56200,0,1,4,3,2.0,1650,18,77091,1967,medium,2026-12-01,29.86019,-95.43304,0,1,40,Walmart Supercenter,3.95,Downtown Houston,7.9
+575,8049 Aegean Trl,Houston,176000,294000,80000,0,0,10,3,2.0,1600,19,77092,1962,heavy,2027-02-02,29.82904,-95.48648,1,0,100,Walmart Supercenter,2.19,Downtown Houston,8.5
+576,4569 Laurel Bow Rd,Houston,247500,321000,18300,0,0,4,4,3.0,1830,17,77092,1992,light,2027-02-02,29.82456,-95.47536,1,0,40,Walmart Supercenter,2.55,Downtown Houston,7.7
+577,5484 Odyssey Ln,Houston,128000,245000,28800,0,0,2,3,1.5,1150,18,77092,2015,medium,2027-02-02,29.84186,-95.467,0,1,20,Walmart Supercenter,2.66,Downtown Houston,8.1
+578,7539 Phaeacia Pkwy,Houston,46000,125000,64000,1,0,10,2,2.0,1040,19,77092,1961,heavy,2027-02-02,29.82315,-95.4903,1,0,100,Walmart Supercenter,2.41,Downtown Houston,8.4
+579,9425 Penelope Dr,Houston,170500,282000,101500,1,1,10,3,1.5,1490,20,77092,1953,heavy,2026-12-01,29.83022,-95.49197,1,0,100,Walmart Supercenter,1.93,Downtown Houston,8.8
+580,4033 Telemachus Ave,Houston,222500,338000,64800,0,1,5,4,2.0,1990,17,77092,1989,medium,2026-12-01,29.83151,-95.46881,0,0,50,Walmart Supercenter,2.87,Downtown Houston,7.7
+581,5180 Phaeacia Pkwy,Houston,104500,140000,12500,0,0,0,2,1.5,1250,16,77092,1999,light,2027-01-05,29.82058,-95.46911,0,1,0,Walmart Supercenter,2.21,Downtown Houston,7.3
+582,7022 Mentor St,Houston,114000,168000,15300,0,0,0,3,2.0,1530,18,77093,2013,light,2027-01-05,29.87452,-95.33358,0,1,0,Walmart Supercenter,4.04,Downtown Houston,8.2
+583,8738 Phaeacia Pkwy,Houston,105500,148000,31000,0,0,6,3,2.0,1240,18,77093,1953,medium,2026-12-01,29.87648,-95.34908,0,0,60,Walmart Supercenter,3.63,Downtown Houston,8.1
+584,4173 Calypso Cir,Houston,80000,173000,80000,0,0,10,3,2.0,1600,17,77093,1958,heavy,2027-02-02,29.86825,-95.34603,1,0,100,Walmart Supercenter,3.24,Downtown Houston,7.6
+585,5923 Athena Blvd,Houston,71000,118000,22200,0,0,4,2,1.5,890,17,77093,1953,medium,2027-02-02,29.86883,-95.35764,0,1,40,Walmart Supercenter,2.93,Downtown Houston,7.5
+586,9720 Olive Tree Ln,Houston,88500,143000,12300,0,0,0,2,1.0,1230,16,77093,2007,light,2027-02-02,29.85835,-95.32398,0,1,0,Walmart Supercenter,3.74,Downtown Houston,7.3
+587,4348 Phaeacia Pkwy,Houston,93500,161000,83000,1,0,8,3,1.0,1420,16,77093,1991,heavy,2027-02-02,29.86302,-95.35055,1,0,80,Walmart Supercenter,2.79,Downtown Houston,7.2
+588,8074 Athena Blvd,Houston,94000,130000,10500,0,0,2,2,1.5,1050,16,77093,1962,light,2027-02-02,29.86265,-95.35818,0,1,20,Walmart Supercenter,2.53,Downtown Houston,7.1
+589,3183 Odyssey Ln,Houston,154500,308000,46000,0,0,6,3,1.5,1840,20,77095,1998,medium,2027-02-02,29.91311,-95.66686,1,0,60,Walmart Cypress Market,1.44,Energy Corridor,9.1
+590,7012 Odyssey Ln,Houston,129000,188000,24200,0,0,2,2,1.0,970,21,77095,2003,medium,2026-12-01,29.91916,-95.64472,0,1,20,Walmart Supercenter,2.54,Energy Corridor,9.4
+591,934 Mentor St,Houston,217500,283000,16000,0,0,0,3,1.0,1600,21,77095,2010,light,2027-02-02,29.91665,-95.67193,0,1,0,Walmart Cypress Market,1.46,Energy Corridor,9.4
+592,8064 Calypso Cir,Houston,226000,344000,80500,1,1,2,4,2.5,2140,18,77095,2001,medium,2027-02-02,29.9007,-95.65799,0,1,20,Walmart Cypress Market,1.53,Energy Corridor,8.1
+593,4488 Phaeacia Pkwy,Houston,231000,389000,26300,0,0,4,4,2.0,2630,18,77095,2010,light,2027-01-05,29.89758,-95.66384,1,0,40,Walmart Cypress Market,1.16,Energy Corridor,8.0
+594,7278 Argos Way,Houston,123000,210000,29200,0,0,6,2,1.5,1170,17,77095,1992,medium,2027-02-02,29.8955,-95.65556,1,0,60,Walmart Supercenter,1.3,Energy Corridor,7.8
+595,6002 Aegean Trl,Houston,216000,335000,20500,0,0,2,4,3.0,2050,19,77095,2007,light,2026-12-01,29.90267,-95.67506,0,0,20,Walmart Cypress Market,0.59,Energy Corridor,8.4
+596,6915 Aegean Trl,Houston,136500,380000,84000,1,0,10,3,2.0,1440,10,77096,1959,heavy,2026-12-01,29.68624,-95.47014,1,0,100,Walmart,1.0,Texas Medical Center,4.6
+597,623 Ithaca Ct,Houston,144500,338000,70500,1,0,8,3,2.0,1170,13,77096,1993,heavy,2026-12-01,29.68781,-95.49058,1,0,80,Walmart,2.12,Texas Medical Center,5.8
+598,2576 Olive Tree Ln,Houston,253500,353000,31800,0,0,5,3,2.5,1270,14,77096,1976,medium,2027-02-02,29.66105,-95.48553,0,0,50,Walmart,2.01,Texas Medical Center,6.2
+599,1769 Calypso Cir,Houston,201000,445000,105500,1,0,8,3,1.0,1870,11,77096,1954,heavy,2026-12-01,29.6799,-95.47526,0,0,80,Walmart,1.09,Texas Medical Center,5.1
+600,1726 Penelope Dr,Houston,40500,111000,72500,1,1,9,2,1.5,910,13,77096,1974,heavy,2027-01-05,29.66379,-95.47986,1,0,90,Walmart,1.62,Texas Medical Center,5.8
+601,8374 Penelope Dr,Houston,268000,462000,57500,1,0,3,4,2.0,1820,11,77096,1973,medium,2027-01-05,29.66685,-95.46425,0,1,30,Walmart,0.8,Texas Medical Center,4.9
+602,7125 Telemachus Ave,Houston,215500,400000,39200,0,0,2,3,2.5,1570,10,77096,1994,medium,2027-01-05,29.68532,-95.46583,0,1,20,Walmart,0.77,Texas Medical Center,4.4
+603,5642 Mentor St,Houston,551500,1218000,111500,0,0,6,4,2.0,2230,6,77098,1994,heavy,2026-12-01,29.74615,-95.41,0,0,60,Walmart Supercenter,1.92,Downtown Houston,2.6
+604,8616 Athena Blvd,Houston,377000,736000,77500,0,0,6,3,2.0,1550,6,77098,1952,heavy,2027-02-02,29.73166,-95.4316,0,1,60,Costco,0.49,Texas Medical Center,2.7
+605,6718 Aegean Trl,Houston,229000,710000,85000,1,0,9,3,2.0,1460,7,77098,1988,heavy,2027-02-02,29.7459,-95.42307,1,0,90,Costco,1.26,Texas Medical Center,3.1
+606,705 Calypso Cir,Houston,553500,799000,44500,0,0,2,3,2.0,1780,4,77098,2004,medium,2027-02-02,29.73236,-95.40766,0,1,20,Costco,1.9,Texas Medical Center,1.9
+607,2721 Odyssey Ln,Houston,266000,656000,64000,0,0,8,3,1.0,1280,4,77098,2014,heavy,2027-02-02,29.72201,-95.41809,1,0,80,Costco,1.52,Texas Medical Center,1.6
+608,8414 Mentor St,Houston,496000,692000,35000,0,0,7,3,1.0,1400,4,77098,1986,medium,2027-02-02,29.73184,-95.41259,1,0,70,Costco,1.61,Texas Medical Center,2.0
+609,8837 Laurel Bow Rd,Houston,575000,1195000,69000,0,1,3,4,2.0,2160,4,77098,1986,medium,2027-01-05,29.72173,-95.42458,0,1,30,Costco,1.23,Texas Medical Center,2.0
+610,6019 Aegean Trl,Houston,113500,239000,94000,0,0,10,3,1.0,1880,20,77099,1965,heavy,2027-02-02,29.66222,-95.59166,1,0,100,Walmart Supercenter,1.68,Energy Corridor,8.9
+611,8722 Telemachus Ave,Houston,145000,215000,15700,0,0,6,3,2.0,1570,18,77099,1958,light,2027-02-02,29.67798,-95.58162,1,0,60,Walmart Supercenter,1.23,Energy Corridor,8.2
+612,6930 Penelope Dr,Houston,172000,272000,64800,0,0,5,4,2.0,2590,18,77099,1981,medium,2026-12-01,29.66893,-95.60535,0,0,50,Walmart Supercenter,2.59,Energy Corridor,8.2
+613,2669 Calypso Cir,Houston,104000,219000,81000,0,0,8,3,2.0,1620,17,77099,1964,heavy,2026-12-01,29.68236,-95.58324,0,0,80,Walmart Supercenter,1.34,Energy Corridor,7.8
+614,6235 Athena Blvd,Houston,151500,215000,15700,0,0,6,3,1.5,1570,20,77099,1962,light,2026-12-01,29.66616,-95.58033,1,0,60,Walmart Supercenter,1.46,Energy Corridor,8.9
+615,2104 Calypso Cir,Houston,171500,221000,18400,0,0,0,4,2.0,1840,21,77099,2001,light,2026-12-01,29.65517,-95.58472,0,1,0,Walmart Supercenter,1.04,Energy Corridor,9.5
+616,2369 Calypso Cir,Houston,158500,228000,43500,0,0,3,3,2.0,1740,20,77099,1987,medium,2027-01-05,29.65925,-95.59646,0,1,30,Walmart Supercenter,1.75,Energy Corridor,9.0
+617,850 Phaeacia Pkwy,Houston,158500,221000,13000,0,0,1,3,2.5,1300,52,77336,1989,light,2027-02-02,30.06082,-95.09054,0,1,10,Walmart Supercenter,6.83,The Woodlands,23.3
+618,9264 Ithaca Ct,Houston,105500,215000,62000,0,0,8,3,1.5,1240,50,77336,1969,heavy,2027-02-02,30.07886,-95.09614,0,0,80,Walmart Supercenter,7.49,The Woodlands,22.6
+619,8813 Penelope Dr,Houston,133500,280000,108000,1,0,6,3,2.5,1920,49,77336,1954,heavy,2027-01-05,30.06828,-95.109,0,1,60,Walmart Supercenter,6.44,The Woodlands,22.1
+620,5669 Telemachus Ave,Houston,275000,394000,19500,0,0,0,4,2.0,1950,48,77336,2004,light,2026-12-01,30.08073,-95.11239,0,1,0,Walmart Supercenter,7.02,The Woodlands,21.7
+621,4287 Ithaca Ct,Houston,243500,402000,20200,0,0,4,4,2.0,2020,50,77336,1996,light,2027-01-05,30.07398,-95.10022,1,0,40,Walmart Supercenter,7.07,The Woodlands,22.5
+622,4325 Telemachus Ave,Houston,156000,212000,12100,0,0,1,3,2.5,1210,49,77336,1989,light,2026-12-01,30.07471,-95.11142,0,1,10,Walmart Supercenter,6.7,The Woodlands,21.8
+623,6769 Ithaca Ct,Houston,100500,152000,24200,0,0,3,2,1.0,970,50,77336,1978,medium,2027-01-05,30.0654,-95.10561,0,1,30,Walmart Supercenter,6.42,The Woodlands,22.4
+624,2157 Athena Blvd,Humble,113500,183000,29200,0,0,7,3,2.0,1170,33,77338,1982,medium,2027-01-05,30.00555,-95.29729,1,0,70,Walmart Supercenter,0.87,The Woodlands,14.8
+625,7042 Calypso Cir,Humble,129000,163000,11800,0,0,2,2,1.0,1180,35,77338,2012,light,2026-12-01,29.9994,-95.28715,0,0,20,Walmart Supercenter,0.7,The Woodlands,15.5
+626,4210 Phaeacia Pkwy,Humble,153000,294000,82000,0,1,7,4,2.0,2680,35,77338,1985,medium,2027-01-05,30.01192,-95.26392,1,0,70,Costco,0.74,The Woodlands,15.9
+627,2388 Olive Tree Ln,Humble,147500,240000,19200,0,0,0,4,2.5,1920,33,77338,2013,light,2027-01-05,30.0127,-95.2887,0,1,0,Walmart Supercenter,0.41,The Woodlands,14.8
+628,7517 Athena Blvd,Humble,99500,240000,123000,1,1,4,4,2.0,1920,32,77338,2012,heavy,2027-01-05,30.01451,-95.29326,0,1,40,Walmart Supercenter,0.7,The Woodlands,14.5
+629,2943 Telemachus Ave,Humble,162000,221000,16200,0,0,0,3,2.0,1620,31,77338,1990,light,2027-02-02,30.02413,-95.29104,0,1,0,Walmart Supercenter,1.14,The Woodlands,14.1
+630,7393 Phaeacia Pkwy,Humble,185500,246000,19300,0,0,0,3,1.0,1930,33,77338,1998,light,2027-01-05,30.01586,-95.28607,0,1,0,Walmart Supercenter,0.5,The Woodlands,14.7
+631,7383 Odyssey Ln,Houston,238000,318000,20700,0,0,0,4,2.0,2070,35,77339,1997,light,2026-12-01,30.05767,-95.22635,0,1,0,Walmart Supercenter,3.44,The Woodlands,15.9
+632,6047 Odyssey Ln,Houston,264500,348000,24000,0,0,2,4,2.0,2400,36,77339,1993,light,2027-02-02,30.05489,-95.2222,0,0,20,Costco,3.5,The Woodlands,16.2
+633,9140 Argos Way,Houston,178000,234000,13600,0,0,4,3,2.0,1360,38,77339,1948,light,2027-02-02,30.03367,-95.22045,0,0,40,Costco,2.89,The Woodlands,17.0
+634,3834 Calypso Cir,Houston,166000,273000,17700,0,0,5,3,2.0,1770,37,77339,1970,light,2027-01-05,30.03876,-95.22538,1,0,50,Costco,2.74,The Woodlands,16.6
+635,7097 Phaeacia Pkwy,Houston,100500,190000,75000,0,1,6,2,1.5,1200,38,77339,1950,heavy,2027-02-02,30.0343,-95.21673,0,1,60,Costco,3.12,The Woodlands,17.2
+636,8574 Odyssey Ln,Houston,99500,172000,37500,1,0,6,2,2.0,1020,38,77339,2003,medium,2026-12-01,30.03426,-95.22062,1,0,60,Costco,2.9,The Woodlands,17.0
+637,515 Olive Tree Ln,Houston,102500,176000,10600,0,0,4,2,1.0,1060,37,77339,2016,light,2027-02-02,30.0423,-95.22353,1,0,40,Costco,2.95,The Woodlands,16.6
+638,7177 Odyssey Ln,Houston,173500,266000,12300,0,0,5,3,2.0,1230,44,77345,1979,light,2027-02-02,30.06665,-95.15517,1,0,50,Walmart Supercenter,5.07,The Woodlands,19.5
+639,3978 Ithaca Ct,Houston,318000,465000,25600,0,0,3,4,3.0,2560,45,77345,1980,light,2027-02-02,30.03746,-95.16019,0,0,30,Walmart Supercenter,3.05,The Woodlands,20.1
+640,1165 Penelope Dr,Houston,160500,268000,12500,0,0,4,3,1.0,1250,44,77345,2005,light,2027-01-05,30.05188,-95.15456,1,0,40,Walmart Supercenter,4.1,The Woodlands,20.0
+641,6835 Argos Way,Houston,183000,251000,11600,0,0,0,2,2.0,1160,44,77345,2003,light,2027-02-02,30.06196,-95.15091,0,1,0,Walmart Supercenter,4.83,The Woodlands,19.9
+642,525 Aegean Trl,Houston,210500,312000,16100,0,0,0,3,2.0,1610,43,77345,1997,light,2027-02-02,30.0468,-95.17242,0,1,0,Walmart Supercenter,3.54,The Woodlands,19.1
+643,4298 Mentor St,Houston,107000,216000,22500,0,0,4,2,1.0,900,43,77345,1949,medium,2027-02-02,30.04455,-95.1695,0,1,40,Walmart Supercenter,3.4,The Woodlands,19.3
+644,5961 Athena Blvd,Houston,165000,280000,13400,0,0,5,3,2.0,1340,45,77345,1979,light,2027-02-02,30.03985,-95.15921,1,0,50,Walmart Supercenter,3.22,The Woodlands,20.0
+645,1039 Argos Way,Atascocita,200500,306000,18500,0,0,0,4,2.5,1850,42,77346,2008,light,2027-02-02,29.9862,-95.19111,0,1,0,Walmart Supercenter,1.1,Downtown Houston,18.9
+646,7757 Laurel Bow Rd,Atascocita,208000,333000,21300,0,0,2,4,2.5,2130,43,77346,1992,light,2027-02-02,29.98698,-95.18747,0,0,20,Walmart Supercenter,0.89,Downtown Houston,19.1
+647,160 Phaeacia Pkwy,Atascocita,134000,258000,49200,1,0,5,3,1.5,1490,44,77346,1986,medium,2026-12-01,29.99268,-95.17322,0,0,50,Walmart Supercenter,0.28,Downtown Houston,19.9
+648,210 Mentor St,Atascocita,163000,245000,34200,0,0,5,3,1.0,1370,43,77346,1978,medium,2027-01-05,29.98336,-95.17005,0,0,50,Walmart Supercenter,0.93,Downtown Houston,19.5
+649,3341 Athena Blvd,Atascocita,102500,195000,34800,1,0,6,2,1.0,910,44,77346,1966,medium,2027-01-05,29.99558,-95.17649,0,0,60,Walmart Supercenter,0.01,Downtown Houston,20.0
+650,2348 Telemachus Ave,Atascocita,161500,259000,15000,0,0,4,3,2.0,1500,45,77346,2018,light,2026-12-01,29.99915,-95.17117,1,0,40,Walmart Supercenter,0.4,Downtown Houston,20.3
+651,7206 Olive Tree Ln,Atascocita,139000,244000,34000,0,0,3,3,1.0,1360,43,77346,1987,medium,2026-12-01,29.99582,-95.19116,0,1,30,Walmart Supercenter,0.88,Downtown Houston,19.5
+652,856 Laurel Bow Rd,Magnolia,230000,347000,18300,0,0,1,4,2.5,1830,36,77355,1972,light,2027-02-02,30.15685,-95.72939,0,1,10,Walmart Supercenter,8.39,The Woodlands,16.0
+653,8111 Argos Way,Magnolia,191000,266000,13000,0,0,1,3,2.0,1300,39,77355,1989,light,2027-01-05,30.14555,-95.75649,0,1,10,Walmart Supercenter,9.23,The Woodlands,17.7
+654,3032 Mentor St,Magnolia,267000,401000,23300,0,0,4,4,3.0,2330,39,77355,1956,light,2027-02-02,30.14569,-95.75072,0,0,40,Walmart Supercenter,8.94,The Woodlands,17.3
+655,3425 Aegean Trl,Magnolia,235000,332000,18800,0,0,2,3,2.5,1880,36,77355,2011,light,2027-01-05,30.15998,-95.73363,0,0,20,Walmart Supercenter,8.72,The Woodlands,16.3
+656,7382 Calypso Cir,Magnolia,235000,299000,15800,0,0,0,3,2.0,1580,38,77355,1996,light,2027-02-02,30.16176,-95.74555,0,1,0,Walmart Supercenter,9.35,The Woodlands,17.0
+657,3042 Aegean Trl,Magnolia,145500,246000,27800,0,0,4,2,1.0,1110,37,77355,1991,medium,2027-02-02,30.14902,-95.74163,0,0,40,Walmart Supercenter,8.62,The Woodlands,16.8
+658,1268 Mentor St,Magnolia,102000,215000,56500,1,0,7,2,1.0,890,37,77355,1985,heavy,2026-12-01,30.1699,-95.73804,0,0,70,Walmart Supercenter,9.05,The Woodlands,16.5
+659,2358 Olive Tree Ln,New Caney,195500,263000,18400,0,0,2,3,2.0,1840,37,77357,1990,light,2027-01-05,30.15085,-95.18646,0,0,20,Walmart Supercenter,2.1,The Woodlands,16.5
+660,7833 Phaeacia Pkwy,New Caney,92500,167000,65000,0,1,5,2,1.5,1000,36,77357,1984,heavy,2026-12-01,30.14946,-95.19381,0,1,50,Walmart Supercenter,1.67,The Woodlands,16.0
+661,7659 Mentor St,New Caney,141000,266000,48200,0,0,3,4,3.0,1930,38,77357,1977,medium,2027-01-05,30.1442,-95.1782,0,1,30,Walmart Supercenter,2.64,The Woodlands,17.0
+662,258 Aegean Trl,New Caney,193000,284000,21400,0,0,0,4,3.0,2140,39,77357,2001,light,2027-01-05,30.16603,-95.17009,0,1,0,Walmart Supercenter,3.23,The Woodlands,17.4
+663,627 Penelope Dr,New Caney,138500,240000,39500,0,0,2,3,1.5,1580,38,77357,2002,medium,2027-01-05,30.16671,-95.17945,0,1,20,Walmart Supercenter,2.73,The Woodlands,16.8
+664,9430 Aegean Trl,New Caney,98000,257000,100500,1,0,4,3,2.0,1770,38,77357,1998,heavy,2027-01-05,30.16274,-95.17561,0,1,40,Walmart Supercenter,2.85,The Woodlands,17.1
+665,3473 Argos Way,New Caney,119500,157000,9000,0,0,0,2,1.0,900,37,77357,2018,light,2027-02-02,30.16347,-95.18586,0,1,0,Walmart Supercenter,2.29,The Woodlands,16.5
+666,8889 Telemachus Ave,Porter,108000,175000,8800,0,0,0,2,1.0,880,27,77365,1995,light,2026-12-01,30.11877,-95.26944,0,1,0,Walmart Supercenter,2.29,The Woodlands,11.9
+667,5184 Laurel Bow Rd,Porter,100000,242000,95000,1,1,8,3,1.5,1360,26,77365,1964,heavy,2027-02-02,30.10731,-95.27819,0,0,80,Walmart Supercenter,2.67,The Woodlands,11.7
+668,8715 Mentor St,Porter,152000,249000,14300,0,0,5,3,2.5,1430,24,77365,1973,light,2027-01-05,30.11737,-95.28643,1,0,50,Walmart Supercenter,3.24,The Woodlands,11.0
+669,4973 Telemachus Ave,Porter,114000,280000,114000,1,1,6,3,2.0,1740,24,77365,1953,heavy,2026-12-01,30.11001,-95.29088,0,1,60,Walmart Supercenter,3.43,The Woodlands,10.9
+670,815 Argos Way,Porter,186500,239000,13300,0,0,4,3,2.5,1330,28,77365,2003,light,2026-12-01,30.10319,-95.26514,1,0,40,Walmart Supercenter,1.9,The Woodlands,12.5
+671,9157 Ithaca Ct,Porter,223000,285000,17900,0,0,2,3,2.5,1790,27,77365,2016,light,2026-12-01,30.10538,-95.27416,0,0,20,Walmart Supercenter,2.43,The Woodlands,11.9
+672,7667 Telemachus Ave,Porter,194500,374000,55500,0,0,3,4,2.0,2220,26,77365,1989,medium,2027-01-05,30.11165,-95.27706,0,1,30,Walmart Supercenter,2.62,The Woodlands,11.6
+673,1217 Ithaca Ct,Spring,164000,271000,21100,0,0,2,4,2.5,2110,21,77373,1952,light,2026-12-01,30.04719,-95.3823,0,1,20,Walmart Supercenter,3.12,The Woodlands,9.5
+674,3003 Athena Blvd,Spring,123500,226000,52000,1,0,8,3,1.0,1600,20,77373,1965,medium,2027-02-02,30.04971,-95.39542,1,0,80,Walmart Supercenter,2.33,The Woodlands,8.9
+675,3641 Aegean Trl,Spring,70500,193000,73500,1,0,6,3,2.0,1230,19,77373,1949,heavy,2027-02-02,30.0607,-95.38729,0,1,60,Walmart Supercenter,2.59,The Woodlands,8.5
+676,3405 Argos Way,Spring,160500,290000,59000,0,0,8,4,2.0,2360,19,77373,1961,medium,2026-12-01,30.06234,-95.38532,1,0,80,Walmart Supercenter,2.7,The Woodlands,8.5
+677,1682 Phaeacia Pkwy,Spring,76500,131000,8600,0,0,2,2,1.0,860,18,77373,2001,light,2026-12-01,30.06639,-95.38526,0,0,20,Walmart Supercenter,2.7,The Woodlands,8.2
+678,7110 Ithaca Ct,Spring,64000,153000,55500,0,0,8,2,1.0,1110,22,77373,1961,heavy,2026-12-01,30.04888,-95.37207,0,0,80,Walmart Supercenter,3.65,The Woodlands,9.7
+679,6145 Odyssey Ln,Spring,113000,203000,48200,0,1,4,3,1.0,1330,18,77373,1949,medium,2026-12-01,30.06395,-95.3887,0,1,40,Walmart Supercenter,2.49,The Woodlands,8.3
+680,1652 Laurel Bow Rd,Tomball,117000,334000,97000,0,0,6,3,2.0,1940,17,77375,2011,heavy,2027-02-02,30.10226,-95.56986,0,0,60,Walmart Supercenter,2.56,The Woodlands,7.8
+681,5590 Odyssey Ln,Tomball,205000,324000,73000,1,1,4,3,2.0,1840,21,77375,1965,medium,2027-02-02,30.07872,-95.58411,0,1,40,Costco,2.3,The Woodlands,9.5
+682,2132 Athena Blvd,Tomball,198500,306000,41800,0,0,7,3,1.5,1670,20,77375,1977,medium,2027-01-05,30.09481,-95.58911,1,0,70,Walmart Supercenter,2.5,The Woodlands,9.1
+683,9898 Aegean Trl,Tomball,281500,425000,23300,0,0,2,4,3.0,2330,19,77375,1958,light,2027-01-05,30.10231,-95.58404,0,1,20,Walmart Supercenter,3.04,The Woodlands,8.5
+684,5527 Mentor St,Tomball,151500,212000,25200,0,0,4,2,1.0,1010,20,77375,1953,medium,2027-02-02,30.0962,-95.58872,0,1,40,Walmart Supercenter,2.57,The Woodlands,9.0
+685,3107 Aegean Trl,Tomball,124000,234000,59500,0,0,9,2,1.5,1190,22,77375,1979,heavy,2026-12-01,30.07857,-95.58871,1,0,90,Costco,2.04,The Woodlands,9.7
+686,3448 Argos Way,Tomball,288000,361000,17700,0,0,1,4,2.5,1770,21,77375,1972,light,2027-01-05,30.08776,-95.58872,0,1,10,Walmart Supercenter,2.31,The Woodlands,9.3
+687,7444 Phaeacia Pkwy,Tomball,122500,311000,73500,0,0,10,3,1.5,1470,32,77377,1969,heavy,2027-01-05,30.05795,-95.66243,1,0,100,Walmart Supercenter,2.57,The Woodlands,14.1
+688,7997 Odyssey Ln,Tomball,156500,229000,10300,0,0,2,2,2.0,1030,31,77377,1998,light,2027-01-05,30.06625,-95.66122,0,0,20,Walmart Supercenter,2.28,The Woodlands,13.8
+689,6246 Calypso Cir,Tomball,246000,476000,62000,0,0,3,4,2.5,2480,33,77377,1986,medium,2026-12-01,30.04852,-95.66827,0,1,30,Costco,3.17,The Woodlands,14.8
+690,6231 Aegean Trl,Tomball,281500,360000,18800,0,0,4,3,2.0,1880,35,77377,2008,light,2027-01-05,30.05788,-95.69072,1,0,40,Walmart Supercenter,4.14,The Woodlands,15.6
+691,2139 Telemachus Ave,Tomball,324000,500000,26900,0,0,0,4,3.0,2690,31,77377,1995,light,2026-12-01,30.07621,-95.6731,0,1,0,Walmart Supercenter,2.89,The Woodlands,14.1
+692,1045 Phaeacia Pkwy,Tomball,154500,234000,26800,0,0,5,2,1.0,1070,32,77377,1980,medium,2027-01-05,30.05049,-95.66041,0,0,50,Costco,2.69,The Woodlands,14.3
+693,4381 Laurel Bow Rd,Tomball,229000,302000,14000,0,0,2,3,2.0,1400,35,77377,2009,light,2027-02-02,30.05099,-95.68549,0,0,20,Walmart Supercenter,4.02,The Woodlands,15.6
+694,1416 Calypso Cir,Spring,132500,177000,9800,0,0,4,2,2.0,980,23,77379,1968,light,2027-01-05,30.03006,-95.54091,0,0,40,Walmart Supercenter,3.43,The Woodlands,10.5
+695,1556 Ithaca Ct,Spring,112000,187000,38800,1,0,5,2,1.5,1070,23,77379,1980,medium,2027-01-05,30.03812,-95.54968,0,0,50,Walmart Supercenter,3.19,The Woodlands,10.3
+696,125 Ithaca Ct,Spring,161000,366000,99000,0,0,9,4,2.0,1980,22,77379,1974,heavy,2027-02-02,30.04646,-95.55263,1,0,90,Walmart Supercenter,3.2,The Woodlands,9.9
+697,1906 Aegean Trl,Spring,147000,282000,39500,0,0,5,3,2.0,1580,21,77379,1984,medium,2026-12-01,30.04266,-95.52625,0,0,50,Walmart Supercenter,2.53,The Woodlands,9.4
+698,1889 Phaeacia Pkwy,Spring,62500,166000,56000,1,0,7,2,1.0,880,21,77379,1971,heavy,2027-01-05,30.04932,-95.54132,0,0,70,Walmart Supercenter,2.58,The Woodlands,9.4
+699,4459 Odyssey Ln,Spring,99500,170000,9100,0,0,1,2,1.5,910,20,77379,1983,light,2026-12-01,30.0546,-95.53334,0,1,10,Walmart Supercenter,2.0,The Woodlands,8.8
+700,7136 Mentor St,Spring,116000,192000,28000,0,0,4,2,1.0,1120,23,77379,1948,medium,2027-01-05,30.03998,-95.54837,0,1,40,Walmart Supercenter,3.32,The Woodlands,10.1
+701,1741 Odyssey Ln,Spring,318000,612000,139000,1,0,5,4,2.5,2540,5,77380,1978,heavy,2027-02-02,30.13196,-95.45785,0,1,50,Walmart Supercenter,0.59,The Woodlands,2.3
+702,7885 Calypso Cir,Spring,199000,289000,59200,1,1,6,3,2.0,1290,6,77380,1951,medium,2026-12-01,30.12634,-95.455,0,0,60,Walmart Supercenter,0.25,The Woodlands,2.8
+703,7379 Argos Way,Spring,200500,304000,11800,0,0,5,2,1.5,1180,6,77380,1989,light,2027-01-05,30.12983,-95.45229,1,0,50,Walmart Supercenter,0.54,The Woodlands,2.5
+704,6405 Athena Blvd,Spring,197500,281000,30800,0,0,4,3,2.0,1230,3,77380,1992,medium,2027-02-02,30.1503,-95.4788,0,0,40,Walmart Supercenter,2.24,The Woodlands,1.5
+705,7748 Penelope Dr,Spring,203500,295000,11200,0,0,4,2,2.0,1120,2,77380,2012,light,2026-12-01,30.15283,-95.46879,1,0,40,Walmart Supercenter,2.13,The Woodlands,1.0
+706,578 Penelope Dr,Spring,210500,341000,17000,0,0,3,3,2.5,1700,4,77380,1978,light,2027-01-05,30.14262,-95.46863,0,0,30,Walmart Supercenter,1.48,The Woodlands,1.7
+707,8857 Phaeacia Pkwy,Spring,384000,603000,24800,0,0,3,4,3.0,2480,4,77380,1983,light,2026-12-01,30.14099,-95.46305,0,0,30,Walmart Supercenter,1.25,The Woodlands,1.7
+708,6352 Phaeacia Pkwy,Spring,358500,652000,102000,0,0,7,4,2.5,2040,7,77381,1976,heavy,2027-02-02,30.17496,-95.51458,0,0,70,Walmart Supercenter,3.48,The Woodlands,3.2
+709,3182 Olive Tree Ln,Spring,407500,673000,21500,0,0,5,4,3.0,2150,7,77381,1977,light,2027-02-02,30.17682,-95.50848,1,0,50,Walmart Supercenter,3.81,The Woodlands,2.9
+710,7041 Mentor St,Spring,224000,386000,14700,0,0,4,3,2.0,1470,8,77381,1996,light,2027-02-02,30.18442,-95.51456,1,0,40,Walmart Supercenter,4.02,The Woodlands,3.4
+711,5276 Penelope Dr,Spring,380000,611000,45800,0,0,6,4,3.0,1830,6,77381,2014,medium,2027-01-05,30.17813,-95.50403,1,0,60,Walmart Supercenter,4.05,The Woodlands,2.7
+712,5345 Athena Blvd,Spring,439500,684000,22100,0,0,2,4,2.5,2210,6,77381,2006,light,2027-02-02,30.19258,-95.49857,0,0,20,Walmart Supercenter,5.02,The Woodlands,2.9
+713,2601 Olive Tree Ln,Spring,149500,281000,32000,0,0,4,2,1.0,1280,6,77381,2009,medium,2027-02-02,30.17868,-95.50702,0,0,40,Walmart Supercenter,3.96,The Woodlands,2.9
+714,2708 Odyssey Ln,Spring,349000,631000,108500,1,0,8,4,2.5,1930,7,77381,1954,heavy,2027-01-05,30.1809,-95.51259,0,0,80,Walmart Supercenter,3.88,The Woodlands,3.2
+715,9078 Telemachus Ave,Spring,230000,401000,40800,0,0,2,3,1.0,1630,11,77382,1992,medium,2027-01-05,30.20005,-95.53212,0,1,20,Walmart Supercenter,3.42,The Woodlands,4.8
+716,4869 Penelope Dr,Spring,357500,671000,141500,1,1,6,4,2.0,2290,13,77382,1954,heavy,2027-02-02,30.19299,-95.55495,0,1,60,Walmart Supercenter,2.0,The Woodlands,5.9
+717,6269 Telemachus Ave,Spring,238500,348000,41500,1,0,8,2,1.5,1180,15,77382,1949,medium,2026-12-01,30.20484,-95.56177,1,0,80,Walmart Supercenter,1.89,The Woodlands,6.6
+718,9822 Telemachus Ave,Spring,217000,580000,117000,1,1,8,4,3.0,1800,14,77382,1993,heavy,2027-02-02,30.18502,-95.56404,1,0,80,Walmart Supercenter,1.48,The Woodlands,6.3
+719,1568 Aegean Trl,Spring,244000,366000,14000,0,0,2,3,2.5,1400,13,77382,1952,light,2027-02-02,30.19492,-95.55627,0,1,20,Walmart Supercenter,1.94,The Woodlands,6.0
+720,8451 Argos Way,Spring,258500,426000,18000,0,0,4,3,1.0,1800,14,77382,2004,light,2027-02-02,30.1892,-95.5602,1,0,40,Walmart Supercenter,1.67,The Woodlands,6.1
+721,4988 Laurel Bow Rd,Spring,328500,653000,54800,0,0,3,4,2.0,2190,15,77382,1983,medium,2027-01-05,30.19005,-95.56716,0,1,30,Walmart Supercenter,1.26,The Woodlands,6.5
+722,8784 Aegean Trl,Spring,180000,237000,12900,0,0,4,2,1.0,1290,18,77386,2016,light,2027-02-02,30.08763,-95.35989,1,0,40,Walmart Supercenter,2.46,The Woodlands,8.1
+723,187 Calypso Cir,Spring,119500,312000,118000,1,1,6,3,2.0,1820,16,77386,1963,heavy,2027-01-05,30.09481,-95.37406,0,1,60,Walmart Supercenter,1.56,The Woodlands,7.2
+724,4991 Mentor St,Spring,96500,193000,35000,1,0,5,2,2.0,920,17,77386,1974,medium,2026-12-01,30.10385,-95.35236,0,0,50,Walmart Supercenter,2.2,The Woodlands,7.8
+725,2391 Laurel Bow Rd,Spring,184000,312000,18200,0,0,4,3,2.0,1820,18,77386,1948,light,2027-01-05,30.09106,-95.3588,0,0,40,Walmart Supercenter,2.34,The Woodlands,8.0
+726,3626 Penelope Dr,Spring,204000,279000,15100,0,0,0,3,2.0,1510,17,77386,2016,light,2026-12-01,30.10236,-95.35349,0,1,0,Walmart Supercenter,2.17,The Woodlands,7.8
+727,7572 Ithaca Ct,Spring,120500,270000,71500,0,0,6,3,2.5,1430,18,77386,1964,heavy,2027-02-02,30.10753,-95.34263,0,1,60,Walmart Supercenter,2.69,The Woodlands,8.2
+728,6197 Laurel Bow Rd,Spring,157000,316000,46500,0,0,6,3,2.0,1860,19,77386,1966,medium,2027-02-02,30.10538,-95.34079,0,0,60,Walmart Supercenter,2.83,The Woodlands,8.3
+729,8807 Ithaca Ct,Spring,174000,260000,39500,0,0,6,3,2.0,1580,16,77388,1967,medium,2027-01-05,30.06084,-95.45596,0,0,60,Walmart Supercenter,1.56,The Woodlands,7.3
+730,6279 Argos Way,Spring,121500,217000,29500,0,0,6,2,1.0,1180,15,77388,1959,medium,2026-12-01,30.07018,-95.46529,0,0,60,Walmart Supercenter,2.12,The Woodlands,6.6
+731,9474 Athena Blvd,Spring,200000,290000,60800,0,1,5,4,2.5,1830,16,77388,1970,medium,2027-02-02,30.0588,-95.46083,0,0,50,Walmart Supercenter,1.87,The Woodlands,7.4
+732,8811 Calypso Cir,Spring,119500,181000,21800,0,0,8,2,1.5,870,17,77388,1969,medium,2027-01-05,30.05509,-95.48209,1,0,80,Walmart Supercenter,2.4,The Woodlands,7.7
+733,4480 Odyssey Ln,Spring,159500,230000,12800,0,0,5,3,2.5,1280,17,77388,1981,light,2027-02-02,30.05746,-95.46095,1,0,50,Walmart Supercenter,1.9,The Woodlands,7.5
+734,4799 Athena Blvd,Spring,199000,343000,72500,1,0,3,4,3.0,2420,18,77388,1979,medium,2027-02-02,30.05178,-95.46354,0,1,30,Walmart Supercenter,2.18,The Woodlands,7.9
+735,1402 Ithaca Ct,Spring,276000,359000,26000,0,0,1,4,3.0,2600,15,77388,1977,light,2026-12-01,30.07014,-95.45985,0,1,10,Walmart Supercenter,1.8,The Woodlands,6.6
+736,8434 Olive Tree Ln,Spring,121500,250000,56000,1,0,8,2,1.0,880,11,77389,1958,heavy,2027-01-05,30.10832,-95.508,0,0,80,Walmart Supercenter,2.16,The Woodlands,4.9
+737,8854 Olive Tree Ln,Spring,223000,386000,46000,0,0,4,3,2.0,1840,12,77389,2016,medium,2027-02-02,30.12012,-95.53399,0,0,40,Walmart Supercenter,1.4,The Woodlands,5.4
+738,1330 Mentor St,Spring,260500,366000,42200,0,0,6,3,2.0,1690,8,77389,1953,medium,2027-02-02,30.12543,-95.50269,0,0,60,Walmart Supercenter,2.69,The Woodlands,3.7
+739,2031 Athena Blvd,Spring,184000,298000,12000,0,0,0,3,1.5,1200,11,77389,2002,light,2027-01-05,30.13051,-95.5315,0,1,0,Walmart Supercenter,1.14,The Woodlands,4.9
+740,7686 Laurel Bow Rd,Spring,191500,296000,11500,0,0,2,3,2.0,1150,8,77389,1998,light,2026-12-01,30.13888,-95.51303,0,0,20,Walmart Supercenter,2.22,The Woodlands,3.6
+741,5908 Odyssey Ln,Spring,248500,378000,17800,0,0,4,3,1.0,1780,8,77389,2006,light,2027-01-05,30.12988,-95.4996,1,0,40,Walmart Supercenter,2.54,The Woodlands,3.4
+742,7811 Telemachus Ave,Spring,167000,289000,28000,0,0,2,2,1.0,1120,8,77389,2013,medium,2027-01-05,30.12346,-95.49943,0,1,20,Walmart Supercenter,2.49,The Woodlands,3.7
+743,7210 Odyssey Ln,Humble,107500,212000,33500,0,0,4,3,2.0,1340,31,77396,2016,medium,2027-02-02,29.93911,-95.25608,0,0,40,Walmart Supercenter,0.27,Downtown Houston,14.1
+744,7952 Phaeacia Pkwy,Humble,109500,164000,9500,0,0,3,2,2.0,950,32,77396,1984,light,2026-12-01,29.94555,-95.25487,0,0,30,Walmart Supercenter,0.64,Downtown Houston,14.5
+745,6470 Penelope Dr,Humble,159500,245000,42800,0,0,4,3,1.0,1710,29,77396,2011,medium,2026-12-01,29.92703,-95.26272,0,0,40,Walmart Supercenter,0.88,Downtown Houston,13.2
+746,9882 Olive Tree Ln,Humble,132000,273000,57800,1,0,4,4,2.0,1830,30,77396,1967,medium,2027-01-05,29.92904,-95.25468,0,1,40,Walmart Supercenter,0.53,Downtown Houston,13.5
+747,1984 Athena Blvd,Humble,94500,240000,82500,0,0,10,3,2.5,1650,33,77396,1958,heavy,2026-12-01,29.9434,-95.24815,1,0,100,Walmart Supercenter,0.55,Downtown Houston,14.6
+748,3191 Laurel Bow Rd,Humble,157000,235000,39800,0,0,7,3,2.0,1590,29,77396,1973,medium,2026-12-01,29.93197,-95.27352,1,0,70,Walmart Supercenter,1.28,Downtown Houston,13.2
+749,934 Telemachus Ave,Humble,164500,206000,12800,0,0,0,3,2.0,1280,34,77396,1999,light,2027-01-05,29.95484,-95.25398,0,1,0,Walmart Supercenter,1.27,Downtown Houston,15.1
+750,4696 Mentor St,Bellaire,419500,612000,13900,0,0,3,3,2.0,1390,7,77401,1976,light,2026-12-01,29.70286,-95.44994,0,0,30,Walmart Supercenter,1.66,Texas Medical Center,3.2
+751,1750 Telemachus Ave,Bellaire,331000,560000,12000,0,0,1,3,1.5,1200,10,77401,1971,light,2027-01-05,29.71405,-95.46839,0,1,10,Walmart Supercenter,0.65,Texas Medical Center,4.3
+752,6020 Olive Tree Ln,Bellaire,367500,630000,14600,0,0,4,3,2.0,1460,10,77401,1962,light,2027-02-02,29.70347,-95.47241,0,0,40,Walmart Supercenter,1.42,Texas Medical Center,4.6
+753,9710 Phaeacia Pkwy,Bellaire,406500,612000,13900,0,0,1,3,2.0,1390,7,77401,1983,light,2026-12-01,29.71492,-95.44907,0,1,10,Walmart Supercenter,1.11,Texas Medical Center,3.2
+754,8841 Olive Tree Ln,Bellaire,290500,574000,74500,1,0,10,3,1.5,1250,10,77401,1957,heavy,2026-12-01,29.70485,-95.47466,1,0,100,Walmart Supercenter,1.38,Texas Medical Center,4.7
+755,2023 Telemachus Ave,Bellaire,254500,465000,56500,0,0,5,2,1.0,1130,8,77401,1980,heavy,2027-01-05,29.69719,-95.4521,0,1,50,Walmart,1.44,Texas Medical Center,3.4
+756,3216 Olive Tree Ln,Bellaire,435500,680000,16600,0,0,2,3,2.0,1660,8,77401,1950,light,2027-01-05,29.7198,-95.45361,0,1,20,Walmart Supercenter,0.72,Texas Medical Center,3.5
+757,3115 Odyssey Ln,Richmond,251000,337000,16800,0,0,4,3,1.5,1680,28,77406,1957,light,2026-12-01,29.64461,-95.78197,0,0,40,Walmart Supercenter,3.17,Energy Corridor,12.8
+758,9146 Ithaca Ct,Richmond,201000,273000,11600,0,0,0,3,1.5,1160,31,77406,2013,light,2026-12-01,29.64397,-95.8036,0,1,0,Walmart Supercenter,3.63,Energy Corridor,13.7
+759,4179 Argos Way,Richmond,217500,308000,63200,1,1,4,3,2.0,1450,27,77406,1953,medium,2026-12-01,29.6615,-95.78858,0,1,40,Walmart Supercenter,2.15,Energy Corridor,12.2
+760,4931 Mentor St,Richmond,276500,351000,18000,0,0,0,3,2.5,1800,29,77406,1995,light,2027-02-02,29.65119,-95.79889,0,1,0,Walmart Supercenter,3.06,Energy Corridor,13.1
+761,9656 Ithaca Ct,Richmond,382500,483000,25400,0,0,4,4,3.0,2540,32,77406,1993,light,2027-02-02,29.62942,-95.79912,1,0,40,Walmart Supercenter,4.44,Energy Corridor,14.2
+762,9629 Phaeacia Pkwy,Richmond,180000,353000,103000,1,0,7,3,2.0,1820,29,77406,1980,heavy,2027-01-05,29.64513,-95.78519,0,0,70,Walmart Supercenter,3.17,Energy Corridor,12.9
+763,2985 Argos Way,Richmond,200000,257000,9700,0,0,4,2,1.5,970,28,77406,2003,light,2027-02-02,29.64903,-95.7867,1,0,40,Walmart Supercenter,2.93,Energy Corridor,12.7
+764,7086 Argos Way,Cypress,161500,233000,24800,0,0,6,2,1.0,990,33,77429,1950,medium,2027-02-02,29.99996,-95.65821,0,0,60,Walmart Supercenter,2.9,Energy Corridor,15.0
+765,1902 Odyssey Ln,Cypress,276500,371000,18000,0,0,4,4,3.0,1800,32,77429,2015,light,2027-02-02,29.99119,-95.66081,1,0,40,Walmart Supercenter,2.46,Energy Corridor,14.4
+766,1842 Calypso Cir,Cypress,204500,376000,46000,0,0,3,4,3.0,1840,35,77429,1979,medium,2027-01-05,30.01074,-95.66398,0,1,30,Walmart Supercenter,3.15,Energy Corridor,15.7
+767,4094 Odyssey Ln,Cypress,276500,370000,17900,0,0,3,4,2.5,1790,31,77429,1973,light,2027-01-05,29.98573,-95.66357,0,0,30,Walmart Supercenter,2.17,Energy Corridor,14.0
+768,2423 Odyssey Ln,Cypress,95000,271000,91000,1,1,10,3,2.5,1280,34,77429,1950,heavy,2026-12-01,30.00172,-95.67733,1,0,100,Walmart Supercenter,2.17,Energy Corridor,15.2
+769,1941 Aegean Trl,Cypress,166500,303000,50500,1,0,6,3,1.5,1540,33,77429,1966,medium,2026-12-01,29.99213,-95.68127,0,0,60,Walmart Supercenter,1.5,Energy Corridor,14.6
+770,2575 Penelope Dr,Cypress,190000,291000,14400,0,0,2,3,2.0,1440,33,77429,1993,light,2027-01-05,30.00016,-95.66346,0,0,20,Walmart Supercenter,2.66,Energy Corridor,15.0
+771,8279 Phaeacia Pkwy,Cypress,255000,351000,18400,0,0,2,3,2.0,1840,29,77433,2002,light,2027-01-05,29.95345,-95.73417,0,0,20,Costco,2.23,Energy Corridor,13.0
+772,7418 Olive Tree Ln,Cypress,288500,499000,136500,0,1,8,4,3.0,2430,28,77433,1957,heavy,2027-01-05,29.94929,-95.73522,0,0,80,Costco,2.51,Energy Corridor,12.7
+773,6408 Mentor St,Cypress,169000,419000,106000,0,1,8,4,2.0,1820,28,77433,2002,heavy,2027-01-05,29.9525,-95.72316,1,0,80,Costco,1.98,Energy Corridor,12.6
+774,8170 Calypso Cir,Cypress,251500,319000,15700,0,0,0,3,2.0,1570,27,77433,1990,light,2026-12-01,29.93279,-95.74495,0,1,0,Walmart Supercenter,1.75,Energy Corridor,12.0
+775,3430 Odyssey Ln,Cypress,255500,340000,17400,0,0,0,3,2.0,1740,27,77433,2001,light,2027-01-05,29.94198,-95.73684,0,1,0,Walmart Supercenter,2.16,Energy Corridor,12.3
+776,2461 Calypso Cir,Cypress,344000,524000,26400,0,0,4,4,3.0,2640,27,77433,1962,light,2027-01-05,29.94094,-95.72392,0,0,40,Walmart Supercenter,2.07,Energy Corridor,11.9
+777,7058 Mentor St,Cypress,105000,295000,81000,1,0,6,3,1.0,1380,29,77433,1955,heavy,2026-12-01,29.94036,-95.75758,0,1,60,Walmart Supercenter,2.63,Energy Corridor,12.8
+778,1362 Odyssey Ln,Hockley,155500,226000,30500,0,0,6,3,2.0,1220,49,77447,2009,medium,2027-01-05,30.06452,-95.819,1,0,60,Costco,8.67,Energy Corridor,22.1
+779,316 Athena Blvd,Hockley,129500,196000,23500,0,0,2,2,1.0,940,47,77447,2008,medium,2026-12-01,30.04946,-95.81379,0,1,20,Costco,7.76,Energy Corridor,21.0
+780,4327 Laurel Bow Rd,Hockley,141000,292000,58200,0,1,5,4,2.5,1730,47,77447,1970,medium,2027-02-02,30.03994,-95.83106,0,0,50,Costco,8.24,Energy Corridor,21.0
+781,3686 Telemachus Ave,Hockley,112500,236000,65500,0,0,5,3,1.5,1310,48,77447,1982,heavy,2027-02-02,30.04941,-95.83107,0,1,50,Costco,8.59,Energy Corridor,21.6
+782,2800 Odyssey Ln,Hockley,160500,349000,128000,1,0,10,4,3.0,2320,50,77447,1957,heavy,2027-02-02,30.06178,-95.83902,1,0,100,Costco,9.48,Energy Corridor,22.5
+783,1844 Ithaca Ct,Hockley,163500,248000,14300,0,0,2,3,1.5,1430,48,77447,1961,light,2026-12-01,30.05972,-95.81639,0,1,20,Costco,8.34,Energy Corridor,21.7
+784,9353 Odyssey Ln,Hockley,203500,321000,62500,1,0,7,4,2.5,2020,50,77447,1972,medium,2027-01-05,30.06421,-95.82631,1,0,70,Costco,8.99,Energy Corridor,22.3
+785,6500 Olive Tree Ln,Katy,57000,176000,65500,0,1,6,2,1.0,1010,14,77449,1959,heavy,2026-12-01,29.84001,-95.7224,0,1,60,Walmart Supercenter,1.47,Energy Corridor,6.2
+786,9720 Telemachus Ave,Katy,143500,218000,31200,0,0,6,3,2.0,1250,14,77449,1990,medium,2026-12-01,29.84546,-95.71971,1,0,60,Walmart Supercenter,1.07,Energy Corridor,6.3
+787,2407 Olive Tree Ln,Katy,160000,223000,13000,0,0,0,3,1.5,1300,15,77449,2007,light,2027-02-02,29.83291,-95.74276,0,1,0,Walmart Supercenter,1.78,Energy Corridor,6.9
+788,7159 Odyssey Ln,Katy,118500,280000,110000,0,1,4,3,2.5,1900,16,77449,2014,heavy,2027-02-02,29.84273,-95.74377,0,1,40,Walmart Supercenter,2.06,Energy Corridor,7.3
+789,5171 Calypso Cir,Katy,112000,229000,68000,0,0,6,3,2.5,1360,15,77449,1957,heavy,2026-12-01,29.8365,-95.73674,0,1,60,Walmart Supercenter,2.07,Energy Corridor,6.7
+790,1265 Penelope Dr,Katy,164000,254000,16200,0,0,5,3,2.0,1620,13,77449,1988,light,2027-01-05,29.8283,-95.72218,1,0,50,Walmart Supercenter,2.26,Energy Corridor,5.7
+791,6055 Athena Blvd,Katy,149500,255000,55800,0,1,5,3,2.0,1630,13,77449,1980,medium,2027-02-02,29.81919,-95.73285,0,0,50,Walmart Supercenter,2.08,Energy Corridor,6.0
+792,4406 Phaeacia Pkwy,Katy,292000,381000,18300,0,0,0,4,2.0,1830,15,77450,2004,light,2027-02-02,29.73381,-95.73677,0,1,0,Walmart Supercenter,3.78,Energy Corridor,6.7
+793,9441 Telemachus Ave,Katy,154500,251000,58200,1,1,7,2,2.0,1250,13,77450,1979,medium,2026-12-01,29.74416,-95.73158,1,0,70,Walmart Supercenter,3.16,Energy Corridor,6.0
+794,1875 Telemachus Ave,Katy,173500,293000,40500,0,0,6,3,2.0,1620,13,77450,1959,medium,2026-12-01,29.75061,-95.73016,0,0,60,Walmart Supercenter,2.71,Energy Corridor,5.8
+795,9030 Penelope Dr,Katy,176000,247000,12200,0,0,3,3,2.5,1220,14,77450,1988,light,2026-12-01,29.74253,-95.73425,0,0,30,Walmart Supercenter,3.31,Energy Corridor,6.2
+796,7856 Argos Way,Katy,153000,277000,101000,1,1,10,3,1.0,1480,16,77450,1952,heavy,2026-12-01,29.75202,-95.75361,1,0,100,Costco,2.69,Energy Corridor,7.0
+797,4987 Olive Tree Ln,Katy,322500,448000,24000,0,0,4,4,2.5,2400,14,77450,2002,light,2027-01-05,29.74438,-95.73319,1,0,40,Walmart Supercenter,3.17,Energy Corridor,6.1
+798,3353 Mentor St,Katy,187000,316000,18400,0,0,1,3,2.5,1840,12,77450,1981,light,2027-01-05,29.74321,-95.71734,0,1,10,Walmart Supercenter,3.19,Energy Corridor,5.3
+799,9883 Argos Way,Missouri City,153000,339000,108000,0,1,6,3,1.0,1860,36,77459,1968,heavy,2027-02-02,29.51176,-95.54057,0,1,60,Walmart Supercenter,2.24,Texas Medical Center,16.0
+800,7614 Penelope Dr,Missouri City,185500,274000,32500,0,0,5,3,2.0,1300,31,77459,1989,medium,2027-01-05,29.54122,-95.53228,0,0,50,Walmart Supercenter,0.99,Texas Medical Center,14.1
+801,9576 Ithaca Ct,Missouri City,175000,237000,12000,0,0,2,2,1.0,1200,36,77459,2000,light,2027-02-02,29.51569,-95.54763,0,0,20,Walmart Supercenter,2.36,Texas Medical Center,16.0
+802,335 Mentor St,Missouri City,258000,413000,53200,0,0,2,4,3.0,2130,34,77459,2017,medium,2026-12-01,29.52314,-95.5417,0,1,20,Walmart Supercenter,1.77,Texas Medical Center,15.4
+803,8987 Telemachus Ave,Missouri City,149500,293000,48500,1,0,4,3,2.0,1460,33,77459,2012,medium,2027-01-05,29.51972,-95.52348,0,0,40,Walmart Supercenter,1.24,Texas Medical Center,15.0
+804,7267 Phaeacia Pkwy,Missouri City,127000,205000,9400,0,0,0,2,1.0,940,33,77459,2006,light,2027-02-02,29.53244,-95.54401,0,1,0,Walmart Supercenter,1.67,Texas Medical Center,15.0
+805,6838 Ithaca Ct,Missouri City,263000,468000,143500,1,0,10,4,2.5,2630,35,77459,1960,heavy,2027-02-02,29.51595,-95.54455,1,0,100,Walmart Supercenter,2.21,Texas Medical Center,15.9
+806,9137 Telemachus Ave,Rosenberg,254500,336000,18000,0,0,2,4,2.0,1800,46,77469,2004,light,2027-01-05,29.49272,-95.71119,0,0,20,Walmart Supercenter,5.34,Energy Corridor,20.5
+807,3768 Calypso Cir,Rosenberg,277500,365000,20600,0,0,2,4,2.0,2060,46,77469,2007,light,2027-02-02,29.4903,-95.70089,0,0,20,Walmart Supercenter,5.83,Energy Corridor,20.6
+808,8602 Olive Tree Ln,Rosenberg,215500,276000,15700,0,0,5,3,2.0,1570,46,77469,1978,light,2027-01-05,29.49208,-95.70526,1,0,50,Walmart Supercenter,5.58,Energy Corridor,20.5
+809,9567 Telemachus Ave,Rosenberg,231000,291000,11400,0,0,4,2,1.0,1140,45,77469,2003,light,2027-02-02,29.49799,-95.71625,1,0,40,Walmart Supercenter,4.87,Energy Corridor,20.2
+810,2169 Calypso Cir,Rosenberg,172500,310000,62500,0,1,7,3,1.0,1900,46,77469,1970,medium,2027-02-02,29.4893,-95.71143,1,0,70,Walmart Supercenter,5.53,Energy Corridor,20.8
+811,289 Phaeacia Pkwy,Rosenberg,153000,416000,140000,1,0,9,4,3.0,2560,45,77469,1981,heavy,2026-12-01,29.49662,-95.70115,1,0,90,Walmart Supercenter,5.48,Energy Corridor,20.2
+812,5967 Penelope Dr,Rosenberg,104000,302000,72500,1,0,6,2,1.0,1210,47,77469,2017,heavy,2026-12-01,29.48536,-95.70006,0,0,60,Walmart Supercenter,6.14,Energy Corridor,20.9
+813,2455 Phaeacia Pkwy,Rosenberg,178000,264000,42500,0,0,3,3,1.0,1700,46,77471,1979,medium,2027-02-02,29.55195,-95.85978,0,1,30,Walmart Supercenter,6.0,Energy Corridor,20.7
+814,1367 Aegean Trl,Rosenberg,108000,302000,117500,1,1,8,4,3.0,1810,45,77471,2006,heavy,2026-12-01,29.55228,-95.85276,1,0,80,Walmart Supercenter,5.58,Energy Corridor,20.4
+815,7487 Penelope Dr,Rosenberg,154500,259000,56200,0,1,4,3,1.5,1650,46,77471,1950,medium,2026-12-01,29.55719,-95.87032,0,1,40,Walmart Supercenter,6.62,Energy Corridor,20.8
+816,8648 Olive Tree Ln,Rosenberg,233500,356000,23800,0,0,4,4,2.0,2380,45,77471,1952,light,2026-12-01,29.56198,-95.86155,0,0,40,Walmart Supercenter,6.11,Energy Corridor,20.2
+817,3654 Odyssey Ln,Rosenberg,99000,143000,8600,0,0,4,2,1.0,860,44,77471,2016,light,2026-12-01,29.56068,-95.84975,1,0,40,Walmart Supercenter,5.39,Energy Corridor,19.8
+818,8223 Telemachus Ave,Rosenberg,104000,175000,30000,0,0,4,2,1.5,1200,46,77471,1964,medium,2027-01-05,29.54497,-95.84777,0,1,40,Walmart Supercenter,5.34,Energy Corridor,20.6
+819,9726 Athena Blvd,Rosenberg,243000,317000,19600,0,0,3,4,2.0,1960,47,77471,1970,light,2026-12-01,29.55001,-95.86822,0,0,30,Walmart Supercenter,6.52,Energy Corridor,21.1
+820,7133 Argos Way,Stafford,199000,342000,55000,0,0,4,4,2.5,2200,28,77477,2003,medium,2027-01-05,29.61355,-95.57786,0,0,40,Costco Business Center,1.65,Energy Corridor,12.4
+821,8791 Mentor St,Stafford,258500,373000,63500,0,0,4,4,2.0,2540,27,77477,1956,medium,2026-12-01,29.61543,-95.57579,0,1,40,Costco Business Center,1.52,Energy Corridor,12.3
+822,5251 Ithaca Ct,Stafford,90500,160000,25500,0,0,6,2,1.0,1020,26,77477,2002,medium,2027-02-02,29.6145,-95.55633,1,0,60,Costco Business Center,1.99,Texas Medical Center,11.5
+823,8738 Argos Way,Stafford,107500,160000,25500,0,0,3,2,1.0,1020,27,77477,1975,medium,2027-01-05,29.61561,-95.57542,0,1,30,Costco Business Center,1.51,Energy Corridor,12.3
+824,913 Aegean Trl,Stafford,184000,290000,46000,0,0,4,3,2.0,1840,24,77477,1957,medium,2027-01-05,29.62929,-95.55091,0,1,40,Costco Business Center,1.63,Texas Medical Center,10.7
+825,9533 Odyssey Ln,Stafford,152000,233000,12800,0,0,0,3,2.5,1280,27,77477,2005,light,2027-01-05,29.61852,-95.57639,0,1,0,Costco Business Center,1.31,Energy Corridor,12.1
+826,1658 Telemachus Ave,Stafford,97500,164000,80000,1,1,10,2,2.0,1060,25,77477,1952,heavy,2027-01-05,29.63693,-95.56122,1,0,100,Walmart Supercenter,0.87,Texas Medical Center,11.0
+827,8182 Phaeacia Pkwy,Sugar Land,253500,338000,15000,0,0,0,3,2.5,1500,25,77478,1999,light,2026-12-01,29.62698,-95.60939,0,1,0,Costco Business Center,2.11,Energy Corridor,11.0
+828,7238 Argos Way,Sugar Land,304000,515000,26600,0,0,6,4,2.0,2660,27,77478,1961,light,2026-12-01,29.61503,-95.60247,1,0,60,Costco Business Center,2.2,Energy Corridor,11.9
+829,5085 Ithaca Ct,Sugar Land,206000,343000,76500,0,0,4,3,1.5,1530,25,77478,2016,heavy,2027-02-02,29.62935,-95.59692,0,1,40,Costco Business Center,1.36,Energy Corridor,11.0
+830,9670 Telemachus Ave,Sugar Land,241500,344000,38500,0,0,3,3,2.0,1540,25,77478,1982,medium,2027-02-02,29.6234,-95.59923,0,1,30,Costco Business Center,1.68,Energy Corridor,11.4
+831,4422 Athena Blvd,Sugar Land,180000,282000,28000,0,0,3,2,2.0,1120,26,77478,1978,medium,2027-01-05,29.61977,-95.59138,0,1,30,Costco Business Center,1.52,Energy Corridor,11.7
+832,6408 Argos Way,Sugar Land,162000,325000,35000,0,0,3,3,2.0,1400,28,77478,1974,medium,2027-01-05,29.60357,-95.60503,0,1,30,Walmart Supercenter,2.47,Energy Corridor,12.6
+833,1831 Penelope Dr,Sugar Land,241000,371000,17500,0,0,2,3,1.5,1750,25,77478,2015,light,2027-01-05,29.62564,-95.62152,0,0,20,Walmart Supercenter,1.62,Energy Corridor,11.0
+834,9557 Phaeacia Pkwy,Sugar Land,246500,369000,16100,0,0,4,3,1.0,1610,34,77479,2013,light,2027-01-05,29.56063,-95.64704,1,0,40,Costco,1.73,Energy Corridor,15.4
+835,7516 Mentor St,Sugar Land,465000,599000,24600,0,0,6,4,2.0,2460,34,77479,1962,light,2027-02-02,29.56349,-95.63793,1,0,60,Costco,1.55,Energy Corridor,15.2
+836,6367 Olive Tree Ln,Sugar Land,159000,230000,10700,0,0,1,2,2.0,1070,33,77479,1975,light,2026-12-01,29.57246,-95.62904,0,1,10,Costco,1.25,Energy Corridor,14.6
+837,1919 Argos Way,Sugar Land,220000,362000,39000,0,0,3,3,1.0,1560,35,77479,1970,medium,2026-12-01,29.55634,-95.64818,0,1,30,Costco,2.03,Energy Corridor,15.7
+838,3702 Olive Tree Ln,Sugar Land,184500,338000,34800,0,0,6,3,2.0,1390,35,77479,1956,medium,2027-02-02,29.55639,-95.62713,0,0,60,Costco,2.24,Energy Corridor,15.7
+839,1644 Penelope Dr,Sugar Land,141500,333000,68000,0,0,10,3,2.0,1360,34,77479,1969,heavy,2027-02-02,29.56368,-95.65042,1,0,100,Costco,1.56,Energy Corridor,15.2
+840,5542 Aegean Trl,Sugar Land,215500,409000,95500,0,0,9,3,1.0,1910,33,77479,1987,heavy,2026-12-01,29.57222,-95.62077,1,0,90,Costco,1.64,Energy Corridor,14.7
+841,5869 Aegean Trl,Missouri City,179500,226000,15900,0,0,0,3,2.0,1590,21,77489,1990,light,2027-01-05,29.61563,-95.51447,0,1,0,Costco Business Center,4.01,Texas Medical Center,9.5
+842,2501 Ithaca Ct,Missouri City,160500,275000,21800,0,0,2,4,2.0,2180,24,77489,1962,light,2027-02-02,29.59219,-95.51573,0,1,20,Walmart Supercenter,3.4,Texas Medical Center,10.7
+843,5567 Calypso Cir,Missouri City,92000,231000,94500,1,0,4,3,2.0,1650,23,77489,1992,heavy,2027-02-02,29.59928,-95.51368,0,1,40,Walmart Supercenter,3.72,Texas Medical Center,10.2
+844,8256 Odyssey Ln,Missouri City,103000,212000,47800,1,0,4,3,1.5,1430,21,77489,2014,medium,2027-02-02,29.60939,-95.50292,0,0,40,Walmart Supercenter,4.63,Texas Medical Center,9.3
+845,9027 Aegean Trl,Missouri City,135500,226000,15900,0,0,0,3,2.5,1590,22,77489,1994,light,2027-02-02,29.59964,-95.50904,0,1,0,Walmart Supercenter,3.98,Texas Medical Center,10.0
+846,8620 Olive Tree Ln,Missouri City,76000,174000,60000,0,0,6,2,1.0,1200,22,77489,1992,heavy,2027-02-02,29.60985,-95.5127,0,0,60,Walmart Supercenter,4.17,Texas Medical Center,9.7
+847,2510 Aegean Trl,Missouri City,135000,179000,12600,0,0,0,2,1.5,1260,23,77489,2006,light,2027-02-02,29.60192,-95.51634,0,1,0,Walmart Supercenter,3.68,Texas Medical Center,10.2
+848,9816 Ithaca Ct,Katy,208500,380000,73500,0,1,4,4,2.0,2340,27,77493,1968,medium,2027-01-05,29.85249,-95.82749,0,1,40,Walmart Supercenter,4.27,Energy Corridor,12.1
+849,9287 Penelope Dr,Katy,150000,246000,10300,0,0,4,2,2.0,1030,29,77493,1948,light,2027-02-02,29.86512,-95.83512,0,0,40,Walmart Supercenter,5.15,Energy Corridor,12.9
+850,6428 Telemachus Ave,Katy,223500,319000,59500,1,0,3,3,2.0,1900,25,77493,1973,medium,2026-12-01,29.85335,-95.81209,0,1,30,Walmart Supercenter,3.57,Energy Corridor,11.3
+851,3368 Athena Blvd,Katy,213000,408000,66000,0,0,5,4,2.0,2640,26,77493,1986,medium,2027-02-02,29.86322,-95.81766,0,0,50,Walmart Supercenter,4.29,Energy Corridor,11.9
+852,1673 Penelope Dr,Katy,170500,243000,37200,1,0,4,2,1.5,1010,30,77493,1958,medium,2027-02-02,29.86095,-95.84679,0,1,40,Walmart Supercenter,5.56,Energy Corridor,13.4
+853,6996 Ithaca Ct,Katy,183000,314000,46200,0,0,2,3,2.0,1850,27,77493,1993,medium,2027-02-02,29.85052,-95.83266,0,1,20,Walmart Supercenter,4.47,Energy Corridor,12.3
+854,6533 Penelope Dr,Katy,225000,395000,62500,0,0,5,4,2.0,2500,28,77493,1979,medium,2026-12-01,29.8686,-95.82526,0,0,50,Walmart Supercenter,4.87,Energy Corridor,12.4
+855,5563 Laurel Bow Rd,Katy,238500,403000,19300,0,0,4,3,1.0,1930,26,77494,2014,light,2027-01-05,29.73533,-95.83029,1,0,40,Walmart Supercenter,2.66,Energy Corridor,11.8
+856,8558 Penelope Dr,Katy,140500,394000,120000,1,1,4,3,2.0,1860,26,77494,1990,heavy,2027-01-05,29.74025,-95.83172,0,1,40,Walmart Supercenter,2.97,Energy Corridor,11.8
+857,1979 Ithaca Ct,Katy,199000,359000,30000,0,0,4,2,1.0,1200,26,77494,1967,medium,2027-02-02,29.74004,-95.82843,0,1,40,Walmart Supercenter,3.0,Energy Corridor,11.6
+858,2095 Athena Blvd,Katy,298500,495000,22300,0,0,6,4,2.0,2230,23,77494,1960,light,2026-12-01,29.73509,-95.8065,1,0,60,Walmart Supercenter,3.32,Energy Corridor,10.4
+859,454 Penelope Dr,Katy,384500,538000,25600,0,0,2,4,2.0,2560,23,77494,2017,light,2027-02-02,29.74836,-95.80995,0,0,20,Walmart Supercenter,2.45,Energy Corridor,10.4
+860,8176 Mentor St,Katy,196000,321000,45000,1,0,2,3,2.0,1320,24,77494,2013,medium,2027-01-05,29.7584,-95.8197,0,1,20,Walmart Supercenter,1.97,Energy Corridor,10.8
+861,280 Laurel Bow Rd,Katy,210000,312000,12600,0,0,4,3,2.0,1260,25,77494,2007,light,2027-02-02,29.73384,-95.82085,1,0,40,Walmart Supercenter,2.77,Energy Corridor,11.3
+862,2693 Mentor St,Sugar Land,228500,293000,18200,0,0,0,3,2.0,1820,22,77498,2004,light,2027-02-02,29.63849,-95.63901,0,1,0,Walmart Supercenter,1.76,Energy Corridor,10.0
+863,2394 Athena Blvd,Sugar Land,177000,298000,18700,0,0,0,3,2.0,1870,23,77498,2015,light,2027-02-02,29.63313,-95.64141,0,1,0,Walmart Supercenter,1.37,Energy Corridor,10.4
+864,8406 Phaeacia Pkwy,Sugar Land,136500,266000,92500,0,1,6,3,2.0,1550,24,77498,1956,heavy,2026-12-01,29.62844,-95.66325,0,1,60,Walmart Supercenter,1.52,Energy Corridor,10.8
+865,3896 Ithaca Ct,Sugar Land,194000,286000,55800,1,0,6,3,2.0,1750,22,77498,1992,medium,2027-01-05,29.64065,-95.6592,1,0,60,Walmart Supercenter,2.07,Energy Corridor,9.9
+866,2950 Olive Tree Ln,Sugar Land,264000,369000,54800,0,0,5,4,3.0,2190,21,77498,1989,medium,2027-01-05,29.64781,-95.66151,0,0,50,Walmart Supercenter,2.58,Energy Corridor,9.5
+867,582 Penelope Dr,Sugar Land,248500,324000,17600,0,0,5,4,2.0,1760,24,77498,1980,light,2027-02-02,29.62906,-95.66663,1,0,50,Walmart Supercenter,1.71,Energy Corridor,10.8
+868,8759 Argos Way,Sugar Land,164000,238000,12900,0,0,1,3,1.0,1290,24,77498,1973,light,2026-12-01,29.62726,-95.64884,0,1,10,Walmart Supercenter,0.98,Energy Corridor,10.8
+869,1279 Mentor St,Pasadena,167000,220000,18300,0,0,2,3,1.5,1830,26,77502,1960,light,2027-02-02,29.66922,-95.20328,0,1,20,Walmart Supercenter,1.73,Downtown Houston,11.8
+870,9253 Penelope Dr,Pasadena,198500,260000,24400,0,0,0,4,3.0,2440,26,77502,2015,light,2027-01-05,29.67226,-95.20764,0,1,0,Walmart Supercenter,1.48,Downtown Houston,11.5
+871,469 Argos Way,Pasadena,101000,198000,38500,0,0,4,3,2.0,1540,26,77502,1957,medium,2027-01-05,29.6915,-95.1951,0,1,40,Walmart Supercenter,0.93,Downtown Houston,11.5
+872,8582 Laurel Bow Rd,Pasadena,113000,228000,49000,0,0,4,4,2.5,1960,26,77502,1997,medium,2027-01-05,29.67562,-95.20209,0,0,40,Walmart Supercenter,1.33,Downtown Houston,11.6
+873,3385 Mentor St,Pasadena,148500,211000,42800,0,0,6,3,2.5,1710,26,77502,1962,medium,2026-12-01,29.6771,-95.19789,0,0,60,Walmart Supercenter,1.36,Downtown Houston,11.8
+874,679 Mentor St,Pasadena,84000,162000,83500,1,1,4,2,2.0,1130,25,77502,1990,heavy,2027-01-05,29.6843,-95.20133,0,1,40,Walmart Supercenter,0.84,Downtown Houston,11.4
+875,8236 Calypso Cir,Pasadena,100000,216000,101000,1,0,10,3,1.5,1780,26,77502,1958,heavy,2027-01-05,29.69159,-95.18924,1,0,100,Walmart Supercenter,1.28,Downtown Houston,11.8
+876,396 Calypso Cir,Pasadena,115500,195000,14600,0,0,3,3,2.0,1460,29,77503,1977,light,2027-01-05,29.69872,-95.16829,0,0,30,Walmart Supercenter,2.55,Downtown Houston,12.8
+877,6124 Mentor St,Pasadena,146000,251000,60200,0,0,8,4,2.0,2410,29,77503,1964,medium,2027-01-05,29.69978,-95.16501,1,0,80,Walmart Supercenter,2.76,Downtown Houston,13.0
+878,850 Odyssey Ln,Pasadena,128000,220000,19400,0,0,3,4,3.0,1940,31,77503,1977,light,2026-12-01,29.67537,-95.16109,0,0,30,Walmart Supercenter,1.99,Downtown Houston,13.8
+879,4101 Athena Blvd,Pasadena,129500,209000,17800,0,0,6,4,2.0,1780,30,77503,1955,light,2027-01-05,29.68483,-95.16683,1,0,60,Walmart Supercenter,2.66,Downtown Houston,13.3
+880,3709 Aegean Trl,Pasadena,141500,180000,12800,0,0,4,3,2.0,1280,28,77503,1957,light,2027-01-05,29.70315,-95.16786,0,0,40,Walmart Supercenter,2.64,Downtown Houston,12.7
+881,8066 Athena Blvd,Pasadena,122000,224000,50000,0,0,3,4,2.0,2000,30,77503,1979,medium,2026-12-01,29.69387,-95.15976,0,1,30,Walmart Supercenter,3.04,Downtown Houston,13.4
+882,687 Argos Way,Pasadena,168500,240000,22300,0,0,5,4,2.5,2230,28,77503,1977,light,2027-02-02,29.69409,-95.17359,1,0,50,Walmart Supercenter,2.21,Downtown Houston,12.6
+883,1078 Athena Blvd,Pasadena,290500,380000,26800,0,0,2,4,3.0,2680,28,77504,1962,light,2027-01-05,29.65722,-95.19217,0,1,20,Walmart Supercenter,1.99,Texas Medical Center,12.8
+884,612 Calypso Cir,Pasadena,156500,249000,15400,0,0,2,3,2.0,1540,28,77504,1997,light,2026-12-01,29.64114,-95.20213,0,0,20,Walmart Supercenter,2.25,Texas Medical Center,12.5
+885,7211 Telemachus Ave,Pasadena,214500,362000,123500,0,0,4,4,3.0,2470,31,77504,1991,heavy,2027-02-02,29.63973,-95.17513,0,1,40,Walmart Supercenter,0.95,Texas Medical Center,14.1
+886,7044 Laurel Bow Rd,Pasadena,260000,367000,63200,0,0,4,4,3.0,2530,30,77504,1961,medium,2027-02-02,29.63102,-95.1941,0,1,40,Walmart Supercenter,2.24,Texas Medical Center,13.3
+887,4595 Ithaca Ct,Pasadena,175000,249000,38500,0,0,6,3,2.5,1540,29,77504,2007,medium,2027-02-02,29.64857,-95.19213,1,0,60,Walmart Supercenter,1.85,Texas Medical Center,12.9
+888,302 Ithaca Ct,Pasadena,171000,267000,17300,0,0,0,3,2.0,1730,27,77504,1998,light,2027-02-02,29.64981,-95.2058,0,1,0,Walmart Supercenter,2.32,Texas Medical Center,12.1
+889,9219 Argos Way,Pasadena,114500,237000,47500,1,0,7,3,2.0,1420,30,77504,1970,medium,2027-02-02,29.6458,-95.18679,1,0,70,Walmart Supercenter,1.53,Texas Medical Center,13.3
+890,8208 Penelope Dr,Pasadena,211000,355000,19800,0,0,4,4,2.0,1980,37,77505,2018,light,2026-12-01,29.64585,-95.12422,1,0,40,Walmart Supercenter,2.06,Downtown Houston,16.7
+891,5299 Odyssey Ln,Pasadena,173000,239000,11700,0,0,6,2,1.5,1170,36,77505,1954,light,2026-12-01,29.63682,-95.13628,1,0,60,Walmart Supercenter,1.65,Texas Medical Center,16.4
+892,3945 Mentor St,Pasadena,79500,245000,76000,0,1,7,2,1.0,1220,35,77505,1981,heavy,2027-02-02,29.66062,-95.13742,0,0,70,Walmart Supercenter,1.74,Downtown Houston,15.6
+893,4738 Penelope Dr,Pasadena,187000,287000,16700,0,0,4,3,1.0,1670,34,77505,1957,light,2027-02-02,29.64129,-95.15154,0,0,40,Walmart Supercenter,0.7,Texas Medical Center,15.4
+894,4865 Penelope Dr,Pasadena,205500,361000,51000,0,0,2,4,3.0,2040,36,77505,2000,medium,2026-12-01,29.64626,-95.1389,0,1,20,Walmart Supercenter,1.35,Downtown Houston,15.9
+895,9646 Odyssey Ln,Pasadena,141500,212000,24000,0,0,3,2,1.5,960,36,77505,1988,medium,2026-12-01,29.65057,-95.13005,0,1,30,Walmart Supercenter,1.9,Downtown Houston,16.3
+896,6949 Calypso Cir,Pasadena,183000,301000,105500,0,1,6,3,2.0,1810,34,77505,1958,heavy,2027-02-02,29.63647,-95.1561,0,1,60,Walmart Supercenter,0.77,Texas Medical Center,15.2
+897,5485 Argos Way,Pasadena,127000,210000,70000,1,0,2,4,3.0,2320,23,77506,2008,medium,2027-01-05,29.72957,-95.19918,0,1,20,Walmart Supercenter,2.58,Downtown Houston,10.5
+898,1352 Mentor St,Pasadena,74000,163000,88500,0,1,6,3,2.0,1470,25,77506,1962,heavy,2027-02-02,29.71383,-95.19322,0,1,60,Walmart Supercenter,1.74,Downtown Houston,11.1
+899,6778 Phaeacia Pkwy,Pasadena,115500,170000,39500,0,0,7,3,2.0,1580,23,77506,1977,medium,2026-12-01,29.7205,-95.20561,1,0,70,Walmart Supercenter,1.89,Downtown Houston,10.2
+900,3345 Penelope Dr,Pasadena,96500,161000,14400,0,0,2,3,2.5,1440,24,77506,1991,light,2026-12-01,29.70951,-95.20238,0,0,20,Walmart Supercenter,1.2,Downtown Houston,10.6
+901,492 Olive Tree Ln,Pasadena,84500,130000,26500,0,0,3,2,1.0,1060,22,77506,1981,medium,2026-12-01,29.72654,-95.20727,0,1,30,Walmart Supercenter,2.29,Downtown Houston,10.0
+902,2050 Mentor St,Pasadena,86500,146000,64500,0,0,4,2,2.0,1290,23,77506,2015,heavy,2027-01-05,29.71532,-95.20565,0,1,40,Walmart Supercenter,1.53,Downtown Houston,10.3
+903,7468 Olive Tree Ln,Pasadena,61000,183000,104000,0,1,6,3,2.0,1780,26,77506,1961,heavy,2027-01-05,29.70859,-95.18386,0,1,60,Walmart Supercenter,1.9,Downtown Houston,11.7
+904,227 Laurel Bow Rd,Bacliff,157000,292000,133000,1,0,8,4,2.5,2420,64,77518,1965,heavy,2027-02-02,29.51234,-94.97506,0,0,80,Walmart Supercenter,3.03,Texas Medical Center,28.7
+905,5688 Odyssey Ln,Bacliff,138000,229000,38500,0,0,5,3,2.0,1540,64,77518,1989,medium,2027-02-02,29.5036,-94.98076,0,0,50,Walmart Supercenter,3.12,Texas Medical Center,28.7
+906,3551 Telemachus Ave,Bacliff,151500,233000,15900,0,0,5,3,2.0,1590,62,77518,1984,light,2027-02-02,29.50776,-94.99367,1,0,50,Walmart Supercenter,2.38,Texas Medical Center,27.9
+907,4350 Laurel Bow Rd,Bacliff,136000,262000,50500,0,0,4,4,3.0,2020,64,77518,1960,medium,2026-12-01,29.50918,-94.97845,0,1,40,Walmart Supercenter,2.98,Texas Medical Center,28.6
+908,8944 Calypso Cir,Bacliff,157500,206000,12900,0,0,2,3,2.0,1290,61,77518,1960,light,2026-12-01,29.52118,-94.99145,0,1,20,Walmart Supercenter,1.87,Texas Medical Center,27.5
+909,4932 Ithaca Ct,Bacliff,153500,195000,11800,0,0,2,3,2.0,1180,61,77518,1995,light,2026-12-01,29.5113,-94.9993,0,0,20,Walmart Supercenter,1.98,Texas Medical Center,27.4
+910,1395 Olive Tree Ln,Bacliff,179500,233000,15900,0,0,2,3,2.0,1590,64,77518,2011,light,2027-02-02,29.50158,-94.98129,0,0,20,Walmart Supercenter,3.2,Texas Medical Center,28.7
+911,728 Telemachus Ave,Baytown,72500,107000,9300,0,0,2,2,1.0,930,49,77520,2012,light,2027-02-02,29.73492,-95.00589,0,0,20,Walmart Supercenter,3.42,Downtown Houston,21.9
+912,2342 Laurel Bow Rd,Baytown,124000,239000,113000,1,0,5,4,2.0,2020,49,77520,1972,heavy,2026-12-01,29.75055,-95.00005,0,1,50,Walmart Supercenter,2.35,Downtown Houston,22.2
+913,8559 Olive Tree Ln,Baytown,130500,172000,14200,0,0,0,3,2.0,1420,49,77520,2008,light,2026-12-01,29.74223,-95.00712,0,1,0,Walmart Supercenter,3.06,Downtown Houston,21.8
+914,5813 Aegean Trl,Baytown,92000,188000,41200,0,0,5,3,2.0,1650,52,77520,1974,medium,2026-12-01,29.73804,-94.98501,0,0,50,Walmart Supercenter,2.71,Downtown Houston,23.1
+915,4940 Ithaca Ct,Baytown,143000,275000,128000,0,0,7,4,2.0,2560,49,77520,1977,heavy,2027-01-05,29.72377,-95.00502,0,0,70,Walmart Supercenter,4.06,Downtown Houston,22.0
+916,5794 Olive Tree Ln,Baytown,124500,185000,16100,0,0,5,3,2.0,1610,47,77520,1989,light,2026-12-01,29.72766,-95.01742,1,0,50,Walmart Supercenter,4.23,Downtown Houston,21.3
+917,6801 Odyssey Ln,Baytown,162000,251000,67000,1,0,6,4,2.5,2200,51,77520,2010,medium,2027-01-05,29.73867,-94.99073,1,0,60,Walmart Supercenter,2.77,Downtown Houston,22.8
+918,5667 Phaeacia Pkwy,Baytown,151000,223000,14800,0,0,2,3,2.0,1480,54,77521,2000,light,2027-01-05,29.81069,-94.97359,0,0,20,Walmart Supercenter,2.38,Downtown Houston,24.0
+919,2217 Laurel Bow Rd,Baytown,143000,214000,34500,0,0,8,3,2.0,1380,53,77521,1969,medium,2027-02-02,29.79879,-94.97595,1,0,80,Walmart Supercenter,1.56,Downtown Houston,23.8
+920,3548 Mentor St,Baytown,68500,163000,64000,1,0,8,2,1.5,1040,55,77521,1959,heavy,2026-12-01,29.8161,-94.96177,0,0,80,Walmart Supercenter,2.86,Downtown Houston,24.8
+921,323 Odyssey Ln,Baytown,171500,279000,21000,0,0,1,4,3.0,2100,57,77521,1977,light,2027-02-02,29.81203,-94.9484,0,1,10,Walmart Supercenter,2.93,Downtown Houston,25.5
+922,653 Athena Blvd,Baytown,105500,164000,10500,0,0,4,2,2.0,1050,53,77521,2010,light,2027-01-05,29.80668,-94.97804,1,0,40,Walmart Supercenter,2.12,Downtown Houston,23.7
+923,8975 Laurel Bow Rd,Baytown,70500,205000,79000,0,1,7,3,2.5,1280,56,77521,1982,heavy,2026-12-01,29.82669,-94.96114,0,0,70,Walmart Supercenter,3.58,Downtown Houston,24.9
+924,7618 Argos Way,Baytown,133000,230000,92500,0,1,5,3,1.0,1550,57,77521,1972,heavy,2027-02-02,29.8071,-94.94694,0,1,50,Walmart Supercenter,2.7,Downtown Houston,25.6
+925,8400 Argos Way,Channelview,106000,199000,65500,1,1,3,3,2.0,1540,33,77530,1985,medium,2027-01-05,29.78665,-95.12421,0,1,30,Walmart Supercenter,2.79,Downtown Houston,14.8
+926,7911 Laurel Bow Rd,Channelview,116500,198000,38200,0,0,2,3,1.0,1530,35,77530,2017,medium,2027-01-05,29.77492,-95.10824,0,1,20,Walmart Supercenter,4.03,Downtown Houston,15.7
+927,7858 Calypso Cir,Channelview,134500,218000,18000,0,0,2,3,2.0,1800,36,77530,1958,light,2027-02-02,29.79484,-95.10621,0,1,20,Walmart Supercenter,3.61,Downtown Houston,16.0
+928,6760 Odyssey Ln,Channelview,142000,219000,17600,0,0,0,4,2.0,1760,34,77530,2011,light,2026-12-01,29.78031,-95.11852,0,1,0,Walmart Supercenter,3.31,Downtown Houston,15.1
+929,1434 Ithaca Ct,Channelview,176000,271000,25100,0,0,0,4,2.0,2510,34,77530,2010,light,2026-12-01,29.77477,-95.11551,0,1,0,Walmart Supercenter,3.67,Downtown Houston,15.3
+930,739 Telemachus Ave,Channelview,169000,227000,19200,0,0,6,3,2.0,1920,34,77530,1949,light,2027-02-02,29.80068,-95.11631,1,0,60,Walmart Supercenter,2.95,Downtown Houston,15.5
+931,4541 Calypso Cir,Channelview,121000,250000,122000,1,0,6,4,2.0,2200,36,77530,1965,heavy,2027-01-05,29.78621,-95.10127,0,1,60,Walmart Supercenter,4.06,Downtown Houston,16.2
+932,7835 Aegean Trl,Crosby,143500,223000,45000,1,0,6,3,1.5,1320,48,77532,1966,medium,2027-01-05,29.9245,-95.06468,0,0,60,Walmart Supercenter,2.08,Downtown Houston,21.5
+933,191 Athena Blvd,Crosby,233500,317000,24400,0,0,2,4,3.0,2440,49,77532,1965,light,2026-12-01,29.92566,-95.05565,0,1,20,Walmart Supercenter,2.24,Downtown Houston,22.0
+934,3803 Mentor St,Crosby,154500,260000,17000,0,0,0,3,2.0,1700,48,77532,2006,light,2026-12-01,29.9233,-95.06153,0,1,0,Walmart Supercenter,2.01,Downtown Houston,21.6
+935,9809 Penelope Dr,Crosby,187000,250000,15900,0,0,1,3,1.0,1590,52,77532,1987,light,2026-12-01,29.93698,-95.04185,0,1,10,Walmart Supercenter,3.27,Downtown Houston,23.1
+936,4642 Olive Tree Ln,Crosby,162000,233000,14200,0,0,2,3,2.5,1420,49,77532,1961,light,2027-02-02,29.94088,-95.06934,0,1,20,Walmart Supercenter,3.22,Downtown Houston,21.9
+937,7890 Odyssey Ln,Crosby,172500,273000,19100,0,0,4,4,2.0,1910,52,77532,1969,light,2026-12-01,29.94137,-95.04489,0,0,40,Walmart Supercenter,3.48,Downtown Houston,23.1
+938,6416 Olive Tree Ln,Crosby,121000,177000,12600,0,0,2,2,1.0,1260,50,77532,2004,light,2027-01-05,29.92621,-95.0511,0,0,20,Walmart Supercenter,2.37,Downtown Houston,22.3
+939,2441 Telemachus Ave,Dayton,264000,370000,20200,0,0,0,4,2.5,2020,76,77535,2015,light,2027-01-05,30.05244,-94.90656,0,1,0,Walmart Supercenter,14.49,The Woodlands,34.1
+940,5768 Olive Tree Ln,Dayton,160500,275000,47200,1,0,4,3,2.0,1410,74,77535,1963,medium,2027-02-02,30.04457,-94.91975,0,1,40,Walmart Supercenter,13.56,Downtown Houston,33.3
+941,9704 Athena Blvd,Dayton,209500,267000,13400,0,0,0,3,2.0,1340,75,77535,1996,light,2027-01-05,30.05839,-94.91096,0,1,0,Walmart Supercenter,14.63,The Woodlands,33.7
+942,4245 Athena Blvd,Dayton,191000,391000,55200,0,0,4,4,2.5,2210,73,77535,1949,medium,2027-02-02,30.05362,-94.92628,0,1,40,Walmart Supercenter,13.81,The Woodlands,32.9
+943,1802 Odyssey Ln,Dayton,218500,429000,156000,1,1,4,4,2.0,2580,71,77535,2008,heavy,2027-02-02,30.0549,-94.94111,0,1,40,Walmart Supercenter,13.36,The Woodlands,32.0
+944,1121 Mentor St,Dayton,126500,352000,120000,1,1,7,4,2.0,1860,73,77535,1970,heavy,2027-02-02,30.05217,-94.92593,0,0,70,Walmart Supercenter,13.74,The Woodlands,32.9
+945,6100 Calypso Cir,Dayton,172000,268000,45800,1,0,6,3,1.0,1350,73,77535,1950,medium,2027-02-02,30.06197,-94.92303,0,0,60,Walmart Supercenter,14.39,The Woodlands,33.0
+946,4614 Laurel Bow Rd,Deer Park,221000,290000,18300,0,0,4,3,1.5,1830,36,77536,1955,light,2027-02-02,29.68693,-95.11451,0,0,40,Walmart Supercenter,1.63,Downtown Houston,16.1
+947,1510 Laurel Bow Rd,Deer Park,176500,287000,45000,0,0,8,3,2.5,1800,34,77536,1948,medium,2026-12-01,29.69777,-95.12825,1,0,80,Walmart Supercenter,2.72,Downtown Houston,15.1
+948,3663 Phaeacia Pkwy,Deer Park,81500,155000,34500,1,0,5,2,1.0,900,33,77536,1971,medium,2026-12-01,29.69533,-95.13354,0,0,50,Walmart Supercenter,2.81,Downtown Houston,14.9
+949,5187 Odyssey Ln,Deer Park,276000,378000,26600,0,0,3,4,2.0,2660,33,77536,1979,light,2027-01-05,29.69054,-95.13379,0,0,30,Walmart Supercenter,2.61,Downtown Houston,15.0
+950,7302 Athena Blvd,Deer Park,107000,157000,38000,0,1,3,2,1.0,920,38,77536,1988,medium,2027-01-05,29.69065,-95.09675,0,1,30,Walmart Supercenter,1.65,Downtown Houston,17.1
+951,8913 Laurel Bow Rd,Deer Park,186000,259000,15100,0,0,0,3,1.5,1510,38,77536,2014,light,2027-02-02,29.6797,-95.10449,0,1,0,Walmart Supercenter,0.92,Downtown Houston,16.9
+952,3552 Athena Blvd,Deer Park,211500,288000,18100,0,0,3,3,1.5,1810,36,77536,1984,light,2027-01-05,29.70471,-95.1069,0,0,30,Walmart Supercenter,2.64,Downtown Houston,16.2
+953,6291 Phaeacia Pkwy,Dickinson,88500,169000,22800,0,0,6,2,1.5,910,65,77539,2014,medium,2026-12-01,29.44374,-95.01747,1,0,60,Walmart Supercenter,3.12,Texas Medical Center,29.2
+954,5965 Athena Blvd,Dickinson,76500,238000,75000,1,0,4,3,1.5,1260,63,77539,1993,heavy,2027-02-02,29.46431,-95.019,0,1,40,Walmart Supercenter,4.28,Texas Medical Center,28.2
+955,4238 Olive Tree Ln,Dickinson,96500,164000,33500,1,0,2,2,1.0,860,61,77539,2004,medium,2027-01-05,29.45854,-95.03937,0,1,20,Walmart Supercenter,3.14,Texas Medical Center,27.5
+956,7077 Athena Blvd,Dickinson,212000,270000,15600,0,0,3,3,2.5,1560,63,77539,1986,light,2027-01-05,29.46604,-95.01641,0,0,30,Walmart Supercenter,4.42,Texas Medical Center,28.3
+957,9405 Penelope Dr,Dickinson,157500,244000,13200,0,0,2,3,1.0,1320,61,77539,2013,light,2027-01-05,29.46501,-95.03281,0,0,20,Walmart Supercenter,3.44,Texas Medical Center,27.5
+958,2516 Argos Way,Dickinson,198500,299000,44000,0,0,4,4,3.0,1760,62,77539,1959,medium,2027-01-05,29.46007,-95.02843,0,1,40,Walmart Supercenter,3.75,Texas Medical Center,28.0
+959,181 Aegean Trl,Dickinson,111500,247000,79000,1,0,5,3,1.5,1340,61,77539,1978,heavy,2026-12-01,29.45507,-95.04316,0,1,50,Walmart Supercenter,2.99,Texas Medical Center,27.5
+960,1669 Telemachus Ave,Fresno,198000,283000,46200,0,0,4,3,1.0,1850,29,77545,1998,medium,2026-12-01,29.53852,-95.48978,0,0,40,Walmart Supercenter,1.62,Texas Medical Center,12.9
+961,9708 Odyssey Ln,Fresno,133500,248000,86000,1,0,5,3,1.5,1480,29,77545,1984,heavy,2027-02-02,29.53268,-95.47265,0,1,50,Walmart Supercenter,2.66,Texas Medical Center,12.9
+962,1365 Phaeacia Pkwy,Fresno,114500,166000,9700,0,0,4,2,1.0,970,29,77545,1995,light,2027-01-05,29.52652,-95.4638,1,0,40,Walmart Supercenter,3.25,Texas Medical Center,13.1
+963,7975 Odyssey Ln,Fresno,92500,165000,51000,1,1,3,2,1.0,960,29,77545,1986,medium,2027-01-05,29.53029,-95.46608,0,1,30,Walmart Supercenter,3.07,Texas Medical Center,12.9
+964,6726 Odyssey Ln,Fresno,103000,174000,26200,0,0,6,2,1.0,1050,26,77545,2014,medium,2026-12-01,29.5489,-95.46319,1,0,60,Walmart Supercenter,3.32,Texas Medical Center,11.6
+965,1999 Laurel Bow Rd,Fresno,184000,254000,15400,0,0,0,3,2.0,1540,29,77545,2006,light,2027-01-05,29.53371,-95.47092,0,1,0,Walmart Supercenter,2.75,Texas Medical Center,12.8
+966,6382 Phaeacia Pkwy,Fresno,199500,292000,60800,1,0,2,3,1.0,1950,29,77545,2008,medium,2026-12-01,29.53079,-95.46916,0,1,20,Walmart Supercenter,2.88,Texas Medical Center,12.9
+967,2091 Aegean Trl,Friendswood,243500,321000,18700,0,0,1,3,2.0,1870,41,77546,1981,light,2026-12-01,29.51037,-95.18869,0,1,10,Costco,3.33,Texas Medical Center,18.5
+968,5947 Telemachus Ave,Friendswood,318000,486000,24000,0,0,2,4,2.0,2400,41,77546,1995,light,2027-01-05,29.51668,-95.17974,0,0,20,Costco,2.65,Texas Medical Center,18.5
+969,2469 Phaeacia Pkwy,Friendswood,120000,245000,44800,0,1,4,3,2.0,1190,41,77546,1962,medium,2027-01-05,29.51531,-95.18976,0,1,40,Walmart Supercenter,3.12,Texas Medical Center,18.2
+970,5450 Mentor St,Friendswood,174500,295000,93000,1,0,7,3,1.0,1620,40,77546,1979,heavy,2027-02-02,29.52383,-95.1892,0,0,70,Walmart Supercenter,2.64,Texas Medical Center,17.8
+971,7022 Telemachus Ave,Friendswood,343500,480000,58800,0,0,8,4,2.0,2350,39,77546,1960,medium,2027-02-02,29.51105,-95.21225,1,0,80,Walmart Supercenter,2.8,Texas Medical Center,17.5
+972,5067 Laurel Bow Rd,Friendswood,142000,316000,118000,1,1,10,3,2.0,1820,42,77546,1958,heavy,2026-12-01,29.51061,-95.18428,1,0,100,Costco,3.09,Texas Medical Center,18.6
+973,8317 Phaeacia Pkwy,Friendswood,154500,246000,12000,0,0,0,3,1.0,1200,41,77546,1995,light,2027-01-05,29.51681,-95.17776,0,1,0,Costco,2.54,Texas Medical Center,18.6
+974,4475 Aegean Trl,Galena Park,140000,209000,23900,0,0,5,4,2.5,2390,19,77547,1984,light,2027-02-02,29.7478,-95.22973,1,0,50,Walmart Supercenter,3.46,Downtown Houston,8.4
+975,7647 Laurel Bow Rd,Galena Park,99500,153000,13800,0,0,5,3,2.0,1380,16,77547,1976,light,2027-02-02,29.73792,-95.24956,1,0,50,Walmart Supercenter,3.87,Downtown Houston,7.4
+976,7668 Olive Tree Ln,Galena Park,53000,164000,92500,0,1,8,3,2.0,1550,19,77547,2008,heavy,2027-02-02,29.73051,-95.23508,1,0,80,Walmart Supercenter,2.95,Downtown Houston,8.3
+977,5757 Ithaca Ct,Galena Park,107000,182000,18400,0,0,2,3,1.5,1840,17,77547,1997,light,2027-02-02,29.72732,-95.2451,0,0,20,Walmart Supercenter,3.13,Downtown Houston,7.8
+978,9355 Telemachus Ave,Galena Park,93500,158000,36200,0,0,7,3,2.0,1450,17,77547,1988,medium,2026-12-01,29.73067,-95.2499,1,0,70,Walmart Supercenter,3.5,Downtown Houston,7.5
+979,6583 Argos Way,Galena Park,81500,188000,111500,1,0,4,4,2.0,1990,19,77547,2010,heavy,2026-12-01,29.75221,-95.22545,0,1,40,Walmart Supercenter,3.1,Downtown Houston,8.7
+980,4669 Mentor St,Galena Park,92500,150000,93500,1,1,6,3,2.0,1330,19,77547,1968,heavy,2027-02-02,29.7422,-95.22747,0,1,60,Walmart Supercenter,3.51,Downtown Houston,8.6
+981,7463 Penelope Dr,Highlands,101000,166000,45000,0,1,3,2,2.0,1200,45,77562,1988,medium,2026-12-01,29.82634,-95.03795,0,1,30,Walmart Supercenter,4.99,Downtown Houston,20.4
+982,6950 Telemachus Ave,Highlands,124500,188000,28800,0,0,4,3,2.0,1150,43,77562,2016,medium,2027-02-02,29.82498,-95.05797,0,0,40,Walmart Supercenter,4.82,Downtown Houston,19.2
+983,474 Mentor St,Highlands,87000,145000,36000,1,0,8,2,1.5,960,44,77562,1965,medium,2026-12-01,29.81872,-95.04673,1,0,80,Walmart Supercenter,5.24,Downtown Houston,19.8
+984,3262 Penelope Dr,Highlands,74500,228000,96500,0,1,8,3,2.0,1630,43,77562,1959,heavy,2027-02-02,29.81894,-95.05583,0,0,80,Walmart Supercenter,5.25,Downtown Houston,19.3
+985,3491 Laurel Bow Rd,Highlands,158000,265000,121000,1,1,8,4,2.5,1880,43,77562,2008,heavy,2026-12-01,29.83718,-95.06162,1,0,80,Walmart Supercenter,3.96,Downtown Houston,19.2
+986,2709 Argos Way,Highlands,161000,226000,52000,1,0,3,3,2.0,1600,45,77562,1978,medium,2026-12-01,29.82316,-95.04135,0,1,30,Walmart Supercenter,5.13,Downtown Houston,20.2
+987,8903 Ithaca Ct,Highlands,98500,137000,21800,0,0,2,2,2.0,870,45,77562,2000,medium,2027-02-02,29.82905,-95.04202,0,1,20,Walmart Supercenter,4.73,Downtown Houston,20.2
+988,753 Mentor St,Kemah,249500,368000,42500,0,0,8,3,2.0,1700,53,77565,1951,medium,2027-02-02,29.54547,-95.04879,1,0,80,Walmart Supercenter,1.98,Texas Medical Center,23.7
+989,2868 Mentor St,Kemah,179000,355000,40000,0,0,4,3,2.0,1600,53,77565,2002,medium,2027-01-05,29.54149,-95.04762,0,0,40,Walmart Supercenter,1.82,Texas Medical Center,23.9
+990,4109 Athena Blvd,Kemah,140500,234000,9700,0,0,0,2,1.0,970,57,77565,2009,light,2027-02-02,29.5216,-95.03192,0,1,0,Walmart Supercenter,1.22,Texas Medical Center,25.4
+991,6176 Laurel Bow Rd,Kemah,221500,356000,40200,0,0,3,3,2.0,1610,56,77565,1981,medium,2027-01-05,29.53976,-95.02236,0,1,30,Walmart Supercenter,0.42,Texas Medical Center,25.3
+992,2206 Penelope Dr,Kemah,216500,391000,62000,0,1,6,3,2.0,1880,54,77565,1968,medium,2027-01-05,29.54039,-95.04031,0,0,60,Walmart Supercenter,1.38,Texas Medical Center,24.3
+993,8432 Olive Tree Ln,Kemah,161000,325000,81000,1,0,10,3,2.5,1380,56,77565,1951,heavy,2027-02-02,29.53681,-95.03127,1,0,100,Walmart Supercenter,0.79,Texas Medical Center,24.9
+994,8050 Phaeacia Pkwy,Kemah,194000,378000,101000,1,0,6,3,1.5,1780,57,77565,1969,heavy,2027-02-02,29.52901,-95.02289,0,1,60,Walmart Supercenter,0.48,Texas Medical Center,25.6
+995,2059 Phaeacia Pkwy,La Porte,202500,257000,16400,0,0,0,3,1.5,1640,44,77571,1996,light,2027-01-05,29.687,-95.04805,0,1,0,Walmart Supercenter,3.41,Downtown Houston,20.0
+996,638 Telemachus Ave,La Porte,156000,272000,102000,1,0,6,3,2.0,1800,44,77571,1949,heavy,2027-01-05,29.6909,-95.04824,0,1,60,Walmart Supercenter,3.52,Downtown Houston,19.9
+997,8667 Argos Way,La Porte,136000,237000,83500,1,0,4,3,1.5,1430,45,77571,2018,heavy,2027-02-02,29.67379,-95.0515,0,1,40,Walmart Supercenter,2.95,Downtown Houston,20.0
+998,4646 Ithaca Ct,La Porte,123000,167000,11800,0,0,5,2,2.0,1180,46,77571,1979,light,2027-02-02,29.68675,-95.03767,1,0,50,Walmart Supercenter,3.98,Downtown Houston,20.6
+999,8897 Odyssey Ln,La Porte,138000,279000,44000,0,0,4,4,2.0,1760,44,77571,1964,medium,2027-02-02,29.67553,-95.05398,0,1,40,Walmart Supercenter,2.82,Downtown Houston,19.8
+1000,5014 Laurel Bow Rd,La Porte,95000,160000,42200,0,1,8,2,1.0,1090,43,77571,1962,medium,2027-01-05,29.67757,-95.06628,1,0,80,Walmart Supercenter,2.15,Downtown Houston,19.1
+1001,6771 Laurel Bow Rd,La Porte,149500,284000,45200,0,0,4,4,2.0,1810,43,77571,2004,medium,2027-02-02,29.7002,-95.05734,0,0,40,Walmart Supercenter,3.44,Downtown Houston,19.2
+1002,9295 Calypso Cir,League City,204500,259000,11100,0,0,2,2,1.0,1110,53,77573,2009,light,2027-01-05,29.50241,-95.07745,0,0,20,Walmart Supercenter,2.35,Texas Medical Center,23.8
+1003,7178 Phaeacia Pkwy,League City,153500,276000,43000,1,0,3,2,1.0,1240,52,77573,1971,medium,2027-01-05,29.51022,-95.08407,0,1,30,Walmart Supercenter,2.79,Texas Medical Center,23.2
+1004,5103 Mentor St,League City,186500,354000,46200,0,0,6,3,2.0,1850,53,77573,2016,medium,2027-01-05,29.50084,-95.07829,1,0,60,Walmart Supercenter,2.23,Texas Medical Center,23.9
+1005,2687 Laurel Bow Rd,League City,125500,243000,25000,0,0,7,2,1.5,1000,50,77573,1974,medium,2027-01-05,29.50718,-95.10435,1,0,70,Walmart Supercenter,2.7,Texas Medical Center,22.3
+1006,2475 Athena Blvd,League City,236500,434000,54500,0,0,2,4,2.0,2180,54,77573,2001,medium,2027-01-05,29.49847,-95.06985,0,1,20,Walmart Supercenter,2.29,Texas Medical Center,24.4
+1007,6797 Mentor St,League City,292000,415000,20200,0,0,0,4,2.5,2020,51,77573,2005,light,2026-12-01,29.51964,-95.0807,0,1,0,Walmart Supercenter,3.46,Texas Medical Center,23.0
+1008,5373 Telemachus Ave,League City,344500,469000,24800,0,0,3,4,3.0,2480,53,77573,1983,light,2027-01-05,29.49717,-95.07956,0,0,30,Walmart Supercenter,1.96,Texas Medical Center,23.9
+1009,7959 Olive Tree Ln,Pearland,235500,375000,47800,0,0,3,3,2.0,1910,27,77581,1973,medium,2026-12-01,29.56413,-95.27515,0,1,30,Walmart Supercenter,0.79,Texas Medical Center,12.3
+1010,8912 Mentor St,Pearland,320500,402000,21000,0,0,0,4,2.0,2100,28,77581,2010,light,2027-01-05,29.55933,-95.2758,0,1,0,Walmart Supercenter,1.06,Texas Medical Center,12.5
+1011,3376 Calypso Cir,Pearland,192500,289000,23000,0,0,4,2,1.0,920,28,77581,1957,medium,2026-12-01,29.55956,-95.27237,0,1,40,Walmart Supercenter,1.14,Texas Medical Center,12.6
+1012,5243 Mentor St,Pearland,237500,351000,54800,1,0,3,3,2.5,1710,25,77581,1981,medium,2027-01-05,29.57209,-95.29249,0,1,30,Walmart Supercenter,0.57,Texas Medical Center,11.2
+1013,479 Penelope Dr,Pearland,193500,307000,13700,0,0,1,3,1.0,1370,29,77581,1971,light,2027-01-05,29.56063,-95.26008,0,1,10,Walmart Supercenter,1.63,Texas Medical Center,13.0
+1014,8361 Mentor St,Pearland,116000,343000,94500,1,0,6,3,2.0,1650,26,77581,1954,heavy,2027-01-05,29.57467,-95.28017,0,1,60,Walmart Supercenter,0.2,Texas Medical Center,11.5
+1015,1537 Laurel Bow Rd,Pearland,158000,323000,86500,1,0,8,3,2.5,1490,26,77581,1956,heavy,2027-02-02,29.56541,-95.29366,0,0,80,Walmart Supercenter,0.83,Texas Medical Center,11.6
+1016,2593 Phaeacia Pkwy,Pearland,133500,297000,79000,1,0,10,3,2.0,1340,24,77584,1957,heavy,2026-12-01,29.55299,-95.36112,1,0,100,Walmart Supercenter,1.35,Texas Medical Center,10.9
+1017,204 Laurel Bow Rd,Pearland,233000,318000,15000,0,0,0,3,2.0,1500,26,77584,2006,light,2026-12-01,29.54217,-95.35329,0,1,0,Walmart Supercenter,2.09,Texas Medical Center,11.7
+1018,3382 Laurel Bow Rd,Pearland,176000,229000,10200,0,0,2,2,2.0,1020,27,77584,2002,light,2027-02-02,29.53722,-95.36396,0,0,20,Costco,1.7,Texas Medical Center,11.9
+1019,746 Penelope Dr,Pearland,200500,379000,46500,0,0,7,4,2.5,1860,26,77584,1972,medium,2026-12-01,29.54219,-95.3539,1,0,70,Walmart Supercenter,2.06,Texas Medical Center,11.7
+1020,3659 Mentor St,Pearland,166000,314000,36800,0,0,7,3,1.0,1470,26,77584,1977,medium,2027-01-05,29.5463,-95.33218,1,0,70,Walmart Supercenter,3.15,Texas Medical Center,11.8
+1021,3469 Telemachus Ave,Pearland,153000,232000,41000,0,1,4,2,1.5,1040,27,77584,1951,medium,2026-12-01,29.53508,-95.34405,0,1,40,Walmart Supercenter,2.82,Texas Medical Center,12.3
+1022,8113 Olive Tree Ln,Pearland,117500,219000,47000,0,0,8,2,1.5,940,25,77584,2012,heavy,2027-02-02,29.55545,-95.34003,1,0,80,Walmart Supercenter,2.58,Texas Medical Center,11.0
+1023,364 Odyssey Ln,El Lago,230000,383000,21200,0,0,1,4,2.0,2120,50,77586,1972,light,2027-01-05,29.59352,-95.04358,0,1,10,Walmart Supercenter,4.33,Texas Medical Center,22.6
+1024,3857 Olive Tree Ln,El Lago,177500,274000,12500,0,0,4,3,1.0,1250,50,77586,1993,light,2027-02-02,29.57208,-95.05462,1,0,40,Walmart Supercenter,3.38,Texas Medical Center,22.6
+1025,3005 Laurel Bow Rd,El Lago,343000,433000,26000,0,0,2,4,2.0,2600,51,77586,2008,light,2027-02-02,29.58398,-95.04223,0,0,20,Walmart Supercenter,3.69,Texas Medical Center,22.9
+1026,6897 Penelope Dr,El Lago,98000,198000,42000,1,0,4,2,1.0,1200,54,77586,2008,medium,2026-12-01,29.57206,-95.02701,0,0,40,Walmart Supercenter,2.63,Texas Medical Center,24.1
+1027,2760 Odyssey Ln,El Lago,249000,442000,134500,0,0,10,4,2.5,2690,52,77586,1967,heavy,2027-01-05,29.59445,-95.02684,1,0,100,Walmart Supercenter,4.16,Texas Medical Center,23.5
+1028,2464 Telemachus Ave,El Lago,151000,310000,38200,0,0,7,3,1.0,1530,52,77586,1981,medium,2027-01-05,29.57896,-95.03812,1,0,70,Walmart Supercenter,3.28,Texas Medical Center,23.3
+1029,7893 Aegean Trl,El Lago,250500,416000,24400,0,0,0,4,3.0,2440,52,77586,2015,light,2027-02-02,29.59215,-95.03349,0,1,0,Walmart Supercenter,4.07,Texas Medical Center,23.2
+1030,1679 Aegean Trl,South Houston,125000,211000,44200,0,0,4,3,2.0,1770,26,77587,1948,medium,2027-02-02,29.65167,-95.21624,0,1,40,Walmart Supercenter,1.93,Texas Medical Center,11.5
+1031,1824 Argos Way,South Houston,105500,134000,9600,0,0,0,2,1.0,960,24,77587,2013,light,2026-12-01,29.65662,-95.22486,0,1,0,Walmart Supercenter,1.94,Texas Medical Center,10.9
+1032,2257 Mentor St,South Houston,111000,188000,36500,0,0,2,3,2.0,1460,26,77587,1990,medium,2027-02-02,29.65921,-95.20858,0,1,20,Walmart Supercenter,2.37,Texas Medical Center,11.8
+1033,658 Argos Way,South Houston,87500,156000,73500,1,0,8,2,1.0,1230,23,77587,1952,heavy,2027-01-05,29.67817,-95.22658,0,0,80,Walmart Supercenter,1.44,Downtown Houston,10.3
+1034,7525 Laurel Bow Rd,South Houston,76500,146000,27500,0,0,4,2,1.0,1100,23,77587,2009,medium,2027-01-05,29.67209,-95.22895,0,0,40,Walmart Supercenter,1.85,Texas Medical Center,10.4
+1035,9093 Aegean Trl,South Houston,57500,137000,76500,1,1,4,2,1.5,990,25,77587,2013,heavy,2027-02-02,29.64545,-95.22693,0,1,40,Walmart Supercenter,1.2,Texas Medical Center,11.0
+1036,7594 Ithaca Ct,South Houston,196500,261000,24800,0,0,0,4,2.0,2480,24,77587,2014,light,2027-02-02,29.67165,-95.2201,0,1,0,Walmart Supercenter,1.62,Downtown Houston,10.9
+1037,8470 Argos Way,Webster,155500,254000,49500,1,0,5,3,1.0,1500,45,77598,1987,medium,2027-02-02,29.54646,-95.11703,0,0,50,Costco,1.65,Texas Medical Center,20.1
+1038,8835 Mentor St,Webster,124500,220000,29200,0,0,3,3,2.0,1170,45,77598,1973,medium,2027-02-02,29.52349,-95.1379,0,1,30,Costco,0.7,Texas Medical Center,20.1
+1039,2591 Calypso Cir,Webster,221000,438000,68000,1,0,8,4,3.0,2240,43,77598,1969,medium,2027-02-02,29.52922,-95.14576,1,0,80,Costco,0.45,Texas Medical Center,19.5
+1040,7907 Aegean Trl,Webster,189500,239000,13600,0,0,1,3,2.0,1360,45,77598,1983,light,2027-02-02,29.52836,-95.12814,0,1,10,Costco,0.8,Texas Medical Center,20.3
+1041,1070 Telemachus Ave,Webster,227500,371000,54500,1,0,6,4,2.0,1700,42,77598,1957,medium,2027-01-05,29.55259,-95.13895,0,0,60,Walmart Supercenter,1.22,Texas Medical Center,18.8
+1042,3807 Athena Blvd,Webster,286500,466000,24800,0,0,1,4,2.0,2480,45,77598,1979,light,2027-01-05,29.53431,-95.12695,0,1,10,Costco,0.79,Texas Medical Center,20.1
+1043,8689 Ithaca Ct,Webster,78500,128000,12300,0,0,2,2,2.0,1230,45,77598,1967,light,2027-02-02,29.52566,-95.13705,0,1,20,Costco,0.57,Texas Medical Center,20.0
