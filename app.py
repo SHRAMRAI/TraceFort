@@ -58,7 +58,8 @@ header[data-testid="stHeader"] { background: transparent; }
 /* ---------- top bar: ☰ + wordmark left, Sign in / Create account right. Fixed: stays put while you scroll.
    The ☰ is Streamlit's own side-panel button, restyled and pinned into the bar's left slot. ---------- */
 .st-key-topbar { position: fixed; top: 0; left: 0; right: 0; z-index: 990; background: var(--paper);
-                 border-bottom: 1px solid var(--line); padding: 10px 20px 10px 68px; }
+                 border-bottom: 1px solid var(--line); padding: 10px 140px 10px 68px; }
+/* 140px right: Streamlit Cloud draws its own Fork + GitHub buttons in the top-right corner of the page. */
 /* Streamlit's header/toolbar is an invisible strip over our bar: make it click-through (it was swallowing
    clicks on Sign in / Create account), and keep only the ☰ button clickable. */
 header[data-testid="stHeader"], [data-testid="stToolbar"] { background: transparent; pointer-events: none !important; }
@@ -81,7 +82,8 @@ header[data-testid="stHeader"] { z-index: 995; }
 [data-testid="stSidebar"] .menu-who { font-weight: 700; margin: 0 0 4px; }
 
 /* ---------- Ask TraceFort: floating button on every page ---------- */
-.st-key-chat_fab { position: fixed; right: 20px; bottom: 20px; z-index: 999; width: auto !important; }
+.st-key-chat_fab { position: fixed; right: 20px; bottom: 76px; z-index: 999; width: auto !important; }
+/* 76px up: Streamlit Cloud's creator badge sits in the bottom-right corner and would cover the button. */
 .st-key-chat_fab button { border-radius: 99px; min-height: 54px; padding: 0 22px;
                           box-shadow: 0 6px 18px rgba(0,0,0,.25); }
 
@@ -168,12 +170,13 @@ button:focus-visible, input:focus-visible, a:focus-visible { outline: 3px solid 
   .nums { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .nums div:nth-child(3) { border-left: none; padding-left: 0; }
   .brand { font-size: .95rem; letter-spacing: .08em; }
-  .st-key-topbar { padding: 10px 10px 10px 64px; }
+  .st-key-topbar { padding: 50px 10px 10px 64px; }      /* phones: start below Cloud's Fork/GitHub strip */
+  .block-container { padding-top: 128px; }
   .st-key-topbar .stButton > button { padding: 0 10px; font-size: .82rem; min-height: 42px; }
   .st-key-top_create button p { font-size: 0 !important; }            /* phones: short label so the */
   .st-key-top_create button p::after { content: "Sign up"; font-size: .82rem; }   /* wordmark still fits */
-  [data-testid="stExpandSidebarButton"] { left: 10px; top: 12px; height: 42px; width: 42px; }
-  .st-key-chat_fab { right: 12px; bottom: 12px; }
+  [data-testid="stExpandSidebarButton"] { left: 10px; top: 50px; height: 42px; width: 42px; }
+  .st-key-chat_fab { right: 12px; bottom: 64px; }
 }
 @media (max-width: 380px) {                                   /* small phones (320-380px): keep the wordmark whole */
   .brand { font-size: .8rem; letter-spacing: .03em; }
