@@ -192,6 +192,13 @@ def money(v):
     return f"${int(round(v)):,}"
 
 
+def xome_city_url(city):
+    """Xome's auction list for a Texas city, e.g. Fort Worth -> https://www.xome.com/auctions/tx/fort-worth
+    (checked live: Arlington lists 15 auctions, Fort Worth 44). Only the city name goes in the link."""
+    slug = "-".join("".join(ch for ch in str(city).lower() if ch.isalnum() or ch == " ").split())
+    return f"https://www.xome.com/auctions/tx/{slug}"
+
+
 def risk_word(score):
     return "Low" if score <= 3 else "Moderate" if score <= 6 else "High"
 
@@ -585,6 +592,17 @@ def home_card(pos, home):
 """,
         unsafe_allow_html=True,
     )
+    # One click to where bidding happens, so buyers don't hunt for it on another site. Opens in a new tab, so
+    # this card (walk-away bid + checklist) stays open here. Sample homes have no real listing page, so they
+    # open real auctions in the same city; a real listing_url (when we have one) goes straight to that home.
+    url = getattr(home, "listing_url", None)
+    if isinstance(url, str) and url.startswith("https://"):
+        st.link_button("Open this listing on Xome", url, icon=":material/open_in_new:", type="primary")
+    else:
+        st.link_button(f"See auctions in {home.city} on Xome", xome_city_url(home.city),
+                       icon=":material/open_in_new:", type="primary",
+                       help="Opens Xome in a new tab. This home is a sample, so you'll see real auctions in the same "
+                            "city. Keep this page open to check each one against your walk-away bid and checklist.")
     with st.expander("Ready to bid? Your checklist"):
         steps = bid_checklist(home)
         if getattr(home, "occupied", 0):

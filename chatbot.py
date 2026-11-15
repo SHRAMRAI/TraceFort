@@ -54,6 +54,9 @@ lives there, and whether anyone has seen inside.
 - Drive times come from the buyer's work ZIP if they gave one, otherwise from the nearest job center.
 - Home values come from Zillow's home value index by ZIP code and bedroom count. The homes themselves are \
 samples made up for the demo: their addresses, opening bids and auction dates are not real listings.
+- Each home card has a red "See auctions in <city> on Xome" button. It opens Xome in a new tab with real auctions \
+in that city (the homes here are samples), while the walk-away bid and checklist stay open on TraceFort. \
+Registration, deposits and bidding happen on Xome.
 - Pages: Your best homes, Investor mode, My preferences (change budget, goal, risk, bedrooms, drive, repairs, \
 work ZIP), Account (sign out, download my data, delete my account), Contact, Terms, Privacy, Cookies.
 

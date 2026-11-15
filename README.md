@@ -4,7 +4,7 @@ TraceFort helps first-time buyers in Dallas–Fort Worth and Houston walk into a
 most they should bid. Answer a short quiz and get your best three homes, each with a walk-away bid that shows its
 math, a repair estimate, a risk score, a map and a "ready to bid?" checklist.
 
-**Try it live:** [tracefort.streamlit.app](https://tracefort.streamlit.app/?embed=true) (tap "See an example buyer").
+**Try it live:** [tracefort.streamlit.app](https://tracefort.streamlit.app) (tap "See an example buyer").
 
 Built at **HackUTA 2026** (theme: Homer's *Odyssey*) for the Xome challenge by
 [Shramika Rai](https://github.com/SHRAMRAI), [Prajita Gyawali](https://github.com/gyawaliprajita50) and

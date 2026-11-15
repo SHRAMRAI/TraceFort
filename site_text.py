@@ -81,7 +81,10 @@ based on public ZIP-code data. Don't rely on them for a real purchase.
 
 ### 4. Not affiliated with Xome
 TraceFort was built for the HackUTA 2026 Xome challenge. It is not affiliated with or endorsed by Xome.
-Registration, deposits and bidding happen on Xome's own site, under Xome's own terms.
+Registration, deposits and bidding happen on Xome's own site, under Xome's own terms. The "See auctions on Xome"
+button on each home opens Xome in a new tab; because our homes are samples, it shows real auctions in the same
+city, not the sample home. We aren't responsible for Xome's listings, prices or terms. Always read the full
+listing on Xome before you bid.
 
 ### 5. Your account
 Choose a 4-digit PIN you don't use anywhere else, and keep it private. You're responsible for what happens under
@@ -151,6 +154,17 @@ Your account and messages are stored in a database on the TraceFort server. Your
 sign-in code. Contact messages are read only by the TraceFort team, in a PIN-protected inbox.
 We don't sell or share your personal data. The map loads tiles from CARTO and the fonts load from Google Fonts;
 like any website, those services see your device's IP address.
+
+### Links to Xome and other sites
+To save you from going back and forth between websites, each home has a button that opens Xome in a new tab,
+where auctions, registration, deposits and bidding happen. Because the homes on TraceFort are samples, the button
+opens real auctions on Xome in the same city. TraceFort's own pages, including your walk-away bid and checklist,
+stay open so you can check each listing against them.
+- **What the link contains:** only the city name (for example xome.com/auctions/tx/arlington). We never put your
+  name, PIN, budget, preferences, work ZIP or anything else about you in the link.
+- **What we send to Xome:** nothing. We don't share your data with Xome, and Xome doesn't send us anything about you.
+- **Once you're on Xome,** Xome's own privacy policy and terms apply, not ours. Xome may use its own cookies and
+  ask you to sign in or register. TraceFort isn't affiliated with or endorsed by Xome.
 
 ### Our host (Streamlit Community Cloud)
 TraceFort runs on Streamlit Community Cloud, a free hosting service owned by Snowflake. The page that holds
